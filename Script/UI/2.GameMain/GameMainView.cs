@@ -1,0 +1,7 @@
+using UnityEngine.UI;
+using GameCore.UI;
+
+public class GameMainView : UIViewBase
+{
+
+}

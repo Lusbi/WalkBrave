@@ -1,0 +1,543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8660115233910597486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u76AE\u8863"
+  m_EditorClassIdentifier: 
+  key: "\u76AE\u8863"
+  m_titlePath: Level_1
+  m_comment: "\u4E0A\u534A\u8EAB"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 1
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-8269865006140331175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u9285\u6212\u6307"
+  m_EditorClassIdentifier: 
+  key: "\u9285\u6212\u6307"
+  m_titlePath: Level_1
+  m_comment: "\u6212\u6307"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 8
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-8058998104448447476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u62AB\u98A8"
+  m_EditorClassIdentifier: 
+  key: "\u62AB\u98A8"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u62AB\u98A8"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 4
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-7640556869206961054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u9285\u9805\u934A"
+  m_EditorClassIdentifier: 
+  key: "\u9285\u9805\u934A"
+  m_titlePath: Level_1
+  m_comment: "\u9805\u934A"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 7
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-6031693135992753309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u5E03\u88FD\u62AB\u98A8"
+  m_EditorClassIdentifier: 
+  key: "\u5E03\u88FD\u62AB\u98A8"
+  m_titlePath: Level_1
+  m_comment: "\u62AB\u98A8"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 4
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-5686704741734743244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u4E0B\u534A\u8EAB"
+  m_EditorClassIdentifier: 
+  key: "\u4E0B\u534A\u8EAB"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u4E0B\u534A\u8EAB"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 2
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-4303819075541420187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u76AE\u8932"
+  m_EditorClassIdentifier: 
+  key: "\u76AE\u8932"
+  m_titlePath: Level_1
+  m_comment: "\u4E0B\u534A\u8EAB"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 2
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-3461509464930856076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u77ED\u528D"
+  m_EditorClassIdentifier: 
+  key: "\u77ED\u528D"
+  m_titlePath: Level_1
+  m_comment: "\u6B66\u5668"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 0
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-2468131259299085584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u9285\u8033\u74B0"
+  m_EditorClassIdentifier: 
+  key: "\u9285\u8033\u74B0"
+  m_titlePath: Level_1
+  m_comment: "\u8033\u98FE"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 6
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &-1628399811461010013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u6B66\u5668"
+  m_EditorClassIdentifier: 
+  key: "\u6B66\u5668"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u6B66\u5668"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 0
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a419c11d425514fb5b1e8d4b8fe023, type: 3}
+  m_Name: EquipRepository_Lusbi
+  m_EditorClassIdentifier: 
+  m_dataList:
+  - {fileID: 8368041204871041663}
+  - {fileID: 735050244540080536}
+  - {fileID: -8058998104448447476}
+  - {fileID: -1628399811461010013}
+  - {fileID: 3718214670325625227}
+  - {fileID: -8660115233910597486}
+  - {fileID: -4303819075541420187}
+  - {fileID: 6010405222190977056}
+  - {fileID: -3461509464930856076}
+  - {fileID: 1177954947793455207}
+  - {fileID: 35551487914773986}
+  - {fileID: 7763734954908213211}
+  - {fileID: 1200158758058625019}
+  - {fileID: -5686704741734743244}
+  - {fileID: -8269865006140331175}
+  - {fileID: -2468131259299085584}
+  - {fileID: -7640556869206961054}
+  - {fileID: -6031693135992753309}
+  m_key: 1MF_8A011lEszoj6C7SKlgc0bgr0dy4pMMqHJNeptF0M
+  m_gid: 1763042449
+  m_gas: 
+  m_sheetName: 
+  m_externalImportFromGoogleSheet: 0
+  m_googleSheetDownloaderReferences: []
+--- !u!114 &35551487914773986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u978B\u5B50"
+  m_EditorClassIdentifier: 
+  key: "\u978B\u5B50"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u978B\u5B50"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 3
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &735050244540080536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u6212\u6307"
+  m_EditorClassIdentifier: 
+  key: "\u6212\u6307"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u6212\u6307"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 8
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &1177954947793455207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u8033\u74B0"
+  m_EditorClassIdentifier: 
+  key: "\u8033\u74B0"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u8033\u98FE"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 6
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &1200158758058625019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u4E0A\u534A\u8EAB"
+  m_EditorClassIdentifier: 
+  key: "\u4E0A\u534A\u8EAB"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u4E0A\u534A\u8EAB"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 1
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &3718214670325625227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u76AE\u5E3D"
+  m_EditorClassIdentifier: 
+  key: "\u76AE\u5E3D"
+  m_titlePath: Level_1
+  m_comment: "\u5E3D\u5B50"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 5
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &6010405222190977056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u76AE\u978B"
+  m_EditorClassIdentifier: 
+  key: "\u76AE\u978B"
+  m_titlePath: Level_1
+  m_comment: "\u978B\u5B50"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 3
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &7763734954908213211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u9805\u934A"
+  m_EditorClassIdentifier: 
+  key: "\u9805\u934A"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u9805\u934A"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 7
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
+--- !u!114 &8368041204871041663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a853059f94146145b9a0a744acd1b4b, type: 3}
+  m_Name: "EquipData_\u5E3D\u5B50"
+  m_EditorClassIdentifier: 
+  key: "\u5E3D\u5B50"
+  m_titlePath: "\u6E2C\u8A66"
+  m_comment: "\u5E3D\u5B50"
+  m_databaseNormalDetail:
+    m_textRefName: 
+    m_textRefDetail: 
+    m_iconRefSmallIcon:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+  m_equipmentType: 5
+  m_rareType: 0
+  m_slotCount: 0
+  m_databaseShopDetail:
+    m_purchasePrice: 100
+    m_sellPrice: 25
