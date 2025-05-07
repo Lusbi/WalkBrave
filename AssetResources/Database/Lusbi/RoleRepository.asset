@@ -1,0 +1,1850 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9202558011703347849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
+  m_EditorClassIdentifier: 
+  key: "\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5143\u7D20\u6B98\u6E23"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1600
+--- !u!114 &-8572075138140381688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u60E1\u72AC\u5E7D\u9748"
+  m_EditorClassIdentifier: 
+  key: "\u60E1\u72AC\u5E7D\u9748"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u60E1\u72AC\u5E7D\u9748"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7D\u5F71\u72AC\u7259"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-8470744692071837744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
+  m_EditorClassIdentifier: 
+  key: "\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6B98\u7F3A\u6383\u5E1A\u67C4"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &-8464233040534860180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
+  m_EditorClassIdentifier: 
+  key: "\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u84BC\u7A79\u6230\u7D0B"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 3750
+--- !u!114 &-8236365160055707037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u7194\u5CA9\u5DE8\u9B54"
+  m_EditorClassIdentifier: 
+  key: "\u7194\u5CA9\u5DE8\u9B54"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7194\u5CA9\u5DE8\u9B54"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7194\u706B\u788E\u5CA9"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 2400
+--- !u!114 &-8023240887506441675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8FF7\u9014\u6C34\u9B3C"
+  m_EditorClassIdentifier: 
+  key: "\u8FF7\u9014\u6C34\u9B3C"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8FF7\u9014\u6C34\u9B3C"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7D\u9B42\u4E4B\u9732"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 2400
+--- !u!114 &-7811345282933128439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
+  m_EditorClassIdentifier: 
+  key: "\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7194\u5CA9\u4E4B\u5FC3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 4000
+--- !u!114 &-7716545042429061199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6436\u98DF\u70CF\u9D09"
+  m_EditorClassIdentifier: 
+  key: "\u6436\u98DF\u70CF\u9D09"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6436\u98DF\u70CF\u9D09"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5077\u4F86\u7684\u9234\u943A"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-7464797187756750964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u60E1\u610F\u85E4\u8513"
+  m_EditorClassIdentifier: 
+  key: "\u60E1\u610F\u85E4\u8513"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u60E1\u610F\u85E4\u8513"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7E8F\u7E5E\u85E4\u689D"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-7387906493409244034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C99\u5F71\u5E7B\u72FC"
+  m_EditorClassIdentifier: 
+  key: "\u6C99\u5F71\u5E7B\u72FC"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u5F71\u5E7B\u72FC"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7B\u6C99\u7D50\u6676"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1100
+--- !u!114 &-7281009289561792791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6232\u6C34\u9B5A\u5996"
+  m_EditorClassIdentifier: 
+  key: "\u6232\u6C34\u9B5A\u5996"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6232\u6C34\u9B5A\u5996"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9583\u5149\u9B5A\u9C57"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &-6445032715040759049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8B8A\u8272\u8449\u5F71\u7378"
+  m_EditorClassIdentifier: 
+  key: "\u8B8A\u8272\u8449\u5F71\u7378"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8B8A\u8272\u8449\u5F71\u7378"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u64EC\u614B\u8449\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &-6033574214875861240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u71C3\u71D2\u528D\u9748"
+  m_EditorClassIdentifier: 
+  key: "\u71C3\u71D2\u528D\u9748"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u71C3\u71D2\u528D\u9748"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u8A5B\u5492\u528D\u9B42"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 5000
+--- !u!114 &-5882992432556577393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6D3B\u5316\u77F3\u50CF"
+  m_EditorClassIdentifier: 
+  key: "\u6D3B\u5316\u77F3\u50CF"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D3B\u5316\u77F3\u50CF"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u53E4\u4EE3\u77F3\u788E\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &-5779342695947175185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5077\u9B5A\u7CBE\u9748"
+  m_EditorClassIdentifier: 
+  key: "\u5077\u9B5A\u7CBE\u9748"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5077\u9B5A\u7CBE\u9748"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7CBE\u9748\u7FBD\u6BDB"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &-5672889247780724166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
+  m_EditorClassIdentifier: 
+  key: "\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u975C\u8B10\u4E4B\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 5000
+--- !u!114 &-4915889791935783199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u4EA1\u9748\u65C5\u4EBA"
+  m_EditorClassIdentifier: 
+  key: "\u4EA1\u9748\u65C5\u4EBA"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u4EA1\u9748\u65C5\u4EBA"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7834\u640D\u65C5\u4EBA\u6597\u7BF7"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1300
+--- !u!114 &-4807500708305071959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6CE1\u6CE1\u6C34\u7CBE"
+  m_EditorClassIdentifier: 
+  key: "\u6CE1\u6CE1\u6C34\u7CBE"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6CE1\u6CE1\u6C34\u7CBE"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6C34\u7CBE\u9748\u6CE1\u6CE1\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-4803783542002423321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5CA9\u77F3\u9B54\u50CF"
+  m_EditorClassIdentifier: 
+  key: "\u5CA9\u77F3\u9B54\u50CF"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5CA9\u77F3\u9B54\u50CF"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5805\u786C\u9B54\u5CA9"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 2400
+--- !u!114 &-4260487337147235364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6D41\u6D6A\u9F20\u5996"
+  m_EditorClassIdentifier: 
+  key: "\u6D41\u6D6A\u9F20\u5996"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D41\u6D6A\u9F20\u5996"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7834\u721B\u9F20\u76AE"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 500
+--- !u!114 &-4130069585008667241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8A6D\u7B11\u8857\u71C8"
+  m_EditorClassIdentifier: 
+  key: "\u8A6D\u7B11\u8857\u71C8"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7B11\u8857\u71C8"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9B3C\u706B\u71ED\u7130"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &-4083128337814233445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C99\u5875\u880D\u602A"
+  m_EditorClassIdentifier: 
+  key: "\u6C99\u5875\u880D\u602A"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u5875\u880D\u602A"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6BD2\u880D\u6676\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &-4032599264716717802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
+  m_EditorClassIdentifier: 
+  key: "\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9EC3\u91D1\u7B26\u77F3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 1200
+--- !u!114 &-3934072804122521430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8FF7\u5931\u7684\u8C93\u9B42"
+  m_EditorClassIdentifier: 
+  key: "\u8FF7\u5931\u7684\u8C93\u9B42"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8FF7\u5931\u7684\u8C93\u9B42"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7D\u9B42\u788E\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &-3099290712714048522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u7121\u81C9\u5E7D\u5F71"
+  m_EditorClassIdentifier: 
+  key: "\u7121\u81C9\u5E7D\u5F71"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7121\u81C9\u5E7D\u5F71"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6697\u5F71\u9727\u9744"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 5000
+--- !u!114 &-2964233767393923160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5E7D\u51A5\u5B88\u885B"
+  m_EditorClassIdentifier: 
+  key: "\u5E7D\u51A5\u5B88\u885B"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5E7D\u51A5\u5B88\u885B"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9ED1\u66DC\u77F3\u788E\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 1500
+--- !u!114 &-2749729636265525871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
+  m_EditorClassIdentifier: 
+  key: "\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u98A8\u66B4\u4E4B\u5FC3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 3750
+--- !u!114 &-2582028980247346222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u507D\u88DD\u6C34\u8349\u5996"
+  m_EditorClassIdentifier: 
+  key: "\u507D\u88DD\u6C34\u8349\u5996"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u507D\u88DD\u6C34\u8349\u5996"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9748\u6D3B\u6C34\u8349\u7D72"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-2322246862927793568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u706B\u7130\u72AC\u9B54"
+  m_EditorClassIdentifier: 
+  key: "\u706B\u7130\u72AC\u9B54"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u706B\u7130\u72AC\u9B54"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5730\u7344\u72AC\u7259"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 2400
+--- !u!114 &-2282728046106140920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8150\u721B\u6CE5\u602A"
+  m_EditorClassIdentifier: 
+  key: "\u8150\u721B\u6CE5\u602A"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8150\u721B\u6CE5\u602A"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9ECF\u7CCA\u5783\u573E\u5718"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &-2192268727118871612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u7194\u5CA9\u98DB\u9F8D"
+  m_EditorClassIdentifier: 
+  key: "\u7194\u5CA9\u98DB\u9F8D"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7194\u5CA9\u98DB\u9F8D"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7194\u9F8D\u4E4B\u9C57"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 5000
+--- !u!114 &-1834405293160709448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u9B3C\u706B\u98DB\u86FE"
+  m_EditorClassIdentifier: 
+  key: "\u9B3C\u706B\u98DB\u86FE"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9B3C\u706B\u98DB\u86FE"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7D\u5149\u7C89\u5875"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &-1601447254415154018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5931\u63A7\u9B54\u6CD5\u66F8"
+  m_EditorClassIdentifier: 
+  key: "\u5931\u63A7\u9B54\u6CD5\u66F8"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5931\u63A7\u9B54\u6CD5\u66F8"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6B98\u7834\u9B54\u6CD5\u66F8\u9801"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1300
+--- !u!114 &-1034168022254040208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6E2C\u8A66\u7528\u8CC7\u6599"
+  m_EditorClassIdentifier: 
+  key: "\u6E2C\u8A66\u7528\u8CC7\u6599"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: 
+  m_roleDescription: 
+  m_enemyType: 
+  m_sceneReference:
+    m_key: Null
+    m_queryText: 
+    m_selectedTitle: Null
+  m_dropInfo:
+    m_itemReference:
+      m_key: Null
+      m_queryText: 
+      m_selectedTitle: Null
+    m_dropRate: 0
+    m_dropBonus: 0
+  m_hitCount: 0
+--- !u!114 &-839381378524103733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
+  m_EditorClassIdentifier: 
+  key: "\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9ED1\u7130\u9B54\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 5000
+--- !u!114 &-344818632175126153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C34\u9F8D\u5E7C\u5D3D"
+  m_EditorClassIdentifier: 
+  key: "\u6C34\u9F8D\u5E7C\u5D3D"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C34\u9F8D\u5E7C\u5D3D"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9F8D\u606F\u6C34\u73E0"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1000
+--- !u!114 &-42529864505115276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
+  m_EditorClassIdentifier: 
+  key: "\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u6E56\u6CCA\u79D8\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u4E5D\u982D\u9F8D\u4E4B\u7259"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 3750
+--- !u!114 &-9454202061368611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
+  m_EditorClassIdentifier: 
+  key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u6DF7\u6C8C\u7981\u57DF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u88C2\u9699\u4E4B\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0570d0b386e155e479801322a3a05228, type: 3}
+  m_Name: RoleRepository
+  m_EditorClassIdentifier: 
+  m_dataList:
+  - {fileID: 2802172165901217668}
+  - {fileID: -4915889791935783199}
+  - {fileID: -5779342695947175185}
+  - {fileID: 8214006055210634301}
+  - {fileID: 358876552186429477}
+  - {fileID: -4803783542002423321}
+  - {fileID: -2964233767393923160}
+  - {fileID: -7464797187756750964}
+  - {fileID: -8572075138140381688}
+  - {fileID: -7281009289561792791}
+  - {fileID: -7716545042429061199}
+  - {fileID: -344818632175126153}
+  - {fileID: -4083128337814233445}
+  - {fileID: -7387906493409244034}
+  - {fileID: -4807500708305071959}
+  - {fileID: 8160939513442045490}
+  - {fileID: -5882992432556577393}
+  - {fileID: -4260487337147235364}
+  - {fileID: 5604162068840273191}
+  - {fileID: -2322246862927793568}
+  - {fileID: -3099290712714048522}
+  - {fileID: -8236365160055707037}
+  - {fileID: -2192268727118871612}
+  - {fileID: -6033574214875861240}
+  - {fileID: 6725464781359861601}
+  - {fileID: -2282728046106140920}
+  - {fileID: 6226339734261269760}
+  - {fileID: -4130069585008667241}
+  - {fileID: -8023240887506441675}
+  - {fileID: 141138253197496816}
+  - {fileID: 4414193167586752712}
+  - {fileID: 4066205625334357814}
+  - {fileID: -1834405293160709448}
+  - {fileID: -2582028980247346222}
+  - {fileID: -1601447254415154018}
+  - {fileID: 8692105084915671564}
+  - {fileID: -1034168022254040208}
+  - {fileID: 7895950442299010232}
+  - {fileID: -6445032715040759049}
+  - {fileID: 2802941207026632634}
+  - {fileID: -3934072804122521430}
+  - {fileID: -8464233040534860180}
+  - {fileID: -9202558011703347849}
+  - {fileID: -8470744692071837744}
+  - {fileID: 768279517145388459}
+  - {fileID: 3474280909880729771}
+  - {fileID: 4690096294232761914}
+  - {fileID: -7811345282933128439}
+  - {fileID: -2749729636265525871}
+  - {fileID: 5073014329320146125}
+  - {fileID: -839381378524103733}
+  - {fileID: 2029169840254307350}
+  - {fileID: 7908589988331048803}
+  - {fileID: -42529864505115276}
+  - {fileID: -5672889247780724166}
+  - {fileID: -4032599264716717802}
+  - {fileID: 3075256532581512014}
+  - {fileID: -9454202061368611}
+  - {fileID: 209611234249782339}
+  m_key: 1_tTLn5gqtLCdyAfP1AfpShe1YLCOstRbeHx7AOCjtKs
+  m_gid: 740908867
+  m_gas: 
+  m_sheetName: 
+  m_externalImportFromGoogleSheet: 0
+  m_googleSheetDownloaderReferences: []
+--- !u!114 &141138253197496816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u96F2\u9727\u5143\u7D20"
+  m_EditorClassIdentifier: 
+  key: "\u96F2\u9727\u5143\u7D20"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u96F2\u9727\u5143\u7D20"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u51DD\u7E2E\u96F2\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &209611234249782339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
+  m_EditorClassIdentifier: 
+  key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u6DF7\u6C8C\u7981\u57DF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7121\u76E1\u88C2\u9699"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 0
+--- !u!114 &358876552186429477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5929\u7FFC\u7375\u9DF9"
+  m_EditorClassIdentifier: 
+  key: "\u5929\u7FFC\u7375\u9DF9"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7FFC\u7375\u9DF9"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u92D2\u5229\u7FBD\u5203"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &768279517145388459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
+  m_EditorClassIdentifier: 
+  key: "\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u8A6D\u7570\u6620\u50CF\u788E\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &2029169840254307350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
+  m_EditorClassIdentifier: 
+  key: "\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9280\u9E7F\u5E7B\u89D2"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 2000
+--- !u!114 &2802172165901217668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u7D19\u7BB1"
+  m_EditorClassIdentifier: 
+  key: "\u7D19\u7BB1"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7834\u820A\u7D19\u7BB1"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u6559\u5B78\u5834"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\uFF1F\uFF1F\uFF1F"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 100
+    m_dropBonus: 0
+  m_hitCount: 500
+--- !u!114 &2802941207026632634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8DF3\u8DF3\u8611\u83C7\u7CBE"
+  m_EditorClassIdentifier: 
+  key: "\u8DF3\u8DF3\u8611\u83C7\u7CBE"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8DF3\u8DF3\u8611\u83C7\u7CBE"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5F48\u529B\u8611\u83C7\u5E3D"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &3075256532581512014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
+  m_EditorClassIdentifier: 
+  key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u6DF7\u6C8C\u7981\u57DF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6642\u7A7A\u5875\u57C3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 0
+--- !u!114 &3474280909880729771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
+  m_EditorClassIdentifier: 
+  key: "\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u8A5B\u5492\u5E03\u689D"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &4066205625334357814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u98A8\u4E4B\u9B54\u50CF"
+  m_EditorClassIdentifier: 
+  key: "\u98A8\u4E4B\u9B54\u50CF"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u98A8\u4E4B\u9B54\u50CF"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u75BE\u98A8\u77F3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 2400
+--- !u!114 &4414193167586752712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u96F7\u64CA\u98DB\u9F8D"
+  m_EditorClassIdentifier: 
+  key: "\u96F7\u64CA\u98DB\u9F8D"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u96F7\u64CA\u98DB\u9F8D"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5929\u7A7A\u4E4B\u57CE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u96F7\u5149\u9F8D\u9C57"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 5000
+--- !u!114 &4690096294232761914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
+  m_EditorClassIdentifier: 
+  key: "\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9B54\u529B\u51DD\u81A0"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 5000
+--- !u!114 &5073014329320146125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
+  m_EditorClassIdentifier: 
+  key: "\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u7368\u773C\u8B77\u7B26"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 1200
+--- !u!114 &5604162068840273191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u706B\u7130\u60E1\u9B54"
+  m_EditorClassIdentifier: 
+  key: "\u706B\u7130\u60E1\u9B54"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u706B\u7130\u60E1\u9B54"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u7194\u5CA9\u6DF1\u6DF5"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u70C8\u7130\u9B54\u6838"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 2400
+--- !u!114 &6226339734261269760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8A6D\u7570\u4EBA\u5076"
+  m_EditorClassIdentifier: 
+  key: "\u8A6D\u7570\u4EBA\u5076"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7570\u4EBA\u5076"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5E7D\u9748\u57CE\u93AE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u8A6D\u7570\u5E03\u5076"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1500
+--- !u!114 &6725464781359861601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u72C2\u98A8\u5143\u7D20"
+  m_EditorClassIdentifier: 
+  key: "\u72C2\u98A8\u5143\u7D20"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u72C2\u98A8\u5143\u7D20"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u8352\u91CE\u907A\u8DE1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u98A8\u66B4\u4E4B\u7FBD"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 1200
+--- !u!114 &7895950442299010232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u8A5B\u5492\u9ED1\u8C93\u4EBA"
+  m_EditorClassIdentifier: 
+  key: "\u8A5B\u5492\u9ED1\u8C93\u4EBA"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A5B\u5492\u9ED1\u8C93\u4EBA"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6697\u5F71\u9B54\u529B\u788E\u7247"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &7908589988331048803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
+  m_EditorClassIdentifier: 
+  key: "\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
+  m_roleDescription: 
+  m_enemyType: BOSS
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u9396\u93C8\u6838\u5FC3"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 20
+    m_dropBonus: 20
+  m_hitCount: 1500
+--- !u!114 &8160939513442045490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6D1E\u7A74\u731B\u7378"
+  m_EditorClassIdentifier: 
+  key: "\u6D1E\u7A74\u731B\u7378"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D1E\u7A74\u731B\u7378"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u654F\u92B3\u55C5\u89BA\u7D50\u6676"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &8214006055210634301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u5730\u7E1B\u9B3C\u9B42"
+  m_EditorClassIdentifier: 
+  key: "\u5730\u7E1B\u9B3C\u9B42"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5730\u7E1B\u9B3C\u9B42"
+  m_roleDescription: 
+  m_enemyType: "\u4E00\u822C\u5C0F\u602A"
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u5E7D\u51A5\u4E4B\u5875"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 24
+    m_dropBonus: 4
+  m_hitCount: 3750
+--- !u!114 &8692105084915671564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565f4caf95d13944c80dbbd2e024bbb7, type: 3}
+  m_Name: "RoleData_\u6DF1\u6DF5\u8725\u8734\u738B"
+  m_EditorClassIdentifier: 
+  key: "\u6DF1\u6DF5\u8725\u8734\u738B"
+  m_titlePath: 
+  m_comment: 
+  m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF1\u6DF5\u8725\u8734\u738B"
+  m_roleDescription: 
+  m_enemyType: "\u83C1\u82F1"
+  m_sceneReference:
+    m_key: "\u5730\u5E95\u8FF7\u5BAE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dropInfo:
+    m_itemReference:
+      m_key: "\u6697\u5F71\u9F8D\u9C57"
+      m_queryText: 
+      m_selectedTitle: 
+    m_dropRate: 28
+    m_dropBonus: 8
+  m_hitCount: 1500

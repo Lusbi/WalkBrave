@@ -1,0 +1,1038 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8740110820068439894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6CF0\u5766\u98A8\u66B4\u6230\u9663\u5716"
+  m_EditorClassIdentifier: 
+  key: "\u6CF0\u5766\u98A8\u66B4\u6230\u9663\u5716"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u51DD\u7E2E\u96F2\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u51DD\u7E2E\u96F2\u6838:
+          \u96F2\u9727\u5143\u7D20\u7684\u6838\u5FC3\uFF0C\u89F8\u78B0\u6642\u611F\u89BA\u67D4\u8EDF\uFF0C\u537B\u80FD\u8B8A\u5E7B\u5F62\u614B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u96F7\u5149\u9F8D\u9C57"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u96F7\u5149\u9F8D\u9C57:
+          \u5E36\u6709\u5FAE\u5F31\u96FB\u6D41\u7684\u9F8D\u9C57\uFF0C\u5076\u723E\u6703\u767C\u51FA\u9583\u96FB\u706B\u82B1\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u98A8\u66B4\u4E4B\u5FC3"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u98A8\u66B4\u4E4B\u5FC3:
+          \u98A8\u66B4\u6CF0\u5766\u7684\u6838\u5FC3\uFF0C\u80FD\u5920\u7522\u751F\u5287\u70C8\u6C23\u6D41\u8207\u96F7\u96FB\u3002"
+      m_amount: 1
+--- !u!114 &-7960063192646751330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9396\u934A\u5730\u9F20\u9677\u9631\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u9396\u934A\u5730\u9F20\u9677\u9631\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5805\u786C\u9B54\u5CA9"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u5805\u786C\u9B54\u5CA9:
+          \u5177\u6709\u9B54\u529B\u7684\u5805\u56FA\u5CA9\u77F3\uFF0C\u53EF\u4F5C\u70BA\u5805\u786C\u6750\u6599\u4F7F\u7528\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u654F\u92B3\u55C5\u89BA\u7D50\u6676"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u654F\u92B3\u55C5\u89BA\u7D50\u6676:
+          \u9019\u9846\u7D50\u6676\u80FD\u5920\u5F37\u5316\u611F\u77E5\u80FD\u529B\uFF0C\u6563\u767C\u51FA\u5FAE\u5F31\u7684\u7378\u6027\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9ED1\u66DC\u77F3\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u9ED1\u66DC\u77F3\u788E\u7247:
+          \u4F86\u81EA\u77F3\u50CF\u6230\u58EB\u7684\u788E\u7247\uFF0C\u5805\u786C\u4E14\u5E36\u6709\u795E\u79D8\u529B\u91CF\u3002"
+      m_amount: 1
+--- !u!114 &-7758475170056836578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6ED1\u6C99\u7AF6\u901F\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u6ED1\u6C99\u7AF6\u901F\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6BD2\u880D\u6676\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u6BD2\u880D\u6676\u6838:
+          \u5E36\u6709\u5FAE\u91CF\u6BD2\u7D20\u7684\u6676\u6838\uFF0C\u80FD\u7522\u751F\u5947\u7570\u7684\u9583\u5149\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u98A8\u66B4\u4E4B\u7FBD"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u98A8\u66B4\u4E4B\u7FBD:
+          \u4F86\u81EA\u72C2\u98A8\u4E2D\u7684\u9B54\u6CD5\u7FBD\u6BDB\uFF0C\u5E36\u6709\u5F37\u70C8\u6C23\u6D41\u6CE2\u52D5\u3002"
+      m_amount: 1
+--- !u!114 &-7479302727370670097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9F8D\u606F\u50B3\u9001\u6C34\u8F2A"
+  m_EditorClassIdentifier: 
+  key: "\u9F8D\u606F\u50B3\u9001\u6C34\u8F2A"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u9F8D\u606F\u6C34\u73E0"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9F8D\u606F\u6C34\u73E0:
+          \u5E36\u6709\u6C34\u9F8D\u4E4B\u529B\u7684\u6676\u7469\u6C34\u73E0\uFF0C\u53EF\u91CB\u653E\u5FAE\u5F31\u6C34\u6D41\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u4E5D\u982D\u9F8D\u4E4B\u7259"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u4E5D\u982D\u9F8D\u4E4B\u7259:
+          \u64C1\u6709\u5F37\u5927\u6C34\u5C6C\u6027\u529B\u91CF\u7684\u9F8D\u7259\u788E\u7247\uFF0C\u80FD\u5F15\u767C\u6C34\u5143\u7D20\u6CE2\u52D5\u3002"
+      m_amount: 1
+--- !u!114 &-7281992576221558742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u7194\u9F8D\u706B\u7FFC\u76E4"
+  m_EditorClassIdentifier: 
+  key: "\u7194\u9F8D\u706B\u7FFC\u76E4"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7194\u706B\u788E\u5CA9"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u706B\u788E\u5CA9:
+          \u9AD8\u6EAB\u7684\u5CA9\u77F3\u788E\u7247\uFF0C\u89F8\u78B0\u6642\u4ECD\u5E36\u6709\u9918\u71B1\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u70C8\u7130\u9B54\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u70C8\u7130\u9B54\u6838:
+          \u542B\u6709\u6FC3\u70C8\u706B\u5143\u7D20\u7684\u6838\u5FC3\uFF0C\u91CB\u653E\u6642\u6703\u7522\u751F\u706B\u7130\u5674\u767C\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u7194\u9F8D\u4E4B\u9C57"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u9F8D\u4E4B\u9C57:
+          \u9F8D\u9C57\u4E0A\u6D41\u52D5\u8457\u71BE\u71B1\u7684\u7194\u5CA9\uFF0C\u78B0\u89F8\u6642\u6703\u611F\u53D7\u5230\u5FAE\u5F31\u8108\u52D5\u3002"
+      m_amount: 1
+--- !u!114 &-6259427090210087762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u8A5B\u5492\u63A2\u96AA\u5E33"
+  m_EditorClassIdentifier: 
+  key: "\u8A5B\u5492\u63A2\u96AA\u5E33"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u53E4\u4EE3\u77F3\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u53E4\u4EE3\u77F3\u788E\u7247:
+          \u4F86\u81EA\u53E4\u8001\u907A\u8DE1\u7684\u9B54\u6CD5\u77F3\uFF0C\u4ECD\u7136\u6B98\u7559\u795E\u79D8\u80FD\u91CF\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u8A5B\u5492\u5E03\u689D"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u8A5B\u5492\u5E03\u689D:
+          \u88AB\u8A5B\u5492\u7684\u53E4\u4EE3\u7D17\u5E03\uFF0C\u6703\u5076\u723E\u5FAE\u5FAE\u8815\u52D5\u3002"
+      m_amount: 1
+--- !u!114 &-6206428227276749185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9B54\u6CD5\u98C4\u98C4\u7FBD\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u9B54\u6CD5\u98C4\u98C4\u7FBD\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7CBE\u9748\u7FBD\u6BDB"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u7CBE\u9748\u7FBD\u6BDB:
+          \u9019\u6839\u7FBD\u6BDB\u5E36\u6709\u5FAE\u5F31\u9B54\u529B\uFF0C\u80FD\u8F15\u8F15\u6F02\u6D6E\u5728\u7A7A\u4E2D\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u64EC\u614B\u8449\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u64EC\u614B\u8449\u7247:
+          \u9019\u7247\u8449\u5B50\u80FD\u96A8\u8457\u74B0\u5883\u6539\u8B8A\u984F\u8272\uFF0C\u4EFF\u82E5\u6D3B\u7269\u3002"
+      m_amount: 1
+--- !u!114 &-5993440076486248646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u706B\u7130\u7194\u5CA9\u722A\u722A\u5730"
+  m_EditorClassIdentifier: 
+  key: "\u706B\u7130\u7194\u5CA9\u722A\u722A\u5730"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7194\u5CA9\u4E4B\u5FC3"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u5CA9\u4E4B\u5FC3:
+          \u64C1\u6709\u7194\u5CA9\u80FD\u91CF\u7684\u5F37\u5927\u6838\u5FC3\uFF0C\u5167\u90E8\u7FFB\u9A30\u8457\u4E0D\u6EC5\u7684\u706B\u7130\u3002"
+      m_amount: 1
+--- !u!114 &-5813448476604219307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u5192\u96AA\u5165\u53E3"
+  m_EditorClassIdentifier: 
+  key: "\u5192\u96AA\u5165\u53E3"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\uFF1F\uFF1F\uFF1F"
+        m_queryText: 
+        m_selectedTitle: "item/\u6559\u5B78\u95DC/\uFF1F\uFF1F\uFF1F: \u6253\u7834\u7D19\u7BB1\u5F8C\u53D6\u5F97\u7684\u6771\u897F\uFF0C\u4F3C\u4E4E\u6C92\u6709\u4EFB\u4F55\u4F5C\u7528\uFF1F"
+      m_amount: 1
+--- !u!114 &-4150181152203592999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6642\u7A7A\u88C2\u9699"
+  m_EditorClassIdentifier: 
+  key: "\u6642\u7A7A\u88C2\u9699"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u91CD\u751F\u4E4B\u8840"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u91CD\u751F\u4E4B\u8840:
+          \u6DF7\u6C8C\u8C93\u795E\u9032\u5165\u91CD\u751F\u968E\u6BB5\u6642\u6D41\u51FA\u7684\u8840\u6DB2\uFF0C\u542B\u6709\u5F37\u5927\u7684\u518D\u751F\u9B54\u6CD5\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u7121\u76E1\u88C2\u9699"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u7121\u76E1\u88C2\u9699:
+          \u4F86\u81EA\u7121\u76E1\u91CD\u751F\u968E\u6BB5\u7684\u88C2\u9699\uFF0C\u9019\u4E9B\u88C2\u9699\u4E0D\u50C5\u80FD\u5920\u6495\u958B\u7A7A\u9593\uFF0C\u9084\u80FD\u4E0D\u65B7\u8B8A\u5316\u653B\u64CA\u6A21\u5F0F\u3002"
+      m_amount: 1
+--- !u!114 &-4008905280433444130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u7D42\u7109\u722A\u5F71"
+  m_EditorClassIdentifier: 
+  key: "\u7D42\u7109\u722A\u5F71"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7D42\u7109\u722A\u75D5"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u7D42\u7109\u722A\u75D5:
+          \u7D42\u7109\u8C93\u795E\u722A\u64CA\u7559\u4E0B\u7684\u75D5\u8DE1\uFF0C\u64C1\u6709\u6975\u9AD8\u7684\u6BC0\u6EC5\u6027\uFF0C\u80FD\u5F15\u767C\u5C0F\u7BC4\u570D\u7684\u7206\u70B8\u6548\u679C\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u88C2\u9699\u4E4B\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u88C2\u9699\u4E4B\u6838:
+          \u4F86\u81EA\u8C93\u795E\u88C2\u9699\u7206\u70B8\u7684\u6838\u5FC3\u7269\u8CEA\uFF0C\u64C1\u6709\u5C07\u7A7A\u9593\u6495\u88C2\u7684\u529B\u91CF\u3002"
+      m_amount: 1
+--- !u!114 &-3726552632532887245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u93E1\u5F71\u8DF3\u8DF3\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u93E1\u5F71\u8DF3\u8DF3\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u9B54\u529B\u51DD\u81A0"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u9B54\u529B\u51DD\u81A0:
+          \u534A\u900F\u660E\u7684\u51DD\u81A0\u72C0\u7269\u8CEA\uFF0C\u64C1\u6709\u5947\u7279\u7684\u9B54\u6CD5\u5438\u9644\u529B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u8A6D\u7570\u6620\u50CF\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u8A6D\u7570\u6620\u50CF\u788E\u7247:
+          \u4F86\u81EA\u8A6D\u7570\u93E1\u50CF\u7684\u788E\u7247\uFF0C\u80FD\u77ED\u66AB\u6620\u5C04\u7269\u9AD4\u7684\u5F71\u50CF\u3002"
+      m_amount: 1
+--- !u!114 &-3326184893366507534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9B54\u80FD\u7206\u5F48\u66F8\u7C64"
+  m_EditorClassIdentifier: 
+  key: "\u9B54\u80FD\u7206\u5F48\u66F8\u7C64"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6B98\u7834\u9B54\u6CD5\u66F8\u9801"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u6B98\u7834\u9B54\u6CD5\u66F8\u9801:
+          \u4F9D\u820A\u6B98\u7559\u9B54\u529B\u7684\u7834\u788E\u66F8\u9801\uFF0C\u6709\u6642\u6703\u81EA\u52D5\u7FFB\u52D5\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u5143\u7D20\u6B98\u6E23"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u5143\u7D20\u6B98\u6E23:
+          \u4F86\u81EA\u5143\u7D20\u7CBE\u9748\u7684\u9B54\u529B\u6B98\u7559\u7269\uFF0C\u6703\u6563\u767C\u5FAE\u5F31\u7684\u5C6C\u6027\u80FD\u91CF\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9B54\u529B\u51DD\u81A0"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u9B54\u529B\u51DD\u81A0:
+          \u534A\u900F\u660E\u7684\u51DD\u81A0\u72C0\u7269\u8CEA\uFF0C\u64C1\u6709\u5947\u7279\u7684\u9B54\u6CD5\u5438\u9644\u529B\u3002"
+      m_amount: 1
+--- !u!114 &-2750446322788209941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9ED1\u7130\u6D6E\u7A7A\u5E7B\u57DF"
+  m_EditorClassIdentifier: 
+  key: "\u9ED1\u7130\u6D6E\u7A7A\u5E7B\u57DF"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6697\u5F71\u9B54\u529B\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u6697\u5F71\u9B54\u529B\u788E\u7247:
+          \u4F86\u81EA\u9ED1\u6697\u9B54\u6CD5\u7684\u788E\u7247\uFF0C\u80FD\u5438\u6536\u5149\u7DDA\uFF0C\u4F7F\u7269\u9AD4\u8B8A\u5F97\u9670\u5F71\u5316\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u8A6D\u7570\u6620\u50CF\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u8A6D\u7570\u6620\u50CF\u788E\u7247:
+          \u4F86\u81EA\u8A6D\u7570\u93E1\u50CF\u7684\u788E\u7247\uFF0C\u80FD\u77ED\u66AB\u6620\u5C04\u7269\u9AD4\u7684\u5F71\u50CF\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9ED1\u7130\u9B54\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u9ED1\u7130\u9B54\u6838:
+          \u88AB\u9ED1\u6697\u9B54\u6CD5\u4FB5\u8755\u7684\u5F37\u5927\u9B54\u6838\uFF0C\u71C3\u71D2\u8457\u8A6D\u7570\u7684\u9ED1\u8272\u706B\u7130\u3002"
+      m_amount: 1
+--- !u!114 &-2650196840659105680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9ED1\u9727\u61F8\u7D72\u5076"
+  m_EditorClassIdentifier: 
+  key: "\u9ED1\u9727\u61F8\u7D72\u5076"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u9B42\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u5E7D\u9B42\u788E\u7247:
+          \u5FAE\u5F31\u767C\u5149\u7684\u9748\u9B42\u788E\u7247\uFF0C\u89F8\u6478\u6642\u6703\u611F\u5230\u4E00\u7D72\u5BD2\u610F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u8A6D\u7570\u5E03\u5076"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u8A6D\u7570\u5E03\u5076:
+          \u7834\u820A\u4F46\u4ECD\u5E36\u6709\u9748\u6027\u7684\u8A6D\u7570\u5E03\u5A03\u5A03\uFF0C\u5076\u723E\u6703\u81EA\u5DF1\u52D5\u4E00\u4E0B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u6697\u5F71\u9727\u9744"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u6697\u5F71\u9727\u9744:
+          \u50CF\u7159\u9727\u822C\u7684\u9ED1\u6697\u80FD\u91CF\uFF0C\u80FD\u77ED\u66AB\u8B8A\u5316\u5F62\u614B\u3002"
+      m_amount: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d3c3ae41a684640b957d331320e801, type: 3}
+  m_Name: CompositeRepository
+  m_EditorClassIdentifier: 
+  m_dataList:
+  - {fileID: 1287671351035549340}
+  - {fileID: -5813448476604219307}
+  - {fileID: -4150181152203592999}
+  - {fileID: 6061690625973968241}
+  - {fileID: -4008905280433444130}
+  - {fileID: 7865615716738189944}
+  - {fileID: 9084665041955822976}
+  - {fileID: 5035209503146940387}
+  - {fileID: -7758475170056836578}
+  - {fileID: -7281992576221558742}
+  - {fileID: 3633924023616199866}
+  - {fileID: -6259427090210087762}
+  - {fileID: -3726552632532887245}
+  - {fileID: 56317921620202582}
+  - {fileID: 7990925846256508798}
+  - {fileID: 309466515635895481}
+  - {fileID: -2650196840659105680}
+  - {fileID: 3980250043470880198}
+  - {fileID: 5237611495741505375}
+  - {fileID: 4327121698761750698}
+  - {fileID: 115866030929885720}
+  - {fileID: -6206428227276749185}
+  - {fileID: -3326184893366507534}
+  - {fileID: -2750446322788209941}
+  - {fileID: -7479302727370670097}
+  - {fileID: -8740110820068439894}
+  - {fileID: 6262825599889680332}
+  - {fileID: -5993440076486248646}
+  - {fileID: 348917195716364158}
+  - {fileID: -7960063192646751330}
+  - {fileID: 4359278454775445046}
+  - {fileID: 4257158053657226936}
+  m_key: 1_tTLn5gqtLCdyAfP1AfpShe1YLCOstRbeHx7AOCjtKs
+  m_gid: 137898358
+  m_gas: 
+  m_sheetName: 
+  m_externalImportFromGoogleSheet: 0
+  m_googleSheetDownloaderReferences: []
+--- !u!114 &56317921620202582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u96F7\u5F71\u9707\u52D5\u9F13"
+  m_EditorClassIdentifier: 
+  key: "\u96F7\u5F71\u9707\u52D5\u9F13"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u96F7\u5149\u9F8D\u9C57"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u96F7\u5149\u9F8D\u9C57:
+          \u5E36\u6709\u5FAE\u5F31\u96FB\u6D41\u7684\u9F8D\u9C57\uFF0C\u5076\u723E\u6703\u767C\u51FA\u9583\u96FB\u706B\u82B1\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u75BE\u98A8\u77F3"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u75BE\u98A8\u77F3: \u5167\u542B\u5F37\u98A8\u7684\u9B54\u6CD5\u77F3\uFF0C\u91CB\u653E\u6642\u6703\u7522\u751F\u5C0F\u578B\u6C23\u6D41\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u84BC\u7A79\u6230\u7D0B"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u84BC\u7A79\u6230\u7D0B:
+          \u6230\u58EB\u82F1\u9B42\u7559\u4E0B\u7684\u53E4\u8001\u7B26\u6587\uFF0C\u96B1\u96B1\u6D41\u52D5\u8457\u5149\u8F1D\u3002"
+      m_amount: 1
+--- !u!114 &115866030929885720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u8FF7\u9014\u9748\u5F71\u71C8\u7C60"
+  m_EditorClassIdentifier: 
+  key: "\u8FF7\u9014\u9748\u5F71\u71C8\u7C60"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u9B42\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u5E7D\u9B42\u788E\u7247:
+          \u5FAE\u5F31\u767C\u5149\u7684\u9748\u9B42\u788E\u7247\uFF0C\u89F8\u6478\u6642\u6703\u611F\u5230\u4E00\u7D72\u5BD2\u610F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u7834\u640D\u65C5\u4EBA\u6597\u7BF7"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u7834\u640D\u65C5\u4EBA\u6597\u7BF7:
+          \u88AB\u9ED1\u6697\u6C23\u606F\u7C60\u7F69\u7684\u6597\u7BF7\u788E\u7247\uFF0C\u4ECD\u7136\u6B98\u7559\u8457\u4E3B\u4EBA\u7684\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9B3C\u706B\u71ED\u7130"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u9B3C\u706B\u71ED\u7130:
+          \u6703\u81EA\u52D5\u98C4\u52D5\u7684\u85CD\u8272\u5E7D\u706B\uFF0C\u4F3C\u4E4E\u6709\u81EA\u5DF1\u7684\u610F\u8B58\u3002"
+      m_amount: 1
+--- !u!114 &309466515635895481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9ECF\u5F48\u5F48\u5F48\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u9ECF\u5F48\u5F48\u5F48\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u5F71\u72AC\u7259"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u5E7D\u5F71\u72AC\u7259:
+          \u5E36\u6709\u5FAE\u5F31\u9748\u6C23\u7684\u72AC\u7259\uFF0C\u80FD\u6563\u767C\u5E7D\u5149\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9ECF\u7CCA\u5783\u573E\u5718"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u9ECF\u7CCA\u5783\u573E\u5718:
+          \u4E0D\u660E\u6210\u5206\u7684\u9ED1\u8272\u9ECF\u6DB2\uFF0C\u5E36\u6709\u4E00\u9EDE\u5F48\u6027\u3002"
+      m_amount: 1
+--- !u!114 &348917195716364158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u7121\u8072\u8A6D\u5C4B\u5C0F\u821E\u53F0"
+  m_EditorClassIdentifier: 
+  key: "\u7121\u8072\u8A6D\u5C4B\u5C0F\u821E\u53F0"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u8A6D\u7570\u5E03\u5076"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u8A6D\u7570\u5E03\u5076:
+          \u7834\u820A\u4F46\u4ECD\u5E36\u6709\u9748\u6027\u7684\u8A6D\u7570\u5E03\u5A03\u5A03\uFF0C\u5076\u723E\u6703\u81EA\u5DF1\u52D5\u4E00\u4E0B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9B3C\u706B\u71ED\u7130"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u9B3C\u706B\u71ED\u7130:
+          \u6703\u81EA\u52D5\u98C4\u52D5\u7684\u85CD\u8272\u5E7D\u706B\uFF0C\u4F3C\u4E4E\u6709\u81EA\u5DF1\u7684\u610F\u8B58\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u975C\u8B10\u4E4B\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u975C\u8B10\u4E4B\u6838:
+          \u64C1\u6709\u58D3\u6291\u4E00\u5207\u8072\u97F3\u7684\u8A6D\u7570\u80FD\u91CF\u6838\u5FC3\uFF0C\u9760\u8FD1\u6642\u6703\u8B93\u5468\u570D\u8B8A\u5F97\u7121\u8072\u3002"
+      m_amount: 1
+--- !u!114 &1287671351035549340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6DF7\u6C8C\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u6DF7\u6C8C\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6DF7\u6C8C\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u6DF7\u6C8C\u788E\u7247:
+          \u6DF7\u6C8C\u8C93\u795E\u91CB\u653E\u51FA\u7684\u80FD\u91CF\u788E\u7247\uFF0C\u5305\u542B\u4E86\u96A8\u6A5F\u7684\u7A7A\u9593\u626D\u66F2\u8207\u6642\u9593\u7570\u5E38\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u6642\u7A7A\u5875\u57C3"
+        m_queryText: 
+        m_selectedTitle: "item/\u7D42\u7109\u8C93\u795E/\u6642\u7A7A\u5875\u57C3:
+          \u9019\u4E9B\u5FAE\u5C0F\u7684\u6642\u7A7A\u9846\u7C92\u4F86\u81EA\u6DF7\u6C8C\u8C93\u795E\u7684\u529B\u91CF\u6E90\u6CC9\uFF0C\u5B83\u5011\u5728\u7A7A\u6C23\u4E2D\u6F02\u6D6E\uFF0C\u80FD\u5920\u4E0D\u7A69\u5B9A\u5730\u6539\u8B8A\u5468\u570D\u74B0\u5883\u7684\u6642\u9593\u6D41\u901F\u3002"
+      m_amount: 1
+--- !u!114 &3633924023616199866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u8A5B\u5492\u5E7B\u93E1\u7BB1"
+  m_EditorClassIdentifier: 
+  key: "\u8A5B\u5492\u5E7B\u93E1\u7BB1"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6B98\u7F3A\u6383\u5E1A\u67C4"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u6B98\u7F3A\u6383\u5E1A\u67C4:
+          \u4E00\u622A\u6703\u5FAE\u5FAE\u986B\u6296\u7684\u6728\u67C4\uFF0C\u4F3C\u4E4E\u9084\u6709\u9EDE\u6B98\u9918\u9B54\u529B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u7368\u773C\u8B77\u7B26"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u7368\u773C\u8B77\u7B26:
+          \u9019\u500B\u8B77\u7B26\u4F86\u81EA\u7368\u773C\u72F8\u8C93\uFF0C\u64DA\u8AAA\u80FD\u8CE6\u4E88\u795E\u79D8\u7684\u654F\u6377\u529B\u91CF\u3002"
+      m_amount: 1
+--- !u!114 &3980250043470880198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u9F20\u9234\u8FFD\u64CA\u7D44"
+  m_EditorClassIdentifier: 
+  key: "\u9F20\u9234\u8FFD\u64CA\u7D44"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7834\u721B\u9F20\u76AE"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u7834\u721B\u9F20\u76AE:
+          \u7834\u820A\u4F46\u4ECD\u6709\u97CC\u6027\u7684\u9F20\u76AE\uFF0C\u53EF\u7528\u65BC\u88FD\u4F5C\u8010\u6293\u73A9\u5177\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u5077\u4F86\u7684\u9234\u943A"
+        m_queryText: 
+        m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u5077\u4F86\u7684\u9234\u943A:
+          \u4E00\u9846\u9285\u8272\u5C0F\u9234\u943A\uFF0C\u6703\u767C\u51FA\u6E05\u8106\u7684\u8072\u97F3\u3002"
+      m_amount: 1
+--- !u!114 &4257158053657226936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: CompositeData_Composite.Lusbi.1
+  m_EditorClassIdentifier: 
+  key: Composite.Lusbi.1
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas: []
+--- !u!114 &4327121698761750698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u5E7D\u9B42\u8FF7\u9727\u9999\u5305"
+  m_EditorClassIdentifier: 
+  key: "\u5E7D\u9B42\u8FF7\u9727\u9999\u5305"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u51A5\u4E4B\u5875"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u5E7D\u51A5\u4E4B\u5875:
+          \u4F86\u81EA\u8FF7\u5BAE\u6DF1\u8655\u7684\u9748\u9B42\u5875\u57C3\uFF0C\u5E36\u6709\u5FAE\u5F31\u7684\u9670\u51B7\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u654F\u92B3\u55C5\u89BA\u7D50\u6676"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u654F\u92B3\u55C5\u89BA\u7D50\u6676:
+          \u9019\u9846\u7D50\u6676\u80FD\u5920\u5F37\u5316\u611F\u77E5\u80FD\u529B\uFF0C\u6563\u767C\u51FA\u5FAE\u5F31\u7684\u7378\u6027\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9ED1\u66DC\u77F3\u788E\u7247"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u9ED1\u66DC\u77F3\u788E\u7247:
+          \u4F86\u81EA\u77F3\u50CF\u6230\u58EB\u7684\u788E\u7247\uFF0C\u5805\u786C\u4E14\u5E36\u6709\u795E\u79D8\u529B\u91CF\u3002"
+      m_amount: 1
+--- !u!114 &4359278454775445046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u96B1\u5F71\u9396\u934A\u5100\u5F0F\u53F0"
+  m_EditorClassIdentifier: 
+  key: "\u96B1\u5F71\u9396\u934A\u5100\u5F0F\u53F0"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u51A5\u4E4B\u5875"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u5E7D\u51A5\u4E4B\u5875:
+          \u4F86\u81EA\u8FF7\u5BAE\u6DF1\u8655\u7684\u9748\u9B42\u5875\u57C3\uFF0C\u5E36\u6709\u5FAE\u5F31\u7684\u9670\u51B7\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u6697\u5F71\u9F8D\u9C57"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u6697\u5F71\u9F8D\u9C57:
+          \u4F86\u81EA\u9ED1\u6697\u4E2D\u7684\u8725\u8734\u738B\uFF0C\u80FD\u5438\u6536\u5149\u7DDA\uFF0C\u4F7F\u6301\u6709\u8005\u66F4\u96E3\u88AB\u5BDF\u89BA\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9396\u93C8\u6838\u5FC3"
+        m_queryText: 
+        m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u9396\u93C8\u6838\u5FC3:
+          \u64C1\u6709\u5F37\u5927\u7981\u932E\u8207\u63A7\u5236\u529B\u91CF\u7684\u6838\u5FC3\uFF0C\u5E36\u8457\u91D1\u5C6C\u9396\u93C8\u7684\u6B98\u97FF\u3002"
+      m_amount: 1
+--- !u!114 &5035209503146940387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6C34\u5F48\u6CE1\u6CE1\u76E4"
+  m_EditorClassIdentifier: 
+  key: "\u6C34\u5F48\u6CE1\u6CE1\u76E4"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u6C34\u7CBE\u9748\u6CE1\u6CE1\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u6C34\u7CBE\u9748\u6CE1\u6CE1\u6838:
+          \u542B\u6709\u9B54\u6CD5\u7684\u900F\u660E\u6CE1\u6CE1\u6838\uFF0C\u80FD\u5920\u96A8\u6A5F\u8B8A\u5F62\u6216\u79FB\u52D5\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9583\u5149\u9B5A\u9C57"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9583\u5149\u9B5A\u9C57:
+          \u6703\u96A8\u8457\u5149\u7DDA\u8B8A\u5316\u984F\u8272\u7684\u6C34\u751F\u5996\u9C57\u7247\uFF0C\u5E36\u6709\u9B54\u529B\u3002"
+      m_amount: 1
+--- !u!114 &5237611495741505375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u5E7B\u5F71\u8FFD\u9010\u5E7B\u6BEF"
+  m_EditorClassIdentifier: 
+  key: "\u5E7B\u5F71\u8FFD\u9010\u5E7B\u6BEF"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7D\u5149\u7C89\u5875"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u5E7D\u5149\u7C89\u5875:
+          \u767C\u51FA\u5FAE\u5F31\u87A2\u5149\u7684\u9B54\u6CD5\u7C89\u672B\uFF0C\u80FD\u77ED\u66AB\u61F8\u6D6E\u5728\u7A7A\u6C23\u4E2D\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9280\u9E7F\u5E7B\u89D2"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u9280\u9E7F\u5E7B\u89D2:
+          \u64C1\u6709\u5E7B\u8853\u4E4B\u529B\u7684\u9E7F\u89D2\u788E\u7247\uFF0C\u80FD\u8B93\u7269\u9AD4\u77ED\u66AB\u9583\u720D\u6D88\u5931\u3002"
+      m_amount: 1
+--- !u!114 &6061690625973968241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u706B\u7130\u6EFE\u7403"
+  m_EditorClassIdentifier: 
+  key: "\u706B\u7130\u6EFE\u7403"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u7194\u706B\u788E\u5CA9"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u706B\u788E\u5CA9:
+          \u9AD8\u6EAB\u7684\u5CA9\u77F3\u788E\u7247\uFF0C\u89F8\u78B0\u6642\u4ECD\u5E36\u6709\u9918\u71B1\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u8A5B\u5492\u528D\u9B42"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u8A5B\u5492\u528D\u9B42:
+          \u88AB\u8A5B\u5492\u7684\u528D\u9748\u6B98\u7247\uFF0C\u6301\u7E8C\u6563\u767C\u51FA\u5FAE\u5F31\u7684\u706B\u7130\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u5730\u7344\u72AC\u7259"
+        m_queryText: 
+        m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u5730\u7344\u72AC\u7259:
+          \u9019\u4E9B\u7360\u7259\u4ECD\u7136\u6B98\u7559\u8457\u4F86\u81EA\u5730\u7344\u7684\u707C\u71B1\u6C23\u606F\u3002"
+      m_amount: 1
+--- !u!114 &6262825599889680332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u6D6E\u7A7A\u7FBD\u5203\u8FFD\u64CA\u76E4"
+  m_EditorClassIdentifier: 
+  key: "\u6D6E\u7A7A\u7FBD\u5203\u8FFD\u64CA\u76E4"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u92D2\u5229\u7FBD\u5203"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u92D2\u5229\u7FBD\u5203:
+          \u9019\u4E9B\u7FBD\u6BDB\u5982\u5200\u5203\u822C\u92B3\u5229\uFF0C\u80FD\u5920\u8F15\u6613\u5207\u958B\u7A7A\u6C23\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u51DD\u7E2E\u96F2\u6838"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u51DD\u7E2E\u96F2\u6838:
+          \u96F2\u9727\u5143\u7D20\u7684\u6838\u5FC3\uFF0C\u89F8\u78B0\u6642\u611F\u89BA\u67D4\u8EDF\uFF0C\u537B\u80FD\u8B8A\u5E7B\u5F62\u614B\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u75BE\u98A8\u77F3"
+        m_queryText: 
+        m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u75BE\u98A8\u77F3: \u5167\u542B\u5F37\u98A8\u7684\u9B54\u6CD5\u77F3\uFF0C\u91CB\u653E\u6642\u6703\u7522\u751F\u5C0F\u578B\u6C23\u6D41\u3002"
+      m_amount: 1
+--- !u!114 &7865615716738189944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u5E7D\u9732\u6ED1\u6ED1\u7E69"
+  m_EditorClassIdentifier: 
+  key: "\u5E7D\u9732\u6ED1\u6ED1\u7E69"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u9748\u6D3B\u6C34\u8349\u7D72"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9748\u6D3B\u6C34\u8349\u7D72:
+          \u6975\u5177\u5F48\u6027\u7684\u6C34\u8349\uFF0C\u4ECD\u5E36\u6709\u5FAE\u5F31\u7684\u751F\u547D\u6C23\u606F\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u5E7D\u9B42\u4E4B\u9732"
+        m_queryText: 
+        m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u5E7D\u9B42\u4E4B\u9732:
+          \u534A\u900F\u660E\u7684\u6DB2\u9AD4\uFF0C\u64DA\u8AAA\u662F\u8FF7\u5931\u9748\u9B42\u7684\u6B98\u7559\u7269\u3002"
+      m_amount: 1
+--- !u!114 &7990925846256508798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u98A8\u6C99\u6D6E\u6BEF\u9663"
+  m_EditorClassIdentifier: 
+  key: "\u98A8\u6C99\u6D6E\u6BEF\u9663"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5E7B\u6C99\u7D50\u6676"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u5E7B\u6C99\u7D50\u6676:
+          \u80FD\u5920\u6298\u5C04\u5149\u7DDA\uFF0C\u4F7F\u7269\u9AD4\u7522\u751F\u5E7B\u5F71\u6548\u679C\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u98A8\u66B4\u4E4B\u7FBD"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u98A8\u66B4\u4E4B\u7FBD:
+          \u4F86\u81EA\u72C2\u98A8\u4E2D\u7684\u9B54\u6CD5\u7FBD\u6BDB\uFF0C\u5E36\u6709\u5F37\u70C8\u6C23\u6D41\u6CE2\u52D5\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u9EC3\u91D1\u7B26\u77F3"
+        m_queryText: 
+        m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u9EC3\u91D1\u7B26\u77F3:
+          \u64C1\u6709\u5343\u5E74\u9B54\u529B\u7684\u7B26\u77F3\uFF0C\u53EF\u64CD\u63A7\u5FAE\u5F31\u7684\u98A8\u6C99\u4E4B\u529B\u3002"
+      m_amount: 1
+--- !u!114 &9084665041955822976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5538e954d47c1e74d888cd0cae99f6c2, type: 3}
+  m_Name: "CompositeData_\u5F48\u5F48\u85E4\u5708\u5708"
+  m_EditorClassIdentifier: 
+  key: "\u5F48\u5F48\u85E4\u5708\u5708"
+  m_titlePath: 
+  m_comment: 
+  m_compositeInfo:
+    m_compositeDatas:
+    - m_itemReference:
+        m_key: "\u5F48\u529B\u8611\u83C7\u5E3D"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u5F48\u529B\u8611\u83C7\u5E3D:
+          \u9019\u9802\u8611\u83C7\u5E3D\u6709\u5F48\u6027\uFF0C\u88AB\u6309\u58D3\u5F8C\u6703\u8FC5\u901F\u5F48\u56DE\u539F\u72C0\u3002"
+      m_amount: 1
+    - m_itemReference:
+        m_key: "\u7E8F\u7E5E\u85E4\u689D"
+        m_queryText: 
+        m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u7E8F\u7E5E\u85E4\u689D:
+          \u4ECD\u5E36\u6709\u751F\u547D\u6C23\u606F\u7684\u9B54\u6CD5\u85E4\u689D\uFF0C\u6703\u8F15\u5FAE\u64FA\u52D5\u3002"
+      m_amount: 1
