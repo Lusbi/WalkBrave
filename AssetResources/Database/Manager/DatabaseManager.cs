@@ -1,5 +1,6 @@
 ﻿// WARNING: Generated file. Do not modify!
 using System;
+using System.Linq;
 
 namespace GameCore.Database
 {
@@ -26,9 +27,35 @@ namespace GameCore.Database
             }
 
             m_initializing = true;
-            m_initializingDatabaseCount = 0;
+            m_initializingDatabaseCount = 6;
 
-            
+            Database<FlagData>.Initialize(OnDatabaseInitialized);
+            Database<ScenemapData>.Initialize(OnDatabaseInitialized);
+            Database<RoleData>.Initialize(OnDatabaseInitialized);
+            Database<CompositeData>.Initialize(OnDatabaseInitialized);
+            Database<ToyData>.Initialize(OnDatabaseInitialized);
+            Database<ItemData>.Initialize(OnDatabaseInitialized);
+
+            //// Use reflection to find all classes inheriting from GameCore.Data
+            //var dataTypes = AppDomain.CurrentDomain.GetAssemblies()
+            //    .SelectMany(assembly => assembly.GetTypes())
+            //    .Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeof(Data)))
+            //    .ToList();
+
+            //m_initializingDatabaseCount = dataTypes.Count;
+
+            //// Initialize each database using reflection
+            //foreach (var dataType in dataTypes)
+            //{
+            //    // Get the generic Database<T> type
+            //    var databaseType = typeof(Database<>).MakeGenericType(dataType);
+
+            //    // Get the Initialize method
+            //    var initializeMethod = databaseType.GetMethod("Initialize");
+
+            //    // Call Initialize method with OnDatabaseInitialized as callback
+            //    initializeMethod.Invoke(this, new object[] { (Action)OnDatabaseInitialized });
+            //}
         }
 
         private void OnDatabaseInitialized()

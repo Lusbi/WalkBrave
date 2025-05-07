@@ -1,27 +1,42 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace GameCore.Database
 {
     [Serializable]
-    public class ItemData : Data, IDataDetail, IDataShopDetail
+    public class ItemData : Data
     {
-        [SerializeField] private DatabaseNormalDetail m_databaseNormalDetail;
-        [SerializeField] private ItemTypes m_itemTypes;
-        [SerializeField] private DatabaseShopDetail m_databaseShopDetail;
+        
+        [SerializeField]
+        private string m_itemName = string.Empty;
+        
+        [SerializeField]
+        private string m_itemDescription = string.Empty;
+        
+        [SerializeField]
+        private RoleReference m_roleReference;
+        
+        [SerializeField]
+        private ToyReference[] m_toyReferences;
+        
+        [SerializeField]
+        private Sprite m_itemIcon; // 新增道具圖示欄位
 
-        public string DetailName => m_databaseNormalDetail.DetailName;
 
-        public string DetailDescription => m_databaseNormalDetail.DetailDescription;
+        public string itemName => m_itemName;
+        public string itemDescription => m_itemDescription;
+        public RoleReference roleReference => m_roleReference;
+        public IReadOnlyList<ToyReference> toyReferences => m_toyReferences;
+        public Sprite itemIcon => m_itemIcon; // 新增道具圖示屬性
 
-        public Sprite GetSprite() => m_databaseNormalDetail.GetSprite();
-
-        public int purchasePrice => m_databaseShopDetail.purchasePrice;
-
-        public int sellPrice => m_databaseShopDetail.sellPrice;
-
-        // 能力
-
-        public bool HasItemTypes(ItemTypes itemTypes) => (m_itemTypes & itemTypes) == itemTypes;
+#if UNITY_EDITOR
+        public override string GetLog()
+        {
+            var toyReferencesLog = string.Join(", ", m_toyReferences.Select(tr => tr.GetKey()));
+            return $"{base.GetLog()}, itemName = {m_itemName}, itemDescription = {m_itemDescription}, roleReference = {m_roleReference.GetKey()}, toyReferences = [{toyReferencesLog}], itemIcon = {m_itemIcon?.name ?? "None"}";
+        }
+#endif
     }
 }

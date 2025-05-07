@@ -7,6 +7,12 @@ using UnityEngine;
 public class GameProcess : MonoBehaviour
 {
     public static GameProcess Instance { get; private set; }
+    public bool ForceNewGame = true;
+
+    private void OnApplicationQuit()
+    {
+        StorageManager.instance.SaveStorageData();
+    }
 
     private void Awake()
     {
@@ -16,7 +22,7 @@ public class GameProcess : MonoBehaviour
 
     private void Start()
     {
-        Setup();
+        GameCore.Database.DatabaseManager.instance.Initialize(()=>Setup());
     }
 
     /// <summary>
@@ -25,6 +31,11 @@ public class GameProcess : MonoBehaviour
     private void Setup()
     {
         UIManager.instance.Initlization(ChangeToTitle);
+
+        if (ForceNewGame == false)
+            StorageManager.instance.LoadStorageData();
+        else
+            StorageManager.instance.SetStorageData(new StorageData());
     }
 
     private void ChangeToTitle()
