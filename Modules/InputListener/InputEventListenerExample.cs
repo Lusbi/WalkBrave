@@ -5,13 +5,13 @@ public class InputEventListenerExample : MonoBehaviour, IInputEventListener
     private void OnEnable()
     {
         // 註冊到 InputEventManager
-        InputEventManager.Instance.RegisterListener(this);
+        InputEventManager.instance.RegisterListener(this);
     }
 
     private void OnDisable()
     {
         // 從 InputEventManager 取消註冊
-        InputEventManager.Instance.UnregisterListener(this);
+        InputEventManager.instance.UnregisterListener(this);
     }
 
     public void OnKeyDown(KeyCode keyCode)

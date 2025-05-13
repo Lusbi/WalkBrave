@@ -35,11 +35,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e41802ada6591d64f8c280c83cb2cdb0
-    m_Address: ScenemapRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9c65e5bf5dcc55469102caa8517cb08
     m_Address: CompositeRepository
     m_ReadOnly: 0

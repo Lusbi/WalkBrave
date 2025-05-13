@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum PetState { Idle, Walking, Battle }
 public class DesktopPetController : MonoBehaviour
 {
     [Header("移動設定")]
@@ -18,7 +19,7 @@ public class DesktopPetController : MonoBehaviour
     [Header("交互設定")]
     [SerializeField] private GameObject interactionPanel;
 
-    private enum PetState { Idle, Walking, Battle }
+    
     private PetState currentState = PetState.Idle;
     private Vector3 targetPosition;
     private float stateTimer;
@@ -77,7 +78,7 @@ public class DesktopPetController : MonoBehaviour
                 break;
         }
     }
-    private void ChangeState(PetState newState)
+    public void ChangeState(PetState newState)
     {
         if (currentState == newState)
             return;
@@ -109,7 +110,7 @@ public class DesktopPetController : MonoBehaviour
                 break;
             case PetState.Walking:
                 stateTimer = moveInterval;
-                SetRandomTargetPosition();
+                //SetRandomTargetPosition();
                 if (walkingSprite != null)
                     petImage.sprite = walkingSprite;
                 break;
@@ -208,4 +209,5 @@ public class DesktopPetController : MonoBehaviour
         _rect.SetParent(rectTransform);
         _rect.anchoredPosition = Vector2.zero;
     }
+
 }

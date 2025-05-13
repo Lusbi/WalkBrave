@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using GameCore;
 using GameCore.Database;
+using GameCore.Log;
 using GameCore.UI;
 using TMPro;
 using UnityEngine;
@@ -57,11 +57,13 @@ public class StagePanel : PanelBase
         m_enterButton.onClicked = OnEnterButtonClick;
     }
 
-    #region Button Action
     private void OnEnterButtonClick(UIButton button)
     {
         // 替換當前場景資料，關閉視窗
         Active(false);
+
+        StorageManager.instance.StorageData.SetCurrentSceneMap(m_scenemapKeys[m_currentIndex]);
+        uiGameMainView.ActionCommand(CommandType.Battle);
     }
 
     private void OnExitButtonClick(UIButton button)
@@ -81,38 +83,50 @@ public class StagePanel : PanelBase
         // 切換 index 到下一個關卡
         SetCurrentIndex(m_currentIndex - 1);
     }
-    #endregion // Button Action
     // 讀取所有關卡資料
     private void LoadAllScenemapDatas()
     {
-        if (m_scenemapKeys.Count > 0) 
+        if (m_scenemapKeys.Count > 0)
             return;
         // 獲取所有關卡資料的鍵
-        var scenemapdatas = Database<ScenemapData>.LoadAll();
+        var scenemapdatas = Database<ScenemapData>.GetAll();
 
-        // 使用 LINQ 取出所有關卡的名稱
-        m_scenemapKeys = scenemapdatas.Select(data => data.ScenemapName).ToList();
+        // 使用 LINQ 取出所有關卡的名稱，並按 scenemapNo 排序
+        m_scenemapKeys = scenemapdatas
+            .OrderBy(data => data.SceneMapNo)
+            .Select(data => data.key)
+            .ToList();
 
-        // 如果沒有關卡資料，則返回
-        if (m_scenemapKeys.Count == 0) 
-            return;
-
-        // 設置當前索引為 0
-        m_currentIndex = 0;
+        string log = string.Empty;
+        foreach (var key in m_scenemapKeys)
+        {
+            if (Database<ScenemapData>.TryLoad(key , out var data))
+            {
+                log += $"{data.SceneMapNo}:{data.key}";
+            }
+        }
+        eLog.Log(log);
     }
 
     public override void ActiveOn()
     {
+        LoadAllScenemapDatas();
+        string _curSceneMapKey = StorageManager.instance.StorageData.CurrentSceneMap;
+        if (string.IsNullOrEmpty(_curSceneMapKey))
+        {
+            _curSceneMapKey = "冒險入口";
+        }
+        // 取得對應的索引值
+        m_currentIndex = m_scenemapKeys.IndexOf(_curSceneMapKey);
         StageUpdate();
     }
 
     public override void ActiveOff()
     {
         SetSceneInfo(string.Empty);
-        LoadAllScenemapDatas();
 
         // 設置場景名稱
-        m_sceneNameText.text = string.Empty ;
+        m_sceneNameText.text = string.Empty;
         // 設置場景圖片
         m_sceneImage.sprite = null;
         m_sceneImage.enabled = false;
@@ -120,27 +134,31 @@ public class StagePanel : PanelBase
 
     private void StageUpdate()
     {
-        SetSceneInfo(string.Empty);
+        SetSceneInfo(m_scenemapKeys[m_currentIndex]);
         SetEnemyInfo();
         SetDefaultIndex();
     }
 
     // 設置場景名稱和圖片
-    private void SetSceneInfo(string sceneName)
+    private void SetSceneInfo(string scenemapName)
     {
-        if (Database<ScenemapData>.TryLoad(sceneName, out m_scenemapData))
+        m_sceneNameText.text = string.Empty;
+        m_sceneImage.sprite = null;
+        if (Database<ScenemapData>.TryLoad(scenemapName, out m_scenemapData))
         {
             // 設置場景名稱
-            m_sceneNameText.text = m_scenemapData.ScenemapName;
+            m_sceneNameText.text = LocalizationManager.instance.GetLocalization(m_scenemapData.ScenemapName);
             // 設置場景圖片
             m_sceneImage.sprite = m_scenemapData.LevelSelectionThumbnail;
-            m_sceneImage.enabled = true;
         }
+        m_sceneImage.enabled = m_sceneImage.sprite;
     }
 
     // 設置敵人資訊
     private void SetEnemyInfo()
     {
+        if (m_scenemapData == null)
+            return;
         // 獲取當前關卡的敵人資料
         IReadOnlyList<RoleData> enemyDatas = m_scenemapData.enemies;
         // 遍歷敵人資料並設置到 UI 上
@@ -149,6 +167,7 @@ public class StagePanel : PanelBase
             if (i < enemyDatas.Count)
             {
                 m_stageEnemies[i].SetEnemyInfo(enemyDatas[i]);
+                m_stageEnemies[i].gameObject.SetActive(true);
             }
             else
             {
@@ -184,6 +203,4 @@ public class StagePanel : PanelBase
         // 更新場景資訊  
         StageUpdate();
     }
-
-
 }

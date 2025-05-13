@@ -1,27 +1,13 @@
 using System;
 using System.Collections.Generic;
+using GameCore;
 using UnityEngine;
 
-public class InputEventManager : MonoBehaviour
+public class InputEventManager : MonoSingleton<InputEventManager>
 {
-    // 單例模式
-    public static InputEventManager Instance { get; private set; }
 
     // 註冊的成員
     private readonly List<IInputEventListener> listeners = new List<IInputEventListener>();
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void Update()
     {
@@ -33,25 +19,25 @@ public class InputEventManager : MonoBehaviour
                 NotifyKeyDown(keyCode);
             }
 
-            if (Input.GetKeyUp(keyCode))
-            {
-                NotifyKeyUp(keyCode);
-            }
+            //if (Input.GetKeyUp(keyCode))
+            //{
+            //    NotifyKeyUp(keyCode);
+            //}
         }
 
         // 監聽滑鼠點擊
-        if (Input.GetMouseButtonDown(0)) // 左鍵
-        {
-            NotifyMouseClick(0, Input.mousePosition);
-        }
-        if (Input.GetMouseButtonDown(1)) // 右鍵
-        {
-            NotifyMouseClick(1, Input.mousePosition);
-        }
-        if (Input.GetMouseButtonDown(2)) // 中鍵
-        {
-            NotifyMouseClick(2, Input.mousePosition);
-        }
+        //if (Input.GetMouseButtonDown(0)) // 左鍵
+        //{
+        //    NotifyMouseClick(0, Input.mousePosition);
+        //}
+        //if (Input.GetMouseButtonDown(1)) // 右鍵
+        //{
+        //    NotifyMouseClick(1, Input.mousePosition);
+        //}
+        //if (Input.GetMouseButtonDown(2)) // 中鍵
+        //{
+        //    NotifyMouseClick(2, Input.mousePosition);
+        //}
     }
 
     // 註冊成員

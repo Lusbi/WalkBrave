@@ -12,23 +12,22 @@ public class BattlePanel : PanelBase
 
     [SerializeField] private EnemySpawn m_enemySpawn;
 
-    private GameMainView m_gameMainView;
-
+    private RoleData m_curBattleRole;
     public override void Initlization(Action callBack = null)
     {
         base.Initlization(callBack);
 
         if (m_enemySpawn)
         {
-            m_enemySpawn.ApplyDieAction(DieAction);
             m_enemySpawn.Initlization();
+            m_enemySpawn.ApplyDieAction(DieAction);
         }
     }
 
     public override void ActiveOn()
     {
         // 確認是否有最後戰鬥資料
-        bool hasBattleData = string.IsNullOrEmpty(StorageManager.instance.StorageData.BattleStorageData.EnemyKey);
+        bool hasBattleData = string.IsNullOrEmpty(StorageManager.instance.StorageData.BattleStorageData.EnemyKey) == false;
         // 讀取最後記錄中的場景
         if (hasBattleData)
         {
@@ -40,6 +39,14 @@ public class BattlePanel : PanelBase
         }
 
         uiGameMainView.desktopPetController.SetParent(m_petParent);
+        uiGameMainView.desktopPetController.ChangeState(PetState.Battle);
+
+        BattleManager.instance.Register(Hit);
+    }
+
+    public override void ActiveOff()
+    {
+        BattleManager.instance.Register(null);
     }
 
     // 依最後場景載入敵人資料
@@ -57,19 +64,22 @@ public class BattlePanel : PanelBase
 
             // 進一步處理 validRoleDatas
             int RandomValue = UnityEngine.Random.Range(0, validRoleDatas.Count);
-            RoleData roleData = validRoleDatas[RandomValue];
-            m_enemySpawn.LoadRoleData(roleData);
+            m_curBattleRole = validRoleDatas[RandomValue];
+            m_enemySpawn.LoadRoleData(m_curBattleRole);
         }
     }
 
     private void DieAction()
     {
         // 清除角色
+
         // 更新角色死亡次數
         // 機率獲得道具
+
+        CreateBattleEnemy();
     }
 
-    public void Hit()
+    public void Hit(string hit)
     {
         if (active == false)
             return;

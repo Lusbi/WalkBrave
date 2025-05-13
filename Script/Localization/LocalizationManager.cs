@@ -5,6 +5,7 @@ using System.Collections;
 using UnityEngine.Localization.Settings;
 using GameCore.Log;
 using UnityEngine.Localization.Tables;
+using System.Threading.Tasks;
 
 public class LocalizationManager : Singleton<LocalizationManager>, IInitlization
 {
@@ -12,22 +13,23 @@ public class LocalizationManager : Singleton<LocalizationManager>, IInitlization
     private StringTable m_localizationStringTable;
     private Action m_initlizationCallBack;
 
-    public void Initlization(Action callBack = null)
+    public async void Initlization(Action callBack = null)
     {
         m_initlizationCallBack = callBack;
+        await Load();
     }
 
-    private IEnumerator Load()
+    private async Task Load()
     {
         m_localizationStringTable = null;
         var localizationOperation = LocalizationSettings.StringDatabase.GetTableAsync(TABLE_NAME);
-        yield return localizationOperation;
+        await localizationOperation.Task;
 
         if (localizationOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
         {
             eLog.Error($"{GetType().ToString()}載入多國語系失敗");
             m_initlizationCallBack?.Invoke();
-            yield break;
+            return;
         }
 
         m_localizationStringTable = localizationOperation.Result;
@@ -46,7 +48,8 @@ public class LocalizationManager : Singleton<LocalizationManager>, IInitlization
             return "多國語系載入失敗，無法讀取。";
         }
 
-        return m_localizationStringTable.GetEntry(key).GetLocalizedString();
+        string result = m_localizationStringTable.GetEntry(key)?.GetLocalizedString();
+        return string.IsNullOrEmpty(result) ? key : result;
     }
 
 }

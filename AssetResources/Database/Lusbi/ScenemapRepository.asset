@@ -15,10 +15,12 @@ MonoBehaviour:
   key: "\u5192\u96AA\u5165\u53E3"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 0
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u5192\u96AA\u5165\u53E3"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &-6205349156486891097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,10 +36,12 @@ MonoBehaviour:
   key: "\u7194\u5CA9\u6DF1\u6DF5"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 9
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u7194\u5CA9\u6DF1\u6DF5"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &-5552848156940187582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,10 +57,12 @@ MonoBehaviour:
   key: "\u5E7D\u9748\u57CE\u93AE"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 6
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u5E7D\u9748\u57CE\u93AE"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &-5324813205102694692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,10 +78,12 @@ MonoBehaviour:
   key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 2
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &-1744087080360829259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,10 +99,12 @@ MonoBehaviour:
   key: "\u6E56\u6CCA\u79D8\u5883"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 3
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u6E56\u6CCA\u79D8\u5883"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +129,6 @@ MonoBehaviour:
   - {fileID: 3438268674401578107}
   - {fileID: 3002824229326211048}
   - {fileID: -5324813205102694692}
-  - {fileID: 5849224207295660092}
   m_key: 1_tTLn5gqtLCdyAfP1AfpShe1YLCOstRbeHx7AOCjtKs
   m_gid: 355803850
   m_gas: 
@@ -141,10 +150,12 @@ MonoBehaviour:
   key: "\u5929\u7A7A\u4E4B\u57CE"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 8
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u5929\u7A7A\u4E4B\u57CE"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &842018173051736073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,10 +171,12 @@ MonoBehaviour:
   key: "\u5EE2\u68C4\u5F8C\u5DF7"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 1
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u5EE2\u68C4\u5F8C\u5DF7"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &3002824229326211048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,10 +192,12 @@ MonoBehaviour:
   key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 5
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &3438268674401578107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,10 +213,12 @@ MonoBehaviour:
   key: "\u8352\u91CE\u907A\u8DE1"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 4
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u8352\u91CE\u907A\u8DE1"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &4337520084246643015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,10 +234,12 @@ MonoBehaviour:
   key: "\u6DF7\u6C8C\u7981\u57DF"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 10
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u6DF7\u6C8C\u7981\u57DF"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}
 --- !u!114 &5479309355457832158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,26 +255,9 @@ MonoBehaviour:
   key: "\u5730\u5E95\u8FF7\u5BAE"
   m_titlePath: 
   m_comment: 
-  m_scenemapName: 
+  m_scenemapNo: 7
+  m_scenemapName: "\u5834\u666F\u540D\u7A31.\u5730\u5E95\u8FF7\u5BAE"
   m_scenemapDescription: 
   m_imgBgReference: {fileID: 0}
   m_spawnObjectReference: {fileID: 0}
---- !u!114 &5849224207295660092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a539d79e52e30b34e8f58eac5b2561c4, type: 3}
-  m_Name: ScenemapData_Scenemap.Lusbi.1
-  m_EditorClassIdentifier: 
-  key: Scenemap.Lusbi.1
-  m_titlePath: "\u6E2C\u8A66"
-  m_comment: 
-  m_scenemapName: 
-  m_scenemapDescription: 
-  m_imgBgReference: {fileID: 0}
-  m_spawnObjectReference: {fileID: 0}
+  m_levelSelectionThumbnail: {fileID: 0}

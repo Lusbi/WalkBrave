@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169d4607b9b9c854bb98ec65ad363248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyImage: {fileID: 4684912832035319069}
-  dropRateText: {fileID: 1334597794666690886}
-  dropItemImage: {fileID: 4547972588782633951}
+  m_enemyImage: {fileID: 4684912832035319069}
+  m_dropRateText: {fileID: 1334597794666690886}
+  m_dropItemImage: {fileID: 4547972588782633951}
 --- !u!1 &6262156186438550780
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,35 +1,24 @@
-using Mono.Cecil.Cil;
+using System;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class BattleManager : GameCore.Singleton<BattleManager>, IInputEventListener
 {
-    private DesktopPetController _controllerPet;
-    private EnemySpawn _enemySpawn;
+
+    private Action<string> m_onHitEvent;
 
     public BattleManager()
     {
-        InputEventManager.Instance.RegisterListener(this);
-        FindSceneObjects();
+        InputEventManager.instance.RegisterListener(this);
     }
     ~BattleManager()
     {
-        InputEventManager.Instance.UnregisterListener(this);
+        InputEventManager.instance.UnregisterListener(this);
     }
 
-    private void FindSceneObjects()
+    public void Register(Action<string> onHit)
     {
-        _controllerPet = GameObject.FindAnyObjectByType<DesktopPetController>();
-        _enemySpawn = GameObject.FindAnyObjectByType<EnemySpawn>();
-
-        if (_controllerPet == null)
-        {
-            Debug.LogWarning("ControllerPet not found in the scene.");
-        }
-
-        if (_enemySpawn == null)
-        {
-            Debug.LogWarning("EnemySpawn not found in the scene.");
-        }
+        m_onHitEvent = onHit;
     }
 
     public void OnKeyDown(KeyCode keyCode) => Hint(keyCode.ToString());
@@ -40,6 +29,6 @@ public class BattleManager : GameCore.Singleton<BattleManager>, IInputEventListe
 
     private void Hint(string key = null)
     {
-        
+        m_onHitEvent?.Invoke(key);
     }
 }

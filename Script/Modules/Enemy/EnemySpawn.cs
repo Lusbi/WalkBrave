@@ -42,6 +42,9 @@ public class EnemySpawn : MonoBehaviour , IInitlization
         m_enemyImage.sprite = roleData.EnemyIcon;
         // 取得敵人名稱
         m_enemyNameText.text = roleData.RoleName;
+
+        m_maxHitCount = roleData.HitCount;
+        m_curHitCount = roleData.HitCount;
         // 更新血條表現
         UpdateHealthBar(roleData.HitCount, roleData.HitCount);
     }
@@ -76,7 +79,7 @@ public class EnemySpawn : MonoBehaviour , IInitlization
 
     public void Hit()
     {
-        m_curHitCount--;
+        m_curHitCount -= GameProcess.Instance.hitRate * 1;
         UpdateHealthBar(m_curHitCount , m_maxHitCount);
 
         if (m_curHitCount <= 0)

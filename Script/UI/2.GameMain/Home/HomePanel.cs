@@ -13,6 +13,7 @@ public class HomePanel : PanelBase
     public override void ActiveOn()
     {
         uiGameMainView.desktopPetController.SetParent(m_petParent);
+        uiGameMainView.desktopPetController.ChangeState(PetState.Walking);
     }
 
     public void MovePetTo(Vector3 targetPosition)

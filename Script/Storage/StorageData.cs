@@ -5,7 +5,7 @@ using UnityEngine;
 public class StorageData
 {
     private string m_currentSceneMap;
-    private BattleStorageData m_battleStorageData;
+    private BattleStorageData m_battleStorageData = new BattleStorageData(string.Empty , 0);
     private List<FlagStorageData> m_flagStorageDatas = new List<FlagStorageData>();
     private List<EnemyStorageData> m_enemyStorageDatas = new List<EnemyStorageData>();
     private List<ToyStorageData> m_toyStorageDatas = new List<ToyStorageData>();
