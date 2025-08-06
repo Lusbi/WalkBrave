@@ -9,8 +9,9 @@ public class GameMainView : UIViewBase
 
     [SerializeField] private HomePanel m_homePanel;
     [SerializeField] private BattlePanel m_battlePanel;
-
+    [SerializeField] private BookPanel m_bookPanel;
     [SerializeField] private StagePanel m_stagePanel;
+    [SerializeField] private ToyPanel m_toyPanel;
 
     private PanelBase m_curPanel;
 
@@ -29,6 +30,10 @@ public class GameMainView : UIViewBase
             m_homePanel = GetComponentInChildren<HomePanel>();
         if (m_stagePanel == null)
             m_stagePanel = GetComponentInChildren<StagePanel>();
+        if (m_bookPanel == null)
+            m_bookPanel = GetComponentInChildren<BookPanel>();
+        if (m_toyPanel == null)
+            m_toyPanel = GetComponentInChildren<ToyPanel>();
     }
 #endif
 
@@ -44,6 +49,10 @@ public class GameMainView : UIViewBase
         m_battlePanel.Apply(this);
         m_stagePanel.Initlization();
         m_stagePanel.Apply(this);
+        m_bookPanel.Initlization();
+        m_bookPanel.Apply(this);
+        m_toyPanel.Initlization();
+        m_toyPanel.Apply(this);
         foreach (var cmd in m_commands)
             cmd.Apply(this);
 
@@ -78,9 +87,11 @@ public class GameMainView : UIViewBase
                 break;
             case CommandType.Toy:
                 Debug.Log("Toy Command Executed");
+                m_toyPanel.Active(true);
                 break;
             case CommandType.Book:
                 Debug.Log("Book Command Executed");
+                m_bookPanel.Active(true);
                 break;
             case CommandType.Setting:
                 Debug.Log("Setting Command Executed");

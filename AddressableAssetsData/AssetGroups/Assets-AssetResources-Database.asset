@@ -14,32 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Assets-AssetResources-Database
   m_GUID: 0163fa4eb2c824b4d84e564e2ae45d8d
-  m_SerializeEntries:
-  - m_GUID: 4c3c4651cde93ab478431c6b99a1656e
-    m_Address: ItemRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 619529ea518dd3848b9c5942ff6a75ba
-    m_Address: RoleRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 70ff874903a34834aa1aa50df4243067
-    m_Address: FlagRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a0cbebd6801434c4eb37dec3276d62be
-    m_Address: ToyRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e9c65e5bf5dcc55469102caa8517cb08
-    m_Address: CompositeRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e2993f66a7e367b4b91087661a632625, type: 2}
   m_SchemaSet:

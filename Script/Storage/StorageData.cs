@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using UnityEngine;
+using GameCore.Database;
 
 [System.Serializable]
 public class StorageData
 {
     private string m_currentSceneMap;
-    private BattleStorageData m_battleStorageData = new BattleStorageData(string.Empty , 0);
+    private BattleStorageData m_battleStorageData = new BattleStorageData(string.Empty, 0);
     private List<FlagStorageData> m_flagStorageDatas = new List<FlagStorageData>();
     private List<EnemyStorageData> m_enemyStorageDatas = new List<EnemyStorageData>();
     private List<ToyStorageData> m_toyStorageDatas = new List<ToyStorageData>();
@@ -22,16 +22,6 @@ public class StorageData
     }
 
     // API for FlagStorageData
-    public void AddFlagStorageData(FlagStorageData data)
-    {
-        m_flagStorageDatas.Add(data);
-    }
-
-    public void RemoveFlagStorageData(FlagStorageData data)
-    {
-        m_flagStorageDatas.Remove(data);
-    }
-
     public List<FlagStorageData> GetFlagStorageDatas()
     {
         return new List<FlagStorageData>(m_flagStorageDatas);
@@ -49,58 +39,127 @@ public class StorageData
         return 0; // Default value if not found
     }
 
+    public void AddFlagStorageValue(string flagKey)
+    {
+        foreach (var data in m_flagStorageDatas)
+        {
+            if (data.FlagKey == flagKey)
+            {
+                data.SetValue(data.Value + 1);
+                return;
+            }
+        }
+        if (Database<FlagData>.Exists(flagKey) == false)
+            return;
+        // If not found, add a new entry
+        var newData = new FlagStorageData(flagKey, 1);
+        m_flagStorageDatas.Add(newData);
+    }
+
     // API for EnemyStorageData
-    public void AddEnemyStorageData(EnemyStorageData data)
-    {
-        m_enemyStorageDatas.Add(data);
-    }
-
-    public void RemoveEnemyStorageData(EnemyStorageData data)
-    {
-        m_enemyStorageDatas.Remove(data);
-    }
-
     public List<EnemyStorageData> GetEnemyStorageDatas()
     {
         return new List<EnemyStorageData>(m_enemyStorageDatas);
     }
 
+    public void AddEnemyKillCount(string enemyKey)
+    {
+        foreach (var data in m_enemyStorageDatas)
+        {
+            if (data.EnemyKey == enemyKey)
+            {
+                data.SetKillValue(data.KillValue + 1);
+                return;
+            }
+        }
+        if (Database<RoleData>.Exists(enemyKey) == false)
+            return;
+        // If not found, add a new entry
+        m_enemyStorageDatas.Add(new EnemyStorageData(enemyKey, 1));
+    }
+
+    public void GetEnemyKillCount(string enemyKey, out int killCount)
+    {
+        foreach (var data in m_enemyStorageDatas)
+        {
+            if (data.EnemyKey == enemyKey)
+            {
+                killCount = data.KillValue;
+                return;
+            }
+        }
+        killCount = 0; // Default value if not found
+    }
+
     // API for ToyStorageData
-    public void AddToyStorageData(ToyStorageData data)
-    {
-        m_toyStorageDatas.Add(data);
-    }
-
-    public void RemoveToyStorageData(ToyStorageData data)
-    {
-        m_toyStorageDatas.Remove(data);
-    }
-
     public List<ToyStorageData> GetToyStorageDatas()
     {
         return new List<ToyStorageData>(m_toyStorageDatas);
     }
-
+    public ToyStorageData GetToyStorageData(string toyKey)
+    {
+        foreach (var data in m_toyStorageDatas)
+        {
+            if (data.ToyKey == toyKey)
+            {
+                return data;
+            }
+        }
+        return null; // Return null if not found
+    }
+    public void AddToyCount(string toyKey)
+    {
+        foreach (var data in m_toyStorageDatas)
+        {
+            if (data.ToyKey == toyKey)
+            {
+                data.SetUseableValue(data.UseableValue + 1);
+                return;
+            }
+        }
+        if (Database<ToyData>.Exists(toyKey) == false)
+            return;
+        // If not found, add a new entry
+        m_toyStorageDatas.Add(new ToyStorageData(toyKey, 1));
+    }
     // API for ItemStorageData
-    public void AddItemStorageData(ItemStorageData data)
-    {
-        m_itemStorageDatas.Add(data);
-    }
-
-    public void RemoveItemStorageData(ItemStorageData data)
-    {
-        m_itemStorageDatas.Remove(data);
-    }
-
     public List<ItemStorageData> GetItemStorageDatas()
     {
         return new List<ItemStorageData>(m_itemStorageDatas);
+    }
+
+    public ItemStorageData GetItemStorageData(string itemKey)
+    {
+        foreach (var data in m_itemStorageDatas)
+        {
+            if (data.ItemKey == itemKey)
+            {
+                return data;
+            }
+        }
+        return null; // Return null if not found
+    }
+
+    public void ModifyItemCount(string itemKey, int count)
+    {
+        foreach (var data in m_itemStorageDatas)
+        {
+            if (data.ItemKey == itemKey)
+            {
+                data.SetItemValue(data.ItemValue + count);
+                return;
+            }
+        }
+        if (Database<ItemData>.Exists(itemKey) == false)
+            return;
+        // If not found, add a new entry
+        m_itemStorageDatas.Add(new ItemStorageData(itemKey, count));
     }
 }
 
 
 [System.Serializable]
-public class  FlagStorageData
+public class FlagStorageData
 {
     private string m_flagKey;
     private int m_value;
@@ -123,7 +182,7 @@ public class EnemyStorageData
 {
     private string m_enemyKey;
     private int m_killValue;
-    
+
     public string EnemyKey => m_enemyKey;
     public int KillValue => m_killValue;
     public EnemyStorageData(string enemyKey, int killValue)

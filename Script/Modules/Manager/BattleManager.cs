@@ -1,33 +1,42 @@
 using System;
-using JetBrains.Annotations;
+using GameCore.Log;
 using UnityEngine;
 
-public class BattleManager : GameCore.Singleton<BattleManager>, IInputEventListener
+public class BattleManager : GameCore.Singleton<BattleManager>
 {
 
     private Action<string> m_onHitEvent;
 
-    public BattleManager()
+    public void Register(Action<string> onHitEvent)
     {
-        InputEventManager.instance.RegisterListener(this);
+        if (onHitEvent == m_onHitEvent)
+        {
+            return;
+        }
+
+        if (onHitEvent != null)
+        {
+            WindowsInputHookManager.OnGlobalKeyDown += OnGlobalKeyDown;
+            WindowsInputHookManager.OnGlobalMouseDown += OnGlobalMouseDown;
+        }
+        else
+        {
+            WindowsInputHookManager.OnGlobalKeyDown -= OnGlobalKeyDown;
+            WindowsInputHookManager.OnGlobalMouseDown -= OnGlobalMouseDown;
+        }
+        m_onHitEvent = onHitEvent;
     }
-    ~BattleManager()
+    private void OnGlobalMouseDown(int obj)
     {
-        InputEventManager.instance.UnregisterListener(this);
+        Hit();
     }
 
-    public void Register(Action<string> onHit)
+    private void OnGlobalKeyDown(KeyCode code)
     {
-        m_onHitEvent = onHit;
+        Hit(code.ToString());
     }
 
-    public void OnKeyDown(KeyCode keyCode) => Hint(keyCode.ToString());
-
-    public void OnKeyUp(KeyCode keyCode) => Hint(keyCode.ToString());
-
-    public void OnMouseClick(int button, Vector3 position) => Hint();
-
-    private void Hint(string key = null)
+    private void Hit(string key = null)
     {
         m_onHitEvent?.Invoke(key);
     }

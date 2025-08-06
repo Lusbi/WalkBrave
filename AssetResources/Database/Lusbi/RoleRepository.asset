@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
   m_EditorClassIdentifier: 
   key: "\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
   m_roleDescription: 
@@ -21,15 +21,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5143\u7D20\u6B98\u6E23"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u5143\u7D20\u6B98\u6E23:
+        \u4F86\u81EA\u5143\u7D20\u7CBE\u9748\u7684\u9B54\u529B\u6B98\u7559\u7269\uFF0C\u6703\u6563\u767C\u5FAE\u5F31\u7684\u5C6C\u6027\u80FD\u91CF\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1600
+  m_hitCount: 1200
+  m_enemyIcon: {fileID: 21300000, guid: c9c23258a092f314f875e5ec401cb4a9, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5931\u63A7\u9B54\u6CD5\u66F8"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0502
 --- !u!114 &-8572075138140381688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,7 +56,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u60E1\u72AC\u5E7D\u9748"
   m_EditorClassIdentifier: 
   key: "\u60E1\u72AC\u5E7D\u9748"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u60E1\u72AC\u5E7D\u9748"
   m_roleDescription: 
@@ -51,15 +64,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7D\u5F71\u72AC\u7259"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u5E7D\u5F71\u72AC\u7259: \u5E36\u6709\u5FAE\u5F31\u9748\u6C23\u7684\u72AC\u7259\uFF0C\u80FD\u6563\u767C\u5E7D\u5149\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 500
+  m_enemyIcon: {fileID: 21300000, guid: 881fb041885213640bf606f58fec61a0, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6436\u98DF\u70CF\u9D09"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u60E1\u72AC\u5E7D\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0103
 --- !u!114 &-8470744692071837744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +98,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
   m_EditorClassIdentifier: 
   key: "\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
   m_roleDescription: 
@@ -81,15 +106,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6B98\u7F3A\u6383\u5E1A\u67C4"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u6B98\u7F3A\u6383\u5E1A\u67C4:
+        \u4E00\u622A\u6703\u5FAE\u5FAE\u986B\u6296\u7684\u6728\u67C4\uFF0C\u4F3C\u4E4E\u9084\u6709\u9EDE\u6B98\u9918\u9B54\u529B\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1500
+  m_hitCount: 500
+  m_enemyIcon: {fileID: 21300000, guid: b27afe1d93a18594780f8704d8c1a129, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8150\u721B\u6CE5\u602A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0105
 --- !u!114 &-8464233040534860180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +141,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
   m_EditorClassIdentifier: 
   key: "\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
   m_roleDescription: 
@@ -111,15 +149,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u84BC\u7A79\u6230\u7D0B"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u84BC\u7A79\u6230\u7D0B: \u6230\u58EB\u82F1\u9B42\u7559\u4E0B\u7684\u53E4\u8001\u7B26\u6587\uFF0C\u96B1\u96B1\u6D41\u52D5\u8457\u5149\u8F1D\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 3750
+  m_hitCount: 2250
+  m_enemyIcon: {fileID: 21300000, guid: dfe0f7b2e89333844bc7c7b5e7ff0ad1, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u98A8\u4E4B\u9B54\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0805
 --- !u!114 &-8236365160055707037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +183,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u7194\u5CA9\u5DE8\u9B54"
   m_EditorClassIdentifier: 
   key: "\u7194\u5CA9\u5DE8\u9B54"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7194\u5CA9\u5DE8\u9B54"
   m_roleDescription: 
@@ -141,15 +191,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7194\u706B\u788E\u5CA9"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u706B\u788E\u5CA9: \u9AD8\u6EAB\u7684\u5CA9\u77F3\u788E\u7247\uFF0C\u89F8\u78B0\u6642\u4ECD\u5E36\u6709\u9918\u71B1\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 2400
+  m_hitCount: 1600
+  m_enemyIcon: {fileID: 21300000, guid: 95eabc65d8180284aab0b2af8403cf2b, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u7194\u5CA9\u5DE8\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0901
 --- !u!114 &-8023240887506441675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +225,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8FF7\u9014\u6C34\u9B3C"
   m_EditorClassIdentifier: 
   key: "\u8FF7\u9014\u6C34\u9B3C"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8FF7\u9014\u6C34\u9B3C"
   m_roleDescription: 
@@ -171,15 +233,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7D\u9B42\u4E4B\u9732"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u5E7D\u9B42\u4E4B\u9732: \u534A\u900F\u660E\u7684\u6DB2\u9AD4\uFF0C\u64DA\u8AAA\u662F\u8FF7\u5931\u9748\u9B42\u7684\u6B98\u7559\u7269\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 2400
+  m_hitCount: 1000
+  m_enemyIcon: {fileID: 21300000, guid: fccb2f5525e7b874b88fd76bec961924, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u507D\u88DD\u6C34\u8349\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8FF7\u9014\u6C34\u9B3C"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0304
 --- !u!114 &-7811345282933128439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +267,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
   m_EditorClassIdentifier: 
   key: "\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
   m_roleDescription: 
@@ -201,15 +275,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7194\u5CA9\u4E4B\u5FC3"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u5CA9\u4E4B\u5FC3: \u64C1\u6709\u7194\u5CA9\u80FD\u91CF\u7684\u5F37\u5927\u6838\u5FC3\uFF0C\u5167\u90E8\u7FFB\u9A30\u8457\u4E0D\u6EC5\u7684\u706B\u7130\u3002"
     m_dropRate: 20
     m_dropBonus: 20
   m_hitCount: 4000
+  m_enemyIcon: {fileID: 21300000, guid: 927ca3ec26c7ebf43bb974c107966e9a, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u7194\u5CA9\u98DB\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0911
 --- !u!114 &-7716545042429061199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +309,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6436\u98DF\u70CF\u9D09"
   m_EditorClassIdentifier: 
   key: "\u6436\u98DF\u70CF\u9D09"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6436\u98DF\u70CF\u9D09"
   m_roleDescription: 
@@ -231,15 +317,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5077\u4F86\u7684\u9234\u943A"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u5077\u4F86\u7684\u9234\u943A:
+        \u4E00\u9846\u9285\u8272\u5C0F\u9234\u943A\uFF0C\u6703\u767C\u51FA\u6E05\u8106\u7684\u8072\u97F3\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 500
+  m_enemyIcon: {fileID: 21300000, guid: 71dba8a7b35c8d646a94d7bcff9b1016, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6D41\u6D6A\u9F20\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6436\u98DF\u70CF\u9D09"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0102
 --- !u!114 &-7464797187756750964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +352,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u60E1\u610F\u85E4\u8513"
   m_EditorClassIdentifier: 
   key: "\u60E1\u610F\u85E4\u8513"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u60E1\u610F\u85E4\u8513"
   m_roleDescription: 
@@ -261,15 +360,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7E8F\u7E5E\u85E4\u689D"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u7E8F\u7E5E\u85E4\u689D:
+        \u4ECD\u5E36\u6709\u751F\u547D\u6C23\u606F\u7684\u9B54\u6CD5\u85E4\u689D\uFF0C\u6703\u8F15\u5FAE\u64FA\u52D5\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 800
+  m_enemyIcon: {fileID: 21300000, guid: f866c43c186b38546b54412c2eb35fec, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8B8A\u8272\u8449\u5F71\u7378"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u60E1\u610F\u85E4\u8513"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0204
 --- !u!114 &-7387906493409244034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +395,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C99\u5F71\u5E7B\u72FC"
   m_EditorClassIdentifier: 
   key: "\u6C99\u5F71\u5E7B\u72FC"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u5F71\u5E7B\u72FC"
   m_roleDescription: 
@@ -291,15 +403,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7B\u6C99\u7D50\u6676"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u5E7B\u6C99\u7D50\u6676: \u80FD\u5920\u6298\u5C04\u5149\u7DDA\uFF0C\u4F7F\u7269\u9AD4\u7522\u751F\u5E7B\u5F71\u6548\u679C\u3002"
     m_dropRate: 24
     m_dropBonus: 4
   m_hitCount: 1100
+  m_enemyIcon: {fileID: 21300000, guid: 5af0862e5957f534dafdc36d1337161e, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C99\u5F71\u5E7B\u72FC"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0404
 --- !u!114 &-7281009289561792791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +437,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6232\u6C34\u9B5A\u5996"
   m_EditorClassIdentifier: 
   key: "\u6232\u6C34\u9B5A\u5996"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6232\u6C34\u9B5A\u5996"
   m_roleDescription: 
@@ -321,15 +445,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9583\u5149\u9B5A\u9C57"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9583\u5149\u9B5A\u9C57: \u6703\u96A8\u8457\u5149\u7DDA\u8B8A\u5316\u984F\u8272\u7684\u6C34\u751F\u5996\u9C57\u7247\uFF0C\u5E36\u6709\u9B54\u529B\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 1000
+  m_enemyIcon: {fileID: 21300000, guid: f3e408c9d33b07b42be9e31385f062fb, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6CE1\u6CE1\u6C34\u7CBE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6232\u6C34\u9B5A\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0302
 --- !u!114 &-6445032715040759049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +479,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8B8A\u8272\u8449\u5F71\u7378"
   m_EditorClassIdentifier: 
   key: "\u8B8A\u8272\u8449\u5F71\u7378"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8B8A\u8272\u8449\u5F71\u7378"
   m_roleDescription: 
@@ -351,15 +487,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u64EC\u614B\u8449\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u64EC\u614B\u8449\u7247:
+        \u9019\u7247\u8449\u5B50\u80FD\u96A8\u8457\u74B0\u5883\u6539\u8B8A\u984F\u8272\uFF0C\u4EFF\u82E5\u6D3B\u7269\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 800
+  m_enemyIcon: {fileID: 21300000, guid: fad89d18e0adfe945833d3f8e5696912, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5077\u9B5A\u7CBE\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8B8A\u8272\u8449\u5F71\u7378"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0203
 --- !u!114 &-6033574214875861240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +522,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u71C3\u71D2\u528D\u9748"
   m_EditorClassIdentifier: 
   key: "\u71C3\u71D2\u528D\u9748"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u71C3\u71D2\u528D\u9748"
   m_roleDescription: 
@@ -381,15 +530,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u8A5B\u5492\u528D\u9B42"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u8A5B\u5492\u528D\u9B42: \u88AB\u8A5B\u5492\u7684\u528D\u9748\u6B98\u7247\uFF0C\u6301\u7E8C\u6563\u767C\u51FA\u5FAE\u5F31\u7684\u706B\u7130\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 5000
+  m_hitCount: 2400
+  m_enemyIcon: {fileID: 21300000, guid: d8f201754cd076840933f033d0fee806, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u7194\u5CA9\u5DE8\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u71C3\u71D2\u528D\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0902
 --- !u!114 &-5882992432556577393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +564,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6D3B\u5316\u77F3\u50CF"
   m_EditorClassIdentifier: 
   key: "\u6D3B\u5316\u77F3\u50CF"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D3B\u5316\u77F3\u50CF"
   m_roleDescription: 
@@ -411,15 +572,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u53E4\u4EE3\u77F3\u788E\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u53E4\u4EE3\u77F3\u788E\u7247:
+        \u4F86\u81EA\u53E4\u8001\u907A\u8DE1\u7684\u9B54\u6CD5\u77F3\uFF0C\u4ECD\u7136\u6B98\u7559\u795E\u79D8\u80FD\u91CF\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1100
+  m_enemyIcon: {fileID: 21300000, guid: a258f53765a6ae44a86b7ad7ca22d27d, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C99\u5875\u880D\u602A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6D3B\u5316\u77F3\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0402
 --- !u!114 &-5779342695947175185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +607,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5077\u9B5A\u7CBE\u9748"
   m_EditorClassIdentifier: 
   key: "\u5077\u9B5A\u7CBE\u9748"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5077\u9B5A\u7CBE\u9748"
   m_roleDescription: 
@@ -441,15 +615,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7CBE\u9748\u7FBD\u6BDB"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u7CBE\u9748\u7FBD\u6BDB:
+        \u9019\u6839\u7FBD\u6BDB\u5E36\u6709\u5FAE\u5F31\u9B54\u529B\uFF0C\u80FD\u8F15\u8F15\u6F02\u6D6E\u5728\u7A7A\u4E2D\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1500
+  m_hitCount: 800
+  m_enemyIcon: {fileID: 21300000, guid: d2f5b3f1bb7f7d84f9433f8f760e5e86, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8DF3\u8DF3\u8611\u83C7\u7CBE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5077\u9B5A\u7CBE\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0202
 --- !u!114 &-5672889247780724166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +650,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
   m_EditorClassIdentifier: 
   key: "\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
   m_roleDescription: 
@@ -471,15 +658,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u975C\u8B10\u4E4B\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u975C\u8B10\u4E4B\u6838: \u64C1\u6709\u58D3\u6291\u4E00\u5207\u8072\u97F3\u7684\u8A6D\u7570\u80FD\u91CF\u6838\u5FC3\uFF0C\u9760\u8FD1\u6642\u6703\u8B93\u5468\u570D\u8B8A\u5F97\u7121\u8072\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 5000
+  m_hitCount: 3250
+  m_enemyIcon: {fileID: 21300000, guid: fe98d5d9dac8df249871cc6d03272a14, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u7121\u81C9\u5E7D\u5F71"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0611
 --- !u!114 &-4915889791935783199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +692,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u4EA1\u9748\u65C5\u4EBA"
   m_EditorClassIdentifier: 
   key: "\u4EA1\u9748\u65C5\u4EBA"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u4EA1\u9748\u65C5\u4EBA"
   m_roleDescription: 
@@ -501,15 +700,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7834\u640D\u65C5\u4EBA\u6597\u7BF7"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u7834\u640D\u65C5\u4EBA\u6597\u7BF7:
+        \u88AB\u9ED1\u6697\u6C23\u606F\u7C60\u7F69\u7684\u6597\u7BF7\u788E\u7247\uFF0C\u4ECD\u7136\u6B98\u7559\u8457\u4E3B\u4EBA\u7684\u6C23\u606F\u3002"
     m_dropRate: 24
     m_dropBonus: 4
   m_hitCount: 1300
+  m_enemyIcon: {fileID: 21300000, guid: 9f8ed0e44ac96104ab8ff33a2b1a6a8d, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8A6D\u7570\u4EBA\u5076"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u4EA1\u9748\u65C5\u4EBA"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0603
 --- !u!114 &-4807500708305071959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +735,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6CE1\u6CE1\u6C34\u7CBE"
   m_EditorClassIdentifier: 
   key: "\u6CE1\u6CE1\u6C34\u7CBE"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6CE1\u6CE1\u6C34\u7CBE"
   m_roleDescription: 
@@ -531,15 +743,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6C34\u7CBE\u9748\u6CE1\u6CE1\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u6C34\u7CBE\u9748\u6CE1\u6CE1\u6838:
+        \u542B\u6709\u9B54\u6CD5\u7684\u900F\u660E\u6CE1\u6CE1\u6838\uFF0C\u80FD\u5920\u96A8\u6A5F\u8B8A\u5F62\u6216\u79FB\u52D5\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 1000
+  m_enemyIcon: {fileID: 21300000, guid: dacaf8bdc5c18dd4fa76024bc4ec41ef, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6CE1\u6CE1\u6C34\u7CBE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0301
 --- !u!114 &-4803783542002423321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +778,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5CA9\u77F3\u9B54\u50CF"
   m_EditorClassIdentifier: 
   key: "\u5CA9\u77F3\u9B54\u50CF"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5CA9\u77F3\u9B54\u50CF"
   m_roleDescription: 
@@ -561,15 +786,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5805\u786C\u9B54\u5CA9"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u5805\u786C\u9B54\u5CA9: \u5177\u6709\u9B54\u529B\u7684\u5805\u56FA\u5CA9\u77F3\uFF0C\u53EF\u4F5C\u70BA\u5805\u786C\u6750\u6599\u4F7F\u7528\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 2400
+  m_hitCount: 1400
+  m_enemyIcon: {fileID: 21300000, guid: 038f7c259e7705744a8c0fc5c082170e, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8A6D\u7570\u65C5\u9928\u4E3B\u4EBA-\u6C89\u9ED8\u4E4B\u5F71"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5CA9\u77F3\u9B54\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0701
 --- !u!114 &-4260487337147235364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +820,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6D41\u6D6A\u9F20\u5996"
   m_EditorClassIdentifier: 
   key: "\u6D41\u6D6A\u9F20\u5996"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D41\u6D6A\u9F20\u5996"
   m_roleDescription: 
@@ -591,15 +828,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7834\u721B\u9F20\u76AE"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u7834\u721B\u9F20\u76AE: \u7834\u820A\u4F46\u4ECD\u6709\u97CC\u6027\u7684\u9F20\u76AE\uFF0C\u53EF\u7528\u65BC\u88FD\u4F5C\u8010\u6293\u73A9\u5177\u3002"
     m_dropRate: 24
     m_dropBonus: 4
   m_hitCount: 500
+  m_enemyIcon: {fileID: 21300000, guid: f3d464b33bc19204f9cff570ef3f082d, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u7D19\u7BB1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6D41\u6D6A\u9F20\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0101
 --- !u!114 &-4130069585008667241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +862,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8A6D\u7B11\u8857\u71C8"
   m_EditorClassIdentifier: 
   key: "\u8A6D\u7B11\u8857\u71C8"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7B11\u8857\u71C8"
   m_roleDescription: 
@@ -621,15 +870,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9B3C\u706B\u71ED\u7130"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u9B3C\u706B\u71ED\u7130: \u6703\u81EA\u52D5\u98C4\u52D5\u7684\u85CD\u8272\u5E7D\u706B\uFF0C\u4F3C\u4E4E\u6709\u81EA\u5DF1\u7684\u610F\u8B58\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 1300
+  m_enemyIcon: {fileID: 21300000, guid: 3c7ee20f7aa9ac146b455dd9f1a72c08, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u4EA1\u9748\u65C5\u4EBA"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8A6D\u7B11\u8857\u71C8"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0604
 --- !u!114 &-4083128337814233445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +904,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C99\u5875\u880D\u602A"
   m_EditorClassIdentifier: 
   key: "\u6C99\u5875\u880D\u602A"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u5875\u880D\u602A"
   m_roleDescription: 
@@ -651,15 +912,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6BD2\u880D\u6676\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u6BD2\u880D\u6676\u6838: \u5E36\u6709\u5FAE\u91CF\u6BD2\u7D20\u7684\u6676\u6838\uFF0C\u80FD\u7522\u751F\u5947\u7570\u7684\u9583\u5149\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1100
+  m_enemyIcon: {fileID: 21300000, guid: db3c1ded7ec8e5a46880f6c11a7b7101, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C99\u5875\u880D\u602A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0401
 --- !u!114 &-4032599264716717802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,7 +946,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
   m_EditorClassIdentifier: 
   key: "\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
   m_roleDescription: 
@@ -681,15 +954,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9EC3\u91D1\u7B26\u77F3"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u9EC3\u91D1\u7B26\u77F3: \u64C1\u6709\u5343\u5E74\u9B54\u529B\u7684\u7B26\u77F3\uFF0C\u53EF\u64CD\u63A7\u5FAE\u5F31\u7684\u98A8\u6C99\u4E4B\u529B\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 1200
+  m_hitCount: 2750
+  m_enemyIcon: {fileID: 21300000, guid: 282433c4577d9f24c81f5d77bb2ae6ab, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u72C2\u98A8\u5143\u7D20"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0411
 --- !u!114 &-3934072804122521430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +988,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8FF7\u5931\u7684\u8C93\u9B42"
   m_EditorClassIdentifier: 
   key: "\u8FF7\u5931\u7684\u8C93\u9B42"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8FF7\u5931\u7684\u8C93\u9B42"
   m_roleDescription: 
@@ -711,15 +996,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7D\u9B42\u788E\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u5E7D\u9B42\u788E\u7247: \u5FAE\u5F31\u767C\u5149\u7684\u9748\u9B42\u788E\u7247\uFF0C\u89F8\u6478\u6642\u6703\u611F\u5230\u4E00\u7D72\u5BD2\u610F\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1500
+  m_hitCount: 1300
+  m_enemyIcon: {fileID: 21300000, guid: ae5f8e6353fd52a459c53016da448da0, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8FF7\u5931\u7684\u8C93\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0601
 --- !u!114 &-3099290712714048522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,7 +1030,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u7121\u81C9\u5E7D\u5F71"
   m_EditorClassIdentifier: 
   key: "\u7121\u81C9\u5E7D\u5F71"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7121\u81C9\u5E7D\u5F71"
   m_roleDescription: 
@@ -741,15 +1038,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6697\u5F71\u9727\u9744"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u6697\u5F71\u9727\u9744: \u50CF\u7159\u9727\u822C\u7684\u9ED1\u6697\u80FD\u91CF\uFF0C\u80FD\u77ED\u66AB\u8B8A\u5316\u5F62\u614B\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 5000
+  m_hitCount: 1950
+  m_enemyIcon: {fileID: 21300000, guid: 2edb68b410285ba4882485f56e829b5a, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8A6D\u7B11\u8857\u71C8"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u7121\u81C9\u5E7D\u5F71"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0605
 --- !u!114 &-2964233767393923160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,7 +1072,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5E7D\u51A5\u5B88\u885B"
   m_EditorClassIdentifier: 
   key: "\u5E7D\u51A5\u5B88\u885B"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5E7D\u51A5\u5B88\u885B"
   m_roleDescription: 
@@ -771,15 +1080,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9ED1\u66DC\u77F3\u788E\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u9ED1\u66DC\u77F3\u788E\u7247:
+        \u4F86\u81EA\u77F3\u50CF\u6230\u58EB\u7684\u788E\u7247\uFF0C\u5805\u786C\u4E14\u5E36\u6709\u795E\u79D8\u529B\u91CF\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 1500
+  m_hitCount: 2100
+  m_enemyIcon: {fileID: 21300000, guid: 18dba5cd2d58ea54098e2a3a6ef37a87, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6D1E\u7A74\u731B\u7378"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5E7D\u51A5\u5B88\u885B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0704
 --- !u!114 &-2749729636265525871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +1115,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
   m_EditorClassIdentifier: 
   key: "\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
   m_roleDescription: 
@@ -801,15 +1123,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u98A8\u66B4\u4E4B\u5FC3"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u98A8\u66B4\u4E4B\u5FC3: \u98A8\u66B4\u6CF0\u5766\u7684\u6838\u5FC3\uFF0C\u80FD\u5920\u7522\u751F\u5287\u70C8\u6C23\u6D41\u8207\u96F7\u96FB\u3002"
     m_dropRate: 20
     m_dropBonus: 20
   m_hitCount: 3750
+  m_enemyIcon: {fileID: 21300000, guid: e5235fd50eb08ab4ab2ff32babeb0878, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5929\u7A7A\u6230\u58EB\u9748\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5929\u7A7A\u738B\u5EA7-\u98A8\u66B4\u6CF0\u5766"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0811
 --- !u!114 &-2582028980247346222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,7 +1157,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u507D\u88DD\u6C34\u8349\u5996"
   m_EditorClassIdentifier: 
   key: "\u507D\u88DD\u6C34\u8349\u5996"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u507D\u88DD\u6C34\u8349\u5996"
   m_roleDescription: 
@@ -831,15 +1165,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9748\u6D3B\u6C34\u8349\u7D72"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9748\u6D3B\u6C34\u8349\u7D72:
+        \u6975\u5177\u5F48\u6027\u7684\u6C34\u8349\uFF0C\u4ECD\u5E36\u6709\u5FAE\u5F31\u7684\u751F\u547D\u6C23\u606F\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 1000
+  m_enemyIcon: {fileID: 21300000, guid: b3aab6ec17028354baf61b1a628e6cbf, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6232\u6C34\u9B5A\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u507D\u88DD\u6C34\u8349\u5996"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0303
 --- !u!114 &-2322246862927793568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +1200,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u706B\u7130\u72AC\u9B54"
   m_EditorClassIdentifier: 
   key: "\u706B\u7130\u72AC\u9B54"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u706B\u7130\u72AC\u9B54"
   m_roleDescription: 
@@ -861,15 +1208,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5730\u7344\u72AC\u7259"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u5730\u7344\u72AC\u7259: \u9019\u4E9B\u7360\u7259\u4ECD\u7136\u6B98\u7559\u8457\u4F86\u81EA\u5730\u7344\u7684\u707C\u71B1\u6C23\u606F\u3002"
     m_dropRate: 28
     m_dropBonus: 8
   m_hitCount: 2400
+  m_enemyIcon: {fileID: 21300000, guid: 4cb56af6befe33c4a821f7bead84653c, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u71C3\u71D2\u528D\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u706B\u7130\u72AC\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0903
 --- !u!114 &-2282728046106140920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,7 +1242,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8150\u721B\u6CE5\u602A"
   m_EditorClassIdentifier: 
   key: "\u8150\u721B\u6CE5\u602A"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8150\u721B\u6CE5\u602A"
   m_roleDescription: 
@@ -891,15 +1250,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9ECF\u7CCA\u5783\u573E\u5718"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u9ECF\u7CCA\u5783\u573E\u5718:
+        \u4E0D\u660E\u6210\u5206\u7684\u9ED1\u8272\u9ECF\u6DB2\uFF0C\u5E36\u6709\u4E00\u9EDE\u5F48\u6027\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 500
+  m_enemyIcon: {fileID: 21300000, guid: 3b7270c7f491d3e4cb8b6c776c31bee7, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u60E1\u72AC\u5E7D\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8150\u721B\u6CE5\u602A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0104
 --- !u!114 &-2192268727118871612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,7 +1285,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u7194\u5CA9\u98DB\u9F8D"
   m_EditorClassIdentifier: 
   key: "\u7194\u5CA9\u98DB\u9F8D"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7194\u5CA9\u98DB\u9F8D"
   m_roleDescription: 
@@ -921,15 +1293,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7194\u9F8D\u4E4B\u9C57"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u7194\u9F8D\u4E4B\u9C57: \u9F8D\u9C57\u4E0A\u6D41\u52D5\u8457\u71BE\u71B1\u7684\u7194\u5CA9\uFF0C\u78B0\u89F8\u6642\u6703\u611F\u53D7\u5230\u5FAE\u5F31\u8108\u52D5\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 5000
+  m_hitCount: 2400
+  m_enemyIcon: {fileID: 21300000, guid: b00ccf552ef606f4b9be11faa08f0a75, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u706B\u7130\u60E1\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u7194\u5CA9\u98DB\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0905
 --- !u!114 &-1834405293160709448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +1327,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u9B3C\u706B\u98DB\u86FE"
   m_EditorClassIdentifier: 
   key: "\u9B3C\u706B\u98DB\u86FE"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9B3C\u706B\u98DB\u86FE"
   m_roleDescription: 
@@ -951,15 +1335,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7D\u5149\u7C89\u5875"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u5E7D\u5149\u7C89\u5875:
+        \u767C\u51FA\u5FAE\u5F31\u87A2\u5149\u7684\u9B54\u6CD5\u7C89\u672B\uFF0C\u80FD\u77ED\u66AB\u61F8\u6D6E\u5728\u7A7A\u6C23\u4E2D\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 800
+  m_enemyIcon: {fileID: 21300000, guid: f915f693bae71de4180fbfa699be4e06, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u60E1\u610F\u85E4\u8513"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u9B3C\u706B\u98DB\u86FE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0205
 --- !u!114 &-1601447254415154018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +1370,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5931\u63A7\u9B54\u6CD5\u66F8"
   m_EditorClassIdentifier: 
   key: "\u5931\u63A7\u9B54\u6CD5\u66F8"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5931\u63A7\u9B54\u6CD5\u66F8"
   m_roleDescription: 
@@ -981,15 +1378,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6B98\u7834\u9B54\u6CD5\u66F8\u9801"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u6B98\u7834\u9B54\u6CD5\u66F8\u9801:
+        \u4F9D\u820A\u6B98\u7559\u9B54\u529B\u7684\u7834\u788E\u66F8\u9801\uFF0C\u6709\u6642\u6703\u81EA\u52D5\u7FFB\u52D5\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1300
+  m_hitCount: 1200
+  m_enemyIcon: {fileID: 21300000, guid: c76a6503875f28d499c66953fd1c489e, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C99\u66B4\u4E4B\u738B-\u5343\u5E74\u91D1\u5B57\u5854\u9B54\u795E"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5931\u63A7\u9B54\u6CD5\u66F8"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0501
 --- !u!114 &-1034168022254040208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,6 +1430,15 @@ MonoBehaviour:
     m_dropRate: 0
     m_dropBonus: 0
   m_hitCount: 0
+  m_enemyIcon: {fileID: -704440213, guid: e8f92982c8d1eea4cada3e3c898c6c2b, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions: []
+  m_killToAddFlagReference:
+    m_key: Null
+    m_queryText: 
+    m_selectedTitle: Null
+  m_dieActionType: 0
+  m_roleIconkey: 
 --- !u!114 &-839381378524103733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1452,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
   m_EditorClassIdentifier: 
   key: "\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
   m_roleDescription: 
@@ -1041,15 +1460,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9ED1\u7130\u9B54\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u9ED1\u7130\u9B54\u6838:
+        \u88AB\u9ED1\u6697\u9B54\u6CD5\u4FB5\u8755\u7684\u5F37\u5927\u9B54\u6838\uFF0C\u71C3\u71D2\u8457\u8A6D\u7570\u7684\u9ED1\u8272\u706B\u7130\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 5000
+  m_hitCount: 3000
+  m_enemyIcon: {fileID: 21300000, guid: df357ee307f282a4487dc63f6c2ed29b, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u58AE\u843D\u5927\u6CD5\u5E2B-\u9ED1\u7130\u4E4B\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0511
 --- !u!114 &-344818632175126153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,7 +1495,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C34\u9F8D\u5E7C\u5D3D"
   m_EditorClassIdentifier: 
   key: "\u6C34\u9F8D\u5E7C\u5D3D"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C34\u9F8D\u5E7C\u5D3D"
   m_roleDescription: 
@@ -1071,15 +1503,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9F8D\u606F\u6C34\u73E0"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u9F8D\u606F\u6C34\u73E0: \u5E36\u6709\u6C34\u9F8D\u4E4B\u529B\u7684\u6676\u7469\u6C34\u73E0\uFF0C\u53EF\u91CB\u653E\u5FAE\u5F31\u6C34\u6D41\u3002"
     m_dropRate: 24
     m_dropBonus: 4
   m_hitCount: 1000
+  m_enemyIcon: {fileID: 21300000, guid: f95a03b3bf533cb46b442eb158c5a638, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8FF7\u9014\u6C34\u9B3C"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C34\u9F8D\u5E7C\u5D3D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0305
 --- !u!114 &-42529864505115276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,7 +1537,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
   m_EditorClassIdentifier: 
   key: "\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
-  m_titlePath: 
+  m_titlePath: "3.\u6E56\u6CCA\u79D8\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
   m_roleDescription: 
@@ -1101,15 +1545,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6E56\u6CCA\u79D8\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "3/\u6E56\u6CCA\u79D8\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u4E5D\u982D\u9F8D\u4E4B\u7259"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u6E56\u6CCA\u7955\u5883/\u4E5D\u982D\u9F8D\u4E4B\u7259:
+        \u64C1\u6709\u5F37\u5927\u6C34\u5C6C\u6027\u529B\u91CF\u7684\u9F8D\u7259\u788E\u7247\uFF0C\u80FD\u5F15\u767C\u6C34\u5143\u7D20\u6CE2\u52D5\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 3750
+  m_hitCount: 2500
+  m_enemyIcon: {fileID: 21300000, guid: 6fabefc3d98129a4fa99310edcb445c5, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C34\u9F8D\u5E7C\u5D3D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C89\u7720\u7684\u6E56\u738B-\u6DF1\u6DF5\u4E5D\u982D\u86C7"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0311
 --- !u!114 &-9454202061368611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,7 +1580,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
   m_EditorClassIdentifier: 
   key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
-  m_titlePath: 
+  m_titlePath: "10.\u6DF7\u6C8C\u7981\u57DF"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
   m_roleDescription: 
@@ -1131,15 +1588,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6DF7\u6C8C\u7981\u57DF"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "10/\u6DF7\u6C8C\u7981\u57DF: "
   m_dropInfo:
     m_itemReference:
-      m_key: "\u88C2\u9699\u4E4B\u6838"
+      m_key: Null
       m_queryText: 
-      m_selectedTitle: 
-    m_dropRate: 20
-    m_dropBonus: 20
-  m_hitCount: 0
+      m_selectedTitle: Null
+    m_dropRate: 0
+    m_dropBonus: 0
+  m_hitCount: 3750
+  m_enemyIcon: {fileID: 21300000, guid: c6042176d1460b640bc1e5912294e104, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 2
+  m_roleIconkey: Mob_1012
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,7 +1700,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u96F2\u9727\u5143\u7D20"
   m_EditorClassIdentifier: 
   key: "\u96F2\u9727\u5143\u7D20"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u96F2\u9727\u5143\u7D20"
   m_roleDescription: 
@@ -1239,15 +1708,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u51DD\u7E2E\u96F2\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u51DD\u7E2E\u96F2\u6838: \u96F2\u9727\u5143\u7D20\u7684\u6838\u5FC3\uFF0C\u89F8\u78B0\u6642\u611F\u89BA\u67D4\u8EDF\uFF0C\u537B\u80FD\u8B8A\u5E7B\u5F62\u614B\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 1500
+  m_enemyIcon: {fileID: 21300000, guid: 03d93a6df1459c645ab2013f062c3069, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5929\u7FFC\u7375\u9DF9"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u96F2\u9727\u5143\u7D20"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0802
 --- !u!114 &209611234249782339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1742,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
   m_EditorClassIdentifier: 
   key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
-  m_titlePath: 
+  m_titlePath: "10.\u6DF7\u6C8C\u7981\u57DF"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
   m_roleDescription: 
@@ -1269,15 +1750,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6DF7\u6C8C\u7981\u57DF"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "10/\u6DF7\u6C8C\u7981\u57DF: "
   m_dropInfo:
     m_itemReference:
-      m_key: "\u7121\u76E1\u88C2\u9699"
+      m_key: Null
       m_queryText: 
-      m_selectedTitle: 
-    m_dropRate: 20
-    m_dropBonus: 20
-  m_hitCount: 0
+      m_selectedTitle: Null
+    m_dropRate: 0
+    m_dropBonus: 0
+  m_hitCount: 5000
+  m_enemyIcon: {fileID: 21300000, guid: 441112df6bdb32240a9f52b7de9f58aa, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv2"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_1013
 --- !u!114 &358876552186429477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,7 +1784,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5929\u7FFC\u7375\u9DF9"
   m_EditorClassIdentifier: 
   key: "\u5929\u7FFC\u7375\u9DF9"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5929\u7FFC\u7375\u9DF9"
   m_roleDescription: 
@@ -1299,15 +1792,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u92D2\u5229\u7FBD\u5203"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u92D2\u5229\u7FBD\u5203: \u9019\u4E9B\u7FBD\u6BDB\u5982\u5200\u5203\u822C\u92B3\u5229\uFF0C\u80FD\u5920\u8F15\u6613\u5207\u958B\u7A7A\u6C23\u3002"
     m_dropRate: 24
     m_dropBonus: 4
   m_hitCount: 1500
+  m_enemyIcon: {fileID: 21300000, guid: 429279e7e7c9d16479e72772edebde89, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5929\u7FFC\u7375\u9DF9"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0801
 --- !u!114 &768279517145388459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1826,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
   m_EditorClassIdentifier: 
   key: "\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
   m_roleDescription: 
@@ -1329,15 +1834,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u8A6D\u7570\u6620\u50CF\u788E\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u8A6D\u7570\u6620\u50CF\u788E\u7247:
+        \u4F86\u81EA\u8A6D\u7570\u93E1\u50CF\u7684\u788E\u7247\uFF0C\u80FD\u77ED\u66AB\u6620\u5C04\u7269\u9AD4\u7684\u5F71\u50CF\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1200
+  m_enemyIcon: {fileID: 21300000, guid: be3614502b6a17c488c93115a54a0b69, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8A5B\u5492\u9ED1\u8C93\u4EBA"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u88AB\u8A5B\u5492\u7684\u93E1\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0505
 --- !u!114 &2029169840254307350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1869,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
   m_EditorClassIdentifier: 
   key: "\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
   m_roleDescription: 
@@ -1359,15 +1877,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9280\u9E7F\u5E7B\u89D2"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u9280\u9E7F\u5E7B\u89D2:
+        \u64C1\u6709\u5E7B\u8853\u4E4B\u529B\u7684\u9E7F\u89D2\u788E\u7247\uFF0C\u80FD\u8B93\u7269\u9AD4\u77ED\u66AB\u9583\u720D\u6D88\u5931\u3002"
     m_dropRate: 20
     m_dropBonus: 20
   m_hitCount: 2000
+  m_enemyIcon: {fileID: 21300000, guid: fe50fce0171d1f7419698ca3f14e7d9d, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u9B3C\u706B\u98DB\u86FE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5E7B\u5F71\u9E7F\u9748-\u9280\u89D2\u4E4B\u68EE\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0211
 --- !u!114 &2802172165901217668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,23 +1912,32 @@ MonoBehaviour:
   m_Name: "RoleData_\u7D19\u7BB1"
   m_EditorClassIdentifier: 
   key: "\u7D19\u7BB1"
-  m_titlePath: 
+  m_titlePath: "0.\u5192\u96AA\u5165\u53E3"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u7834\u820A\u7D19\u7BB1"
   m_roleDescription: 
   m_enemyType: "\u4E00\u822C\u5C0F\u602A"
   m_sceneReference:
-    m_key: "\u6559\u5B78\u5834"
+    m_key: "\u5192\u96AA\u5165\u53E3"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "0/\u5192\u96AA\u5165\u53E3: "
   m_dropInfo:
     m_itemReference:
       m_key: "\uFF1F\uFF1F\uFF1F"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5192\u96AA\u5165\u53E3/\uFF1F\uFF1F\uFF1F: \u6253\u7834\u7D19\u7BB1\u5F8C\u53D6\u5F97\u7684\u6771\u897F\uFF0C\u4F3C\u4E4E\u6C92\u6709\u4EFB\u4F55\u4F5C\u7528\uFF1F"
     m_dropRate: 100
     m_dropBonus: 0
-  m_hitCount: 500
+  m_hitCount: 100
+  m_enemyIcon: {fileID: 21300000, guid: 6d08a500c8b392e419b1811767837c1f, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions: []
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u7D19\u7BB1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0001
 --- !u!114 &2802941207026632634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,7 +1951,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8DF3\u8DF3\u8611\u83C7\u7CBE"
   m_EditorClassIdentifier: 
   key: "\u8DF3\u8DF3\u8611\u83C7\u7CBE"
-  m_titlePath: 
+  m_titlePath: "2.\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8DF3\u8DF3\u8611\u83C7\u7CBE"
   m_roleDescription: 
@@ -1419,15 +1959,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u68EE\u6797\u908A\u5883"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "2/\u9B54\u6CD5\u68EE\u6797\u908A\u5883: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5F48\u529B\u8611\u83C7\u5E3D"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u68EE\u6797\u908A\u5883/\u5F48\u529B\u8611\u83C7\u5E3D:
+        \u9019\u9802\u8611\u83C7\u5E3D\u6709\u5F48\u6027\uFF0C\u88AB\u6309\u58D3\u5F8C\u6703\u8FC5\u901F\u5F48\u56DE\u539F\u72C0\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1500
+  m_hitCount: 800
+  m_enemyIcon: {fileID: 21300000, guid: 5ba26ac49ab0a8d4b9841278be891f35, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8DF3\u8DF3\u8611\u83C7\u7CBE"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0201
 --- !u!114 &3075256532581512014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,7 +1994,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
   m_EditorClassIdentifier: 
   key: "\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
-  m_titlePath: 
+  m_titlePath: "10.\u6DF7\u6C8C\u7981\u57DF"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
   m_roleDescription: 
@@ -1449,15 +2002,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u6DF7\u6C8C\u7981\u57DF"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "10/\u6DF7\u6C8C\u7981\u57DF: "
   m_dropInfo:
     m_itemReference:
-      m_key: "\u6642\u7A7A\u5875\u57C3"
+      m_key: Null
       m_queryText: 
-      m_selectedTitle: 
-    m_dropRate: 20
-    m_dropBonus: 20
-  m_hitCount: 0
+      m_selectedTitle: Null
+    m_dropRate: 0
+    m_dropBonus: 0
+  m_hitCount: 2500
+  m_enemyIcon: {fileID: 21300000, guid: 9012ef45a36f18549a252799175b5279, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5730\u7344\u7194\u738B-\u6DF1\u7D05\u9B54\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv1"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 2
+  m_roleIconkey: Mob_1011
 --- !u!114 &3474280909880729771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,7 +2036,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
   m_EditorClassIdentifier: 
   key: "\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
   m_roleDescription: 
@@ -1479,15 +2044,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u8A5B\u5492\u5E03\u689D"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u8A5B\u5492\u5E03\u689D: \u88AB\u8A5B\u5492\u7684\u53E4\u4EE3\u7D17\u5E03\uFF0C\u6703\u5076\u723E\u5FAE\u5FAE\u8815\u52D5\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1100
+  m_enemyIcon: {fileID: 21300000, guid: 4535e119ed63c4541a579de26726c5ca, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6D3B\u5316\u77F3\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8A5B\u5492\u6728\u4E43\u4F0A\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0403
 --- !u!114 &4066205625334357814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,7 +2078,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u98A8\u4E4B\u9B54\u50CF"
   m_EditorClassIdentifier: 
   key: "\u98A8\u4E4B\u9B54\u50CF"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u98A8\u4E4B\u9B54\u50CF"
   m_roleDescription: 
@@ -1509,15 +2086,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u75BE\u98A8\u77F3"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u75BE\u98A8\u77F3: \u5167\u542B\u5F37\u98A8\u7684\u9B54\u6CD5\u77F3\uFF0C\u91CB\u653E\u6642\u6703\u7522\u751F\u5C0F\u578B\u6C23\u6D41\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 2400
+  m_hitCount: 2250
+  m_enemyIcon: {fileID: 21300000, guid: 499bf9a2d6b477744ad787829f373ca4, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u96F7\u64CA\u98DB\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u98A8\u4E4B\u9B54\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0804
 --- !u!114 &4414193167586752712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1531,7 +2120,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u96F7\u64CA\u98DB\u9F8D"
   m_EditorClassIdentifier: 
   key: "\u96F7\u64CA\u98DB\u9F8D"
-  m_titlePath: 
+  m_titlePath: "8.\u5929\u7A7A\u4E4B\u57CE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u96F7\u64CA\u98DB\u9F8D"
   m_roleDescription: 
@@ -1539,15 +2128,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5929\u7A7A\u4E4B\u57CE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "8/\u5929\u7A7A\u4E4B\u57CE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u96F7\u5149\u9F8D\u9C57"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5929\u7A7A\u4E4B\u57CE/\u96F7\u5149\u9F8D\u9C57: \u5E36\u6709\u5FAE\u5F31\u96FB\u6D41\u7684\u9F8D\u9C57\uFF0C\u5076\u723E\u6703\u767C\u51FA\u9583\u96FB\u706B\u82B1\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 5000
+  m_hitCount: 2250
+  m_enemyIcon: {fileID: 21300000, guid: b5c38a38538833a449dd9166f0f98030, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u96F2\u9727\u5143\u7D20"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u96F7\u64CA\u98DB\u9F8D"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0803
 --- !u!114 &4690096294232761914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,7 +2162,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
   m_EditorClassIdentifier: 
   key: "\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
   m_roleDescription: 
@@ -1569,15 +2170,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9B54\u529B\u51DD\u81A0"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u9B54\u529B\u51DD\u81A0:
+        \u534A\u900F\u660E\u7684\u51DD\u81A0\u72C0\u7269\u8CEA\uFF0C\u64C1\u6709\u5947\u7279\u7684\u9B54\u6CD5\u5438\u9644\u529B\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 5000
+  m_hitCount: 1200
+  m_enemyIcon: {fileID: 21300000, guid: d01903e543a06e7459cbd3ff93492f97, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u66B4\u8D70\u5143\u7D20\u7CBE\u9748"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0503
 --- !u!114 &5073014329320146125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,7 +2205,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
   m_EditorClassIdentifier: 
   key: "\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
-  m_titlePath: 
+  m_titlePath: "1.\u5EE2\u68C4\u5F8C\u5DF7"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
   m_roleDescription: 
@@ -1599,15 +2213,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5EE2\u68C4\u5F8C\u5DF7"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "1/\u5EE2\u68C4\u5F8C\u5DF7: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u7368\u773C\u8B77\u7B26"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5EE2\u68C4\u5F8C\u5DF7/\u7368\u773C\u8B77\u7B26: \u9019\u500B\u8B77\u7B26\u4F86\u81EA\u7368\u773C\u72F8\u8C93\uFF0C\u64DA\u8AAA\u80FD\u8CE6\u4E88\u795E\u79D8\u7684\u654F\u6377\u529B\u91CF\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 1200
+  m_hitCount: 1250
+  m_enemyIcon: {fileID: 21300000, guid: 2a4463eb533aea54c84a4e9be9b0cfe0, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u88AB\u8A5B\u5492\u7684\u6383\u5E1A"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u9ED1\u5DF7\u4E4B\u738B-\u7368\u773C\u72F8\u8C93"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0111
 --- !u!114 &5604162068840273191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,7 +2247,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u706B\u7130\u60E1\u9B54"
   m_EditorClassIdentifier: 
   key: "\u706B\u7130\u60E1\u9B54"
-  m_titlePath: 
+  m_titlePath: "9.\u7194\u5CA9\u6DF1\u6DF5"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u706B\u7130\u60E1\u9B54"
   m_roleDescription: 
@@ -1629,15 +2255,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u7194\u5CA9\u6DF1\u6DF5"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "9/\u7194\u5CA9\u6DF1\u6DF5: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u70C8\u7130\u9B54\u6838"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u7194\u5CA9\u6DF1\u6DF5/\u70C8\u7130\u9B54\u6838: \u542B\u6709\u6FC3\u70C8\u706B\u5143\u7D20\u7684\u6838\u5FC3\uFF0C\u91CB\u653E\u6642\u6703\u7522\u751F\u706B\u7130\u5674\u767C\u3002"
     m_dropRate: 28
     m_dropBonus: 8
   m_hitCount: 2400
+  m_enemyIcon: {fileID: 21300000, guid: c0bebd55fb76a4048861b420d25e14c9, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u706B\u7130\u72AC\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u706B\u7130\u60E1\u9B54"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0904
 --- !u!114 &6226339734261269760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,7 +2289,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8A6D\u7570\u4EBA\u5076"
   m_EditorClassIdentifier: 
   key: "\u8A6D\u7570\u4EBA\u5076"
-  m_titlePath: 
+  m_titlePath: "6.\u5E7D\u9748\u57CE\u93AE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A6D\u7570\u4EBA\u5076"
   m_roleDescription: 
@@ -1659,15 +2297,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5E7D\u9748\u57CE\u93AE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "6/\u5E7D\u9748\u57CE\u93AE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u8A6D\u7570\u5E03\u5076"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5E7D\u9748\u57CE\u93AE/\u8A6D\u7570\u5E03\u5076: \u7834\u820A\u4F46\u4ECD\u5E36\u6709\u9748\u6027\u7684\u8A6D\u7570\u5E03\u5A03\u5A03\uFF0C\u5076\u723E\u6703\u81EA\u5DF1\u52D5\u4E00\u4E0B\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1500
+  m_hitCount: 1300
+  m_enemyIcon: {fileID: 21300000, guid: c5ba8ecdf48aa9049bb785f699c707df, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u8FF7\u5931\u7684\u8C93\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8A6D\u7570\u4EBA\u5076"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0602
 --- !u!114 &6725464781359861601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1681,7 +2331,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u72C2\u98A8\u5143\u7D20"
   m_EditorClassIdentifier: 
   key: "\u72C2\u98A8\u5143\u7D20"
-  m_titlePath: 
+  m_titlePath: "4.\u8352\u91CE\u907A\u8DE1"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u72C2\u98A8\u5143\u7D20"
   m_roleDescription: 
@@ -1689,15 +2339,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u8352\u91CE\u907A\u8DE1"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "4/\u8352\u91CE\u907A\u8DE1: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u98A8\u66B4\u4E4B\u7FBD"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u8352\u91CE\u907A\u8DE1/\u98A8\u66B4\u4E4B\u7FBD: \u4F86\u81EA\u72C2\u98A8\u4E2D\u7684\u9B54\u6CD5\u7FBD\u6BDB\uFF0C\u5E36\u6709\u5F37\u70C8\u6C23\u6D41\u6CE2\u52D5\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 1200
+  m_hitCount: 1100
+  m_enemyIcon: {fileID: 21300000, guid: 913c649f614523541a5075e5db47338d, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6C99\u5F71\u5E7B\u72FC"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u72C2\u98A8\u5143\u7D20"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0405
 --- !u!114 &7895950442299010232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +2373,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u8A5B\u5492\u9ED1\u8C93\u4EBA"
   m_EditorClassIdentifier: 
   key: "\u8A5B\u5492\u9ED1\u8C93\u4EBA"
-  m_titlePath: 
+  m_titlePath: "5.\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u8A5B\u5492\u9ED1\u8C93\u4EBA"
   m_roleDescription: 
@@ -1719,15 +2381,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "5/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6697\u5F71\u9B54\u529B\u788E\u7247"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u9B54\u6CD5\u5B78\u9662\u5EE2\u589F/\u6697\u5F71\u9B54\u529B\u788E\u7247:
+        \u4F86\u81EA\u9ED1\u6697\u9B54\u6CD5\u7684\u788E\u7247\uFF0C\u80FD\u5438\u6536\u5149\u7DDA\uFF0C\u4F7F\u7269\u9AD4\u8B8A\u5F97\u9670\u5F71\u5316\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1200
+  m_enemyIcon: {fileID: 21300000, guid: ad7f1ca7f9d88a24797896458ac1df00, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u9B54\u6CD5\u6BD2\u53F2\u840A\u59C6"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u8A5B\u5492\u9ED1\u8C93\u4EBA"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0504
 --- !u!114 &7908589988331048803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1741,7 +2416,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
   m_EditorClassIdentifier: 
   key: "\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
   m_roleDescription: 
@@ -1749,15 +2424,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u9396\u93C8\u6838\u5FC3"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u9396\u93C8\u6838\u5FC3: \u64C1\u6709\u5F37\u5927\u7981\u932E\u8207\u63A7\u5236\u529B\u91CF\u7684\u6838\u5FC3\uFF0C\u5E36\u8457\u91D1\u5C6C\u9396\u93C8\u7684\u6B98\u97FF\u3002"
     m_dropRate: 20
     m_dropBonus: 20
-  m_hitCount: 1500
+  m_hitCount: 3500
+  m_enemyIcon: {fileID: 21300000, guid: cc49abb67de91c14e8f07ec8c9ff88ca, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u6DF1\u6DF5\u8725\u8734\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6C38\u6046\u770B\u5B88\u8005-\u9396\u93C8\u9B54\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 1
+  m_roleIconkey: Mob_0711
 --- !u!114 &8160939513442045490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1771,7 +2458,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6D1E\u7A74\u731B\u7378"
   m_EditorClassIdentifier: 
   key: "\u6D1E\u7A74\u731B\u7378"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6D1E\u7A74\u731B\u7378"
   m_roleDescription: 
@@ -1779,15 +2466,28 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u654F\u92B3\u55C5\u89BA\u7D50\u6676"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u654F\u92B3\u55C5\u89BA\u7D50\u6676:
+        \u9019\u9846\u7D50\u6676\u80FD\u5920\u5F37\u5316\u611F\u77E5\u80FD\u529B\uFF0C\u6563\u767C\u51FA\u5FAE\u5F31\u7684\u7378\u6027\u6C23\u606F\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1400
+  m_enemyIcon: {fileID: 21300000, guid: 61ea7e08d02c7b84a89afda483e568ee, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5730\u7E1B\u9B3C\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6D1E\u7A74\u731B\u7378"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0703
 --- !u!114 &8214006055210634301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,7 +2501,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u5730\u7E1B\u9B3C\u9B42"
   m_EditorClassIdentifier: 
   key: "\u5730\u7E1B\u9B3C\u9B42"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u5730\u7E1B\u9B3C\u9B42"
   m_roleDescription: 
@@ -1809,15 +2509,27 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u5E7D\u51A5\u4E4B\u5875"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u5E7D\u51A5\u4E4B\u5875: \u4F86\u81EA\u8FF7\u5BAE\u6DF1\u8655\u7684\u9748\u9B42\u5875\u57C3\uFF0C\u5E36\u6709\u5FAE\u5F31\u7684\u9670\u51B7\u6C23\u606F\u3002"
     m_dropRate: 24
     m_dropBonus: 4
-  m_hitCount: 3750
+  m_hitCount: 1400
+  m_enemyIcon: {fileID: 21300000, guid: afcdcb27f24d9d44cbe707febc67c103, type: 3}
+  m_directionType: 1
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5CA9\u77F3\u9B54\u50CF"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u5730\u7E1B\u9B3C\u9B42"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0702
 --- !u!114 &8692105084915671564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1831,7 +2543,7 @@ MonoBehaviour:
   m_Name: "RoleData_\u6DF1\u6DF5\u8725\u8734\u738B"
   m_EditorClassIdentifier: 
   key: "\u6DF1\u6DF5\u8725\u8734\u738B"
-  m_titlePath: 
+  m_titlePath: "7.\u5730\u5E95\u8FF7\u5BAE"
   m_comment: 
   m_roleName: "\u6575\u4EBA\u540D\u5B57.\u6DF1\u6DF5\u8725\u8734\u738B"
   m_roleDescription: 
@@ -1839,12 +2551,24 @@ MonoBehaviour:
   m_sceneReference:
     m_key: "\u5730\u5E95\u8FF7\u5BAE"
     m_queryText: 
-    m_selectedTitle: 
+    m_selectedTitle: "7/\u5730\u5E95\u8FF7\u5BAE: "
   m_dropInfo:
     m_itemReference:
       m_key: "\u6697\u5F71\u9F8D\u9C57"
       m_queryText: 
-      m_selectedTitle: 
+      m_selectedTitle: "item/\u5730\u5E95\u8FF7\u5BAE/\u6697\u5F71\u9F8D\u9C57: \u4F86\u81EA\u9ED1\u6697\u4E2D\u7684\u8725\u8734\u738B\uFF0C\u80FD\u5438\u6536\u5149\u7DDA\uFF0C\u4F7F\u6301\u6709\u8005\u66F4\u96E3\u88AB\u5BDF\u89BA\u3002"
     m_dropRate: 28
     m_dropBonus: 8
-  m_hitCount: 1500
+  m_hitCount: 2100
+  m_enemyIcon: {fileID: 21300000, guid: dc46246e0497de04685e10338341e10d, type: 3}
+  m_directionType: 0
+  m_flagReferenceConditions:
+  - m_key: "\u64CA\u6BBA_\u5E7D\u51A5\u5B88\u885B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_killToAddFlagReference:
+    m_key: "\u64CA\u6BBA_\u6DF1\u6DF5\u8725\u8734\u738B"
+    m_queryText: 
+    m_selectedTitle: 
+  m_dieActionType: 0
+  m_roleIconkey: Mob_0705

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using GameCore.Database;
 using GameCore.Log;
 using GameCore.UI;
@@ -74,12 +75,46 @@ public class StagePanel : PanelBase
 
     private void OnRightArrowClick(UIButton button)
     {
+        if (m_currentIndex + 1 >= m_scenemapKeys.Count)
+        {
+            Debug.LogWarning("索引值超出範圍");
+            return;
+        }
+        // 檢查下一個關卡是否可以選擇
+        string key = m_scenemapKeys[m_currentIndex + 1];
+        if (Database<ScenemapData>.TryLoad(key, out ScenemapData data))
+        {
+            if (data.SceneUnlockValid() == false)
+            {
+                // 關卡尚未解鎖
+                eLog.Error($"關卡尚未解鎖：{data.key}");
+                return;
+            }
+        }
+
         // 切換 index 到下一個關卡
         SetCurrentIndex(m_currentIndex + 1);
     }
 
     private void OnLeftArrowClick(UIButton button)
     {
+        if (m_currentIndex - 1 < 0)
+        {
+            Debug.LogWarning("索引值超出範圍");
+            return;
+        }
+
+        string key = m_scenemapKeys[m_currentIndex - 1];
+        if (Database<ScenemapData>.TryLoad(key, out ScenemapData data))
+        {
+            if (data.SceneUnlockValid() == false)
+            {
+                // 關卡尚未解鎖
+                eLog.Error($"關卡尚未解鎖：{data.key}");
+                return;
+            }
+        }
+
         // 切換 index 到下一個關卡
         SetCurrentIndex(m_currentIndex - 1);
     }

@@ -4,169 +4,169 @@ using UnityEngine;
 
 public class WindowManager : MonoBehaviour
 {
-    #region Windows API 導入
-    [DllImport("user32.dll")]
-    private static extern IntPtr GetActiveWindow();
-
-    [DllImport("user32.dll")]
-    private static extern int SetWindowLong(IntPtr hWnd, int nIndex, uint dwNewLong);
-
-    [DllImport("user32.dll")]
-    private static extern uint GetWindowLong(IntPtr hWnd, int nIndex);
-
-    [DllImport("user32.dll", SetLastError = true)]
-    private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
-
-    [DllImport("user32.dll")]
-    private static extern bool SetLayeredWindowAttributes(IntPtr hWnd, uint crKey, byte bAlpha, uint dwFlags);
-
-    [DllImport("user32.dll")]
-    private static extern bool ReleaseCapture();
-
-    [DllImport("user32.dll")]
-    private static extern bool SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-
-    [DllImport("user32.dll")]
-    private static extern bool UpdateWindow(IntPtr hWnd);
-
-    [DllImport("user32.dll")]
-    private static extern bool RedrawWindow(IntPtr hWnd, IntPtr lprcUpdate, IntPtr hrgnUpdate, uint flags);
-
-    [DllImport("user32.dll", EntryPoint = "SetWindowLongPtr")]
-    private static extern IntPtr SetWindowLongPtr(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
+    #region Native Window API
+    [DllImport("user32.dll")] private static extern IntPtr GetActiveWindow();
+    [DllImport("user32.dll")] private static extern bool IsWindow(IntPtr hWnd);
+    [DllImport("user32.dll")] private static extern bool IsWindowVisible(IntPtr hWnd);
+    [DllImport("user32.dll")] private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+    [DllImport("user32.dll")] private static extern int SetWindowLong(IntPtr hWnd, int nIndex, uint dwNewLong);
+    [DllImport("user32.dll")] private static extern uint GetWindowLong(IntPtr hWnd, int nIndex);
+    [DllImport("user32.dll")] private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+    [DllImport("user32.dll")] private static extern bool SetLayeredWindowAttributes(IntPtr hWnd, uint crKey, byte bAlpha, uint dwFlags);
+    [DllImport("user32.dll")] private static extern bool ReleaseCapture();
+    [DllImport("user32.dll")] private static extern bool SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+    [DllImport("user32.dll")] private static extern bool UpdateWindow(IntPtr hWnd);
+    [DllImport("user32.dll")] private static extern bool RedrawWindow(IntPtr hWnd, IntPtr lprcUpdate, IntPtr hrgnUpdate, uint flags);
     #endregion
 
-    #region Windows API 常數
+    #region Window Constants
     private const int GWL_STYLE = -16;
     private const int GWL_EXSTYLE = -20;
-    private const uint WS_POPUP = 0x80000000;
-    private const uint WS_EX_LAYERED = 0x00080000;
-    private const uint WS_EX_TRANSPARENT = 0x00000020;
-    private const uint WS_EX_COMPOSITED = 0x02000000; // 防止窗口閃爍
-    private const uint WS_EX_TOOLWINDOW = 0x00000080; // 工具窗口，不在任務欄顯示
-    private const uint LWA_COLORKEY = 0x00000001;
-    private const uint LWA_ALPHA = 0x00000002;
+    private const int SW_SHOW = 5;
     private const int WM_NCLBUTTONDOWN = 0xA1;
     private const int HTCAPTION = 0x2;
 
-    // RedrawWindow flags
+    private const uint WS_POPUP = 0x80000000;
+    private const uint WS_EX_LAYERED = 0x00080000;
+    private const uint WS_EX_COMPOSITED = 0x02000000;
+    private const uint LWA_COLORKEY = 0x00000001;
+    private const uint LWA_ALPHA = 0x00000002;
     private const uint RDW_INVALIDATE = 0x0001;
-    private const uint RDW_INTERNALPAINT = 0x0002;
-    private const uint RDW_ERASE = 0x0004;
-    private const uint RDW_ALLCHILDREN = 0x0080;
     private const uint RDW_UPDATENOW = 0x0100;
-    private const uint RDW_FRAME = 0x0400;
-
-    // 用於SetWindowPos的特殊句柄和標誌
-    private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
-    private const uint SWP_NOSIZE = 0x0001;
-    private const uint SWP_NOMOVE = 0x0002;
+    private const uint SWP_FRAMECHANGED = 0x0020;
     private const uint SWP_SHOWWINDOW = 0x0040;
-    private const uint SWP_FRAMECHANGED = 0x0020; // 通知窗口框架改變
+    private const uint SWP_NOMOVE = 0x0002;
+    private const uint SWP_NOSIZE = 0x0001;
+
+    private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
     #endregion
 
-    // 視窗句柄
-    private IntPtr windowHandle;
-
-    // 拖動相關
+    #region Serialized Fields
+    [Header("Window Settings")]
     [SerializeField] private bool enableDragging = true;
-
-    // 視窗設置
     [SerializeField] private bool alwaysOnTop = true;
     [SerializeField] private Color transparentColor = Color.black;
     [SerializeField] private byte windowAlpha = 255;
-
-    // 視窗位置
-    [SerializeField] private Vector2 initialPosition = new Vector2(0, 0);
+    [SerializeField] private Vector2 initialPosition = Vector2.zero;
     [SerializeField] private bool centerScreenHorizontally = true;
     [SerializeField] private bool positionAtBottom = true;
-
-    // 拖動控制區域（如果不是整個窗口可拖動）
     [SerializeField] private GameObject dragHandle;
 
-    // 滑鼠軌跡消除設定
-    [SerializeField] private float redrawInterval = 0.1f; // 重繪間隔時間
-    private float redrawTimer;
+    [Header("Performance Settings")]
+    [SerializeField] private int targetFrameRate = 60;
+    [SerializeField] private float redrawInterval = 0.033f;
 
+    [Header("Mouse Settings")]
+    [SerializeField, Range(0.1f, 3.0f)] private float mouseSensitivity = 1.0f;
+    [SerializeField] private bool useMouseSmoothing = true;
+    [SerializeField, Range(0.0f, 1.0f)] private float mouseSmoothing = 0.5f;
+    #endregion
+
+    #region Private Fields
+    private IntPtr windowHandle;
     private Camera mainCamera;
-    private bool initialized = false;
+    private bool initialized;
+    private float redrawTimer;
+    private Vector2 currentMousePosition;
+    private Vector2 smoothedMousePosition;
+    private readonly RaycastHit2D[] raycastResults = new RaycastHit2D[1];
+    #endregion
 
+    #region Unity Lifecycle
     private void Awake()
     {
-        mainCamera = Camera.main;
-
-        // 確保主相機的背景是透明的
-        if (mainCamera != null)
-        {
-            mainCamera.clearFlags = CameraClearFlags.SolidColor;
-            mainCamera.backgroundColor = new Color(0, 0, 0, 0);
-        }
-
-        // 禁用光標軌跡
-        Cursor.visible = true;
+        InitializeBasicSettings();
     }
 
     private void Start()
     {
-        // 等待一幀確保窗口創建完成
-        StartCoroutine(InitializeAfterDelay());
+        StartCoroutine(InitializeWindowCoroutine());
     }
 
-    private System.Collections.IEnumerator InitializeAfterDelay()
+    private void Update()
     {
-        yield return null; // 等待一幀
-        yield return new WaitForSeconds(0.1f); // 再多等一點時間確保窗口完全創建
-        InitializeWindow();
+        if (!initialized) return;
+        HandleDragging();
+        UpdateWindowVisibility();
     }
 
-    private void InitializeWindow()
+    private void OnApplicationPause(bool pauseStatus)
     {
-        if (initialized)
-            return;
-
-        windowHandle = GetActiveWindow();
-
-        // 設置窗口樣式（無邊框）
-        uint style = GetWindowLong(windowHandle, GWL_STYLE);
-        style &= ~(uint)(0x00C00000); // 移除WS_CAPTION
-        style &= ~(uint)(0x00800000); // 移除WS_BORDER
-        style = WS_POPUP; // 使用彈出窗口樣式
-        SetWindowLong(windowHandle, GWL_STYLE, style);
-
-        // 設置擴展樣式（透明、分層、合成）
-        uint exStyle = GetWindowLong(windowHandle, GWL_EXSTYLE);
-        exStyle |= WS_EX_LAYERED | WS_EX_COMPOSITED | WS_EX_TOOLWINDOW;
-        if (!enableDragging)
-            exStyle |= WS_EX_TRANSPARENT; // 如果不允許拖動，則設置為透明（點擊穿透）
-        SetWindowLong(windowHandle, GWL_EXSTYLE, exStyle);
-
-        // 設置透明色和透明度
-        uint transparentColorKey = (uint)(((int)(transparentColor.b * 255)) |
-                                 (((int)(transparentColor.g * 255)) << 8) |
-                                 (((int)(transparentColor.r * 255)) << 16));
-        SetLayeredWindowAttributes(windowHandle, transparentColorKey, windowAlpha, LWA_COLORKEY | LWA_ALPHA);
-
-        // 設置窗口位置
-        SetWindowPosition();
-
-        // 如果需要置頂
-        if (alwaysOnTop)
+        if (!pauseStatus && initialized && windowHandle != IntPtr.Zero)
         {
-            SetWindowPos(windowHandle, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW | SWP_FRAMECHANGED);
+            ShowWindow(windowHandle, SW_SHOW);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        if (windowHandle != IntPtr.Zero)
+        {
+            SetLayeredWindowAttributes(windowHandle, 0, 255, LWA_ALPHA);
+        }
+    }
+    #endregion
+
+    #region Initialization
+    private void InitializeBasicSettings()
+    {
+        mainCamera = Camera.main;
+        if (mainCamera != null)
+        {
+            mainCamera.clearFlags = CameraClearFlags.SolidColor;
+            mainCamera.backgroundColor = Color.clear;
         }
 
-        // 強制窗口重繪
-        RedrawWindow(windowHandle, IntPtr.Zero, IntPtr.Zero, RDW_INVALIDATE | RDW_UPDATENOW | RDW_FRAME | RDW_ALLCHILDREN | RDW_ERASE);
-        UpdateWindow(windowHandle);
+        currentMousePosition = Input.mousePosition;
+        smoothedMousePosition = currentMousePosition;
+        Application.targetFrameRate = targetFrameRate;
+        QualitySettings.vSyncCount = 0;
+        Cursor.visible = true;
+    }
+
+    private System.Collections.IEnumerator InitializeWindowCoroutine()
+    {
+        yield return null;
+        yield return new WaitForSeconds(0.1f);
+
+        windowHandle = GetActiveWindow();
+        if (windowHandle == IntPtr.Zero || !IsWindow(windowHandle))
+        {
+            Debug.LogError("Failed to get valid window handle!");
+            yield break;
+        }
+
+        SetupWindowStyle();
+        SetupWindowPosition();
+        ShowWindow(windowHandle, SW_SHOW);
 
         initialized = true;
     }
 
-    private void SetWindowPosition()
+    private void SetupWindowStyle()
+    {
+        uint style = GetWindowLong(windowHandle, GWL_STYLE);
+        style &= ~(uint)(0x00C00000 | 0x00800000);
+        style |= WS_POPUP;
+        SetWindowLong(windowHandle, GWL_STYLE, style);
+
+        uint exStyle = GetWindowLong(windowHandle, GWL_EXSTYLE);
+        exStyle |= WS_EX_LAYERED | WS_EX_COMPOSITED;
+        SetWindowLong(windowHandle, GWL_EXSTYLE, exStyle);
+
+        SetLayeredWindowAttributes(windowHandle, ColorToUInt(transparentColor), windowAlpha, LWA_COLORKEY | LWA_ALPHA);
+
+        if (alwaysOnTop)
+        {
+            SetWindowPos(windowHandle, HWND_TOPMOST, 0, 0, 0, 0,
+                SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW | SWP_FRAMECHANGED);
+        }
+    }
+
+    private void SetupWindowPosition()
     {
         int screenWidth = Screen.currentResolution.width;
         int screenHeight = Screen.currentResolution.height;
-
         int windowWidth = Screen.width;
         int windowHeight = Screen.height;
 
@@ -175,57 +175,43 @@ public class WindowManager : MonoBehaviour
 
         if (centerScreenHorizontally)
             x = (screenWidth - windowWidth) / 2;
-
         if (positionAtBottom)
             y = screenHeight - windowHeight;
 
-        SetWindowPos(windowHandle, IntPtr.Zero, x, y, windowWidth, windowHeight, SWP_FRAMECHANGED);
+        SetWindowPos(windowHandle, IntPtr.Zero, x, y, windowWidth, windowHeight,
+            SWP_FRAMECHANGED | SWP_SHOWWINDOW);
+    }
+    #endregion
+
+    #region Window Operations
+    private void HandleDragging()
+    {
+        if (!enableDragging || !Input.GetMouseButtonDown(0)) return;
+
+        Vector2 mousePos = GetSmoothedMousePosition();
+        if (CheckDragHandle(mousePos))
+        {
+            ReleaseCapture();
+            SendMessage(windowHandle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            ForceRedraw();
+        }
     }
 
-    private void Update()
+    private void UpdateWindowVisibility()
     {
-        // 處理拖動
-        if (enableDragging)
+        if (Input.GetMouseButton(0) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0))
         {
-            bool shouldDrag = false;
-
-            // 如果指定了拖動句柄，檢查是否點擊了該句柄
-            if (dragHandle != null)
+            redrawTimer -= Time.deltaTime;
+            if (redrawTimer <= 0)
             {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    Vector2 mousePos = Input.mousePosition;
-                    Ray ray = mainCamera.ScreenPointToRay(mousePos);
-                    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-                    if (hit.collider != null && hit.collider.gameObject == dragHandle)
-                    {
-                        shouldDrag = true;
-                    }
-                }
-            }
-            // 否則整個窗口可拖動
-            else if (Input.GetMouseButtonDown(0))
-            {
-                shouldDrag = true;
-            }
-
-            if (shouldDrag)
-            {
-                ReleaseCapture();
-                SendMessage(windowHandle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
-
-                // 拖動時立即重繪
+                redrawTimer = redrawInterval;
                 ForceRedraw();
             }
         }
 
-        // 定期重繪窗口以消除滑鼠軌跡
-        redrawTimer -= Time.deltaTime;
-        if (redrawTimer <= 0)
+        if (!IsWindowVisible(windowHandle))
         {
-            redrawTimer = redrawInterval;
-            ForceRedraw();
+            ShowWindow(windowHandle, SW_SHOW);
         }
     }
 
@@ -233,17 +219,56 @@ public class WindowManager : MonoBehaviour
     {
         if (windowHandle != IntPtr.Zero)
         {
-            RedrawWindow(windowHandle, IntPtr.Zero, IntPtr.Zero, RDW_INVALIDATE | RDW_UPDATENOW | RDW_FRAME);
+            RedrawWindow(windowHandle, IntPtr.Zero, IntPtr.Zero, RDW_INVALIDATE | RDW_UPDATENOW);
             UpdateWindow(windowHandle);
         }
     }
+    #endregion
 
-    private void OnApplicationQuit()
+    #region Helper Methods
+    private Vector2 GetSmoothedMousePosition()
     {
-        // 應用退出時確保窗口正確釋放
-        if (windowHandle != IntPtr.Zero)
-        {
-            SetLayeredWindowAttributes(windowHandle, 0, 255, LWA_ALPHA);
-        }
+        if (!useMouseSmoothing)
+            return Input.mousePosition;
+
+        currentMousePosition = Input.mousePosition;
+        smoothedMousePosition = Vector2.Lerp(
+            smoothedMousePosition,
+            currentMousePosition,
+            (1f - mouseSmoothing) * Time.deltaTime * 60f
+        );
+
+        return smoothedMousePosition * mouseSensitivity;
     }
+
+    private bool CheckDragHandle(Vector2 mousePos)
+    {
+        if (dragHandle == null)
+            return true;
+
+        var ray = mainCamera.ScreenPointToRay(mousePos);
+        int hitCount = Physics2D.RaycastNonAlloc(ray.origin, ray.direction, raycastResults);
+
+        return hitCount > 0 && raycastResults[0].collider != null &&
+               raycastResults[0].collider.gameObject == dragHandle;
+    }
+
+    private uint ColorToUInt(Color color)
+    {
+        return (uint)(
+            ((int)(color.b * 255)) |
+            ((int)(color.g * 255) << 8) |
+            ((int)(color.r * 255) << 16)
+        );
+    }
+    #endregion
+
+#if UNITY_EDITOR
+    private void OnGUI()
+    {
+        GUILayout.Label($"FPS: {1.0f / Time.deltaTime:F1}");
+        GUILayout.Label($"Mouse Position: {Input.mousePosition}");
+        GUILayout.Label($"Smoothed Position: {smoothedMousePosition}");
+    }
+#endif
 }

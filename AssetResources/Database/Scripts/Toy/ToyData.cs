@@ -22,8 +22,13 @@ namespace GameCore.Database
         [SerializeField]
         private CompositeReference m_compositeReference;
 
+        [LabelText("玩具圖示")]
+        [SerializeField]
+        private Sprite m_toySprite;
+
         public string toyName => m_toyName;
         public string toyDescription => m_toyDescription;
+        public Sprite toySprite => m_toySprite;
         public ScenemapReference scenemapReference => m_scenemapReference;
         public CompositeReference compositeReference => m_compositeReference;
     }

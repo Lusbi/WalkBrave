@@ -23,12 +23,12 @@ public class PanelBase : UIViewBase
 
     public virtual void ActiveOn()
     {
-
+        
     }
 
     public virtual void ActiveOff()
     {
-
+        
     }
 
     public virtual void Tick (float deltaTime)

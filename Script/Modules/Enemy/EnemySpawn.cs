@@ -1,7 +1,10 @@
 using System;
+using Febucci.UI.Core;
 using GameCore;
 using GameCore.Database;
+using PrimeTween;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +15,7 @@ public class EnemySpawn : MonoBehaviour , IInitlization
     [SerializeField] private TextMeshProUGUI m_enemyHealthText; // 敵人血量數值
     [SerializeField] private TextMeshProUGUI m_enemyNameText; // 敵人名稱
     [SerializeField] private Image m_enemyHealthBar; // 敵人血條表現
-
+    [SerializeField] private RectTransform m_enemyRect;
     private Action m_dieActionCallBack;
     private int m_maxHitCount; // 最大血量
     private int m_curHitCount; // 當前血量
@@ -25,6 +28,7 @@ public class EnemySpawn : MonoBehaviour , IInitlization
         m_enemyNameText.text = "Enemy";
         m_enemyHealthBar.fillAmount = 1f; // 預設血條為滿
         m_dieActionCallBack = null;
+        m_enemyRect = m_enemyImage.GetComponent<RectTransform>();
     }
 
     public void ApplyDieAction(Action dieActionCallBack)
@@ -40,6 +44,7 @@ public class EnemySpawn : MonoBehaviour , IInitlization
     {
         // 取得敵人圖片
         m_enemyImage.sprite = roleData.EnemyIcon;
+        m_enemyImage.enabled = m_enemyImage.sprite != null;
         // 取得敵人名稱
         m_enemyNameText.text = roleData.RoleName;
 
@@ -47,6 +52,10 @@ public class EnemySpawn : MonoBehaviour , IInitlization
         m_curHitCount = roleData.HitCount;
         // 更新血條表現
         UpdateHealthBar(roleData.HitCount, roleData.HitCount);
+
+        float rotationY = roleData.DirectionType == DirectionType.Right ? 180f : 0f;
+        m_enemyRect.localEulerAngles = new Vector3(0, rotationY, 0); // 面向右邊
+        
     }
 
     /// <summary>
@@ -79,12 +88,43 @@ public class EnemySpawn : MonoBehaviour , IInitlization
 
     public void Hit()
     {
-        m_curHitCount -= GameProcess.Instance.hitRate * 1;
+        m_curHitCount = Mathf.Clamp( m_curHitCount - SettingsManager.instance.gameDefaultSetting.defaultClickDamage , 0 , int .MaxValue);
         UpdateHealthBar(m_curHitCount , m_maxHitCount);
 
         if (m_curHitCount <= 0)
         {
             m_dieActionCallBack?.Invoke();
         }
+        Shake();
+    }
+
+    public void EnemyDieAnimation(Action callBack)
+    {
+        TweenSettings tweenSettings = new()
+        {
+            duration = 0.3f,
+            cycleMode = CycleMode.Rewind,
+            ease = Ease.Default,
+        };
+        PrimeTween.Tween.Custom(1f, 0f, tweenSettings, (x) =>
+        {
+            m_enemyImage.fillAmount = x;
+            Shake();
+        }).OnComplete(() => { callBack?.Invoke(); });
+    }
+
+    private void Shake()
+    {
+        // 圖片震動(0.1秒)，使用 Tween
+        ShakeSettings shakeSettings = new()
+        {
+            // 建立簡易的震動效果
+            duration = 0.1f,
+            strength = UnityEngine.Random.insideUnitSphere * 5, // 震動強度
+            cycles = 1, // 震動次數
+            easeBetweenShakes = Ease.OutSine, // 震動過渡效果
+            frequency = 3,
+        };
+        PrimeTween.Tween.PunchLocalPosition(m_enemyRect, shakeSettings);
     }
 }

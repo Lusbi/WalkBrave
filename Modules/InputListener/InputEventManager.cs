@@ -18,26 +18,7 @@ public class InputEventManager : MonoSingleton<InputEventManager>
             {
                 NotifyKeyDown(keyCode);
             }
-
-            //if (Input.GetKeyUp(keyCode))
-            //{
-            //    NotifyKeyUp(keyCode);
-            //}
         }
-
-        // ºÊÅ¥·Æ¹«ÂIÀ»
-        //if (Input.GetMouseButtonDown(0)) // ¥ªÁä
-        //{
-        //    NotifyMouseClick(0, Input.mousePosition);
-        //}
-        //if (Input.GetMouseButtonDown(1)) // ¥kÁä
-        //{
-        //    NotifyMouseClick(1, Input.mousePosition);
-        //}
-        //if (Input.GetMouseButtonDown(2)) // ¤¤Áä
-        //{
-        //    NotifyMouseClick(2, Input.mousePosition);
-        //}
     }
 
     // µù¥U¦¨­û

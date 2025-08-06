@@ -8,7 +8,6 @@ public class GameProcess : MonoBehaviour
 {
     public static GameProcess Instance { get; private set; }
     public bool ForceNewGame = true;
-    public int hitRate;
 
     private void OnApplicationQuit()
     {
@@ -26,6 +25,7 @@ public class GameProcess : MonoBehaviour
         GameCore.Database.DatabaseManager.instance.Initialize(
             ()=>LocalizationManager.instance.Initlization(
                 () => Setup()));
+
     }
 
     /// <summary>
@@ -33,6 +33,7 @@ public class GameProcess : MonoBehaviour
     /// </summary>
     private void Setup()
     {
+        SettingsManager.instance.Initlization();
         UIManager.instance.Initlization(ChangeToTitle);
 
         if (ForceNewGame == false)
