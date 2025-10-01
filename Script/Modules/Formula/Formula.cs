@@ -19,7 +19,7 @@ public static class Formula
     }
 
     /// <summary>
-    /// 傷害公式： 基本傷害+(累計擊殺加成)^(累計蕃茄鐘加成) 
+    /// 阨`G 禰辣阨`+(眴p[)^(眴pX[)
     /// </summary>
     /// <returns></returns>
     public static BigNumber GetDefaultDamageValue()
@@ -29,7 +29,7 @@ public static class Formula
         BigNumber bigNumber = new BigNumber();
         bigNumber = gameDefaultSetting.defaultClickDamage;
         BigNumber killBonus = 0;
-        int tomatoBonus = 0;
+        float tomatoBonus = 0f;
         IReadOnlyList<EnemyStorageData> enemyStorageDatas = StorageManager.instance.StorageData.GetEnemyStorageDatas();
         foreach (var data in enemyStorageDatas)
         {
@@ -47,7 +47,10 @@ public static class Formula
             }
         }
 
-        eLog.Log($"當前傷害：{bigNumber} + ({killBonus} * (1 +{ tomatoBonus})) = {(bigNumber + (killBonus * (1 + tomatoBonus)))}");
-        return bigNumber + (killBonus * (1+tomatoBonus));
+        BigNumber totalTomatoBonus = tomatoBonus;
+        BigNumber bonusValue = BigNumber.Pow(killBonus, totalTomatoBonus);
+
+        eLog.Log($"e阨`G{bigNumber} + ({killBonus} ^ {totalTomatoBonus}) = {bigNumber + bonusValue}");
+        return bigNumber + bonusValue;
     }
 }
