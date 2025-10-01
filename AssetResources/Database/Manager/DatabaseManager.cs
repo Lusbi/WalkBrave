@@ -27,14 +27,11 @@ namespace GameCore.Database
             }
 
             m_initializing = true;
-            m_initializingDatabaseCount = 6;
+            m_initializingDatabaseCount = 3;
 
             Database<FlagData>.Initialize(OnDatabaseInitialized);
             Database<ScenemapData>.Initialize(OnDatabaseInitialized);
             Database<RoleData>.Initialize(OnDatabaseInitialized);
-            Database<CompositeData>.Initialize(OnDatabaseInitialized);
-            Database<ToyData>.Initialize(OnDatabaseInitialized);
-            Database<ItemData>.Initialize(OnDatabaseInitialized);
 
             //// Use reflection to find all classes inheriting from GameCore.Data
             //var dataTypes = AppDomain.CurrentDomain.GetAssemblies()

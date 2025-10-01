@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+using BigMath;
 using GameCore.Database;
 
 [System.Serializable]
@@ -8,8 +11,6 @@ public class StorageData
     private BattleStorageData m_battleStorageData = new BattleStorageData(string.Empty, 0);
     private List<FlagStorageData> m_flagStorageDatas = new List<FlagStorageData>();
     private List<EnemyStorageData> m_enemyStorageDatas = new List<EnemyStorageData>();
-    private List<ToyStorageData> m_toyStorageDatas = new List<ToyStorageData>();
-    private List<ItemStorageData> m_itemStorageDatas = new List<ItemStorageData>();
 
     // Property to get the current scene map
     public string CurrentSceneMap => m_currentSceneMap;
@@ -62,13 +63,25 @@ public class StorageData
         return new List<EnemyStorageData>(m_enemyStorageDatas);
     }
 
-    public void AddEnemyKillCount(string enemyKey)
+    public EnemyStorageData GetEnemyStorageData(string enemyKey)
     {
         foreach (var data in m_enemyStorageDatas)
         {
             if (data.EnemyKey == enemyKey)
             {
-                data.SetKillValue(data.KillValue + 1);
+                return data;
+            }
+        }
+        return null; // Default value if not found
+    }
+
+    public void AddEnemyKillCount(string enemyKey , bool tomatoModel = false)
+    {
+        foreach (var data in m_enemyStorageDatas)
+        {
+            if (data.EnemyKey == enemyKey)
+            {
+                data.SetKillValue(data.KillValue + 1 , tomatoModel);
                 return;
             }
         }
@@ -91,69 +104,9 @@ public class StorageData
         killCount = 0; // Default value if not found
     }
 
-    // API for ToyStorageData
-    public List<ToyStorageData> GetToyStorageDatas()
+    public void ApplyLastBattleStorageData(string enemyKey , BigInteger remainHit)
     {
-        return new List<ToyStorageData>(m_toyStorageDatas);
-    }
-    public ToyStorageData GetToyStorageData(string toyKey)
-    {
-        foreach (var data in m_toyStorageDatas)
-        {
-            if (data.ToyKey == toyKey)
-            {
-                return data;
-            }
-        }
-        return null; // Return null if not found
-    }
-    public void AddToyCount(string toyKey)
-    {
-        foreach (var data in m_toyStorageDatas)
-        {
-            if (data.ToyKey == toyKey)
-            {
-                data.SetUseableValue(data.UseableValue + 1);
-                return;
-            }
-        }
-        if (Database<ToyData>.Exists(toyKey) == false)
-            return;
-        // If not found, add a new entry
-        m_toyStorageDatas.Add(new ToyStorageData(toyKey, 1));
-    }
-    // API for ItemStorageData
-    public List<ItemStorageData> GetItemStorageDatas()
-    {
-        return new List<ItemStorageData>(m_itemStorageDatas);
-    }
-
-    public ItemStorageData GetItemStorageData(string itemKey)
-    {
-        foreach (var data in m_itemStorageDatas)
-        {
-            if (data.ItemKey == itemKey)
-            {
-                return data;
-            }
-        }
-        return null; // Return null if not found
-    }
-
-    public void ModifyItemCount(string itemKey, int count)
-    {
-        foreach (var data in m_itemStorageDatas)
-        {
-            if (data.ItemKey == itemKey)
-            {
-                data.SetItemValue(data.ItemValue + count);
-                return;
-            }
-        }
-        if (Database<ItemData>.Exists(itemKey) == false)
-            return;
-        // If not found, add a new entry
-        m_itemStorageDatas.Add(new ItemStorageData(itemKey, count));
+        m_battleStorageData = new BattleStorageData(enemyKey, remainHit);
     }
 }
 
@@ -182,17 +135,30 @@ public class EnemyStorageData
 {
     private string m_enemyKey;
     private int m_killValue;
+    private bool m_silverClear;
+    private bool m_goldenClear;
 
     public string EnemyKey => m_enemyKey;
     public int KillValue => m_killValue;
+    public bool silverClear => m_silverClear;
+    public bool goldenClear => m_goldenClear;
     public EnemyStorageData(string enemyKey, int killValue)
     {
         m_enemyKey = enemyKey;
-        m_killValue = killValue;
+        SetKillValue(killValue, false);
     }
-    public void SetKillValue(int killValue)
+    public void SetKillValue(int killValue , bool tomatoModel)
     {
         m_killValue = killValue;
+
+        if (m_killValue > 0)
+        {
+            if (tomatoModel)
+            {
+                m_goldenClear = true;
+            }
+            m_silverClear = true;
+        }
     }
 }
 
@@ -238,11 +204,11 @@ public class ItemStorageData
 public class BattleStorageData
 {
     private string m_enemyKey;
-    private int m_remainHit;
+    private BigNumber m_remainHit;
 
     public string EnemyKey => m_enemyKey;
-    public int RemainHit => m_remainHit;
-    public BattleStorageData(string enemyKey, int remainHit)
+    public BigNumber RemainHit => m_remainHit;
+    public BattleStorageData(string enemyKey, BigNumber remainHit)
     {
         m_enemyKey = enemyKey;
         m_remainHit = remainHit;

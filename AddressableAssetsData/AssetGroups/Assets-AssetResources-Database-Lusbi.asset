@@ -15,18 +15,8 @@ MonoBehaviour:
   m_GroupName: Assets-AssetResources-Database-Lusbi
   m_GUID: 2d77396523b9bce4d86821653c21eee8
   m_SerializeEntries:
-  - m_GUID: 4c3c4651cde93ab478431c6b99a1656e
-    m_Address: ItemRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 619529ea518dd3848b9c5942ff6a75ba
     m_Address: RoleRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a0cbebd6801434c4eb37dec3276d62be
-    m_Address: ToyRepository
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -37,11 +27,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e41802ada6591d64f8c280c83cb2cdb0
     m_Address: ScenemapRepository
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e9c65e5bf5dcc55469102caa8517cb08
-    m_Address: CompositeRepository
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

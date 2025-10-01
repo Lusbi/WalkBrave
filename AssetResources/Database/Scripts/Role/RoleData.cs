@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Numerics;
+using BigMath;
 using GameCore.Log;
 using Sirenix.OdinInspector;
 using UnityEditor;
@@ -9,6 +11,8 @@ namespace GameCore.Database
     [Serializable]
     public class RoleData : Data
     {
+        [SerializeField]
+        private int m_roleSortId = 0;
         [HideInInspector]
         [SerializeField]
         private string m_roleName = string.Empty;
@@ -21,12 +25,9 @@ namespace GameCore.Database
         [LabelText("場景參考")]
         [SerializeField]
         private ScenemapReference m_sceneReference;
-        [LabelText("掉落資訊")]
-        [SerializeField]
-        private DropInfo m_dropInfo;
         [LabelText("命中次數")]
         [SerializeField]
-        private int m_hitCount = 0;
+        private string m_hitCount = "0";
         [LabelText("敵人小圖示")]
         [SerializeField]
         private Sprite m_enemyIcon;
@@ -39,6 +40,13 @@ namespace GameCore.Database
         [LabelText("擊殺後增加旗標")]
         [SerializeField]
         private FlagReference m_killToAddFlagReference;
+        [LabelText("擊殺增加傷害")]
+        [SerializeField]
+        private int m_killBonus = 1;
+
+        [LabelText("蕃茄鐘擊殺增加傷害")]
+        [SerializeField]
+        private int m_tomatoBouns = 1;
 
         [LabelText("死亡後觸發事件類型")]
         [SerializeField]
@@ -52,18 +60,19 @@ namespace GameCore.Database
         [SerializeField]
         private string m_roleIconkey;
 
+        public int roleSortId => m_roleSortId;
         public string RoleName => m_roleName;
         public string RoleDescription => m_roleDescription;
         public string EnemyType => m_enemyType;
         public ScenemapReference SceneReference => m_sceneReference;
-        public DropInfo DropInfo => m_dropInfo;
-        public int HitCount => m_hitCount;
+        public BigNumber HitCount => new BigNumber(BigInteger.Parse(m_hitCount));
         public DirectionType DirectionType => m_directionType;
 
         public FlagReference[] FlagReferenceConditions => m_flagReferenceConditions;
         public FlagReference KillToAddFlagReference => m_killToAddFlagReference;
         public Sprite EnemyIcon => m_enemyIcon;
-
+        public int KillBonus => m_killBonus;
+        public int TomatoBonus => m_tomatoBouns;
         public bool ValidateFlagReferenceConditions()
         {
             if (m_flagReferenceConditions == null || m_flagReferenceConditions.Length == 0)
@@ -104,7 +113,7 @@ namespace GameCore.Database
 
         public override string GetLog()
         {
-            return $"{base.GetLog()}, roleName = {m_roleName}, roleDescription = {m_roleDescription}, enemyType = {m_enemyType}, sceneReference = {m_sceneReference}, dropInfo = {m_dropInfo}, hitCount = {m_hitCount}";
+            return $"{base.GetLog()}, roleName = {m_roleName}, roleDescription = {m_roleDescription}, enemyType = {m_enemyType}, sceneReference = {m_sceneReference}, hitCount = {m_hitCount}";
         }
 #endif
     }

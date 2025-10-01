@@ -1,5 +1,4 @@
 using System;
-using GameCore.Log;
 using UnityEngine;
 
 public class BattleManager : GameCore.Singleton<BattleManager>

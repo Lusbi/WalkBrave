@@ -6,11 +6,11 @@ public class SettingsManager : Singleton<SettingsManager>, IInitlization
 {
     private const string SETTING_ADDRESSABLE_KEY = "GameDefaultSetting";
 
-    public GameDefaultSetting gameDefaultSetting { get; private set; }
+    public GameDefaultSetting setting { get; private set; }
 
     public void Initlization(Action callBack = null)
     {
         CoreResoucesService.LoadAssetAsync<GameDefaultSetting>(SETTING_ADDRESSABLE_KEY,
-            (setting) => gameDefaultSetting = setting);
+            (setting) => this.setting = setting);
     }
 }

@@ -1,29 +1,41 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using GameCore.Database;
+using GameCore.Event;
 using GameCore.Log;
 using UnityEngine;
 using UnityEngine.UI;
+using GameCore.Utils;
+using NUnit.Framework;
+using Cinemachine;
+using TreeEditor;
+using BigMath;
 
 public class BattlePanel : PanelBase
 {
     private const string ANI_ENEMYSPAWN = "SpawnEnemyAnim";
-    private const string ANI_DROPITEM = "DropItemAnim";
-
-    [SerializeField] private RectTransform m_petParent;
 
     [SerializeField] private RectTransform m_enemyParent;
 
     [SerializeField] private Image m_bgImage;
 
-    [SerializeField] private EnemySpawn m_enemySpawn;
-
-    [SerializeField] private DropItem m_dropItem;
+    [SerializeField] private RoleSpawnHUD m_enemySpawn;
 
     [SerializeField] private Animation m_ani;
+
+    [SerializeField] private TomatoButton m_tomatoBtn;
+
+    [SerializeField] private HitPanel m_hitPanel;
+
+    private Cinemachine.CinemachineVirtualCamera m_cinemachineVirtualCamera;
+
+    private TomatoManager m_tomatoManager;
+    private CinemachineBasicMultiChannelPerlin m_perlin;
+
+    private EventListener m_eventListener;
     private RoleData m_curBattleRole;
     private bool m_isAlive = false;
+    private int m_tomatoHitStack = 0; // 蕃茄鐘期間累積的傷害次數
+    private BigNumber m_curHitValue = 0;  // 當前點擊傷害
     public override void Initlization(Action callBack = null)
     {
         base.Initlization(callBack);
@@ -33,6 +45,79 @@ public class BattlePanel : PanelBase
             m_enemySpawn.Initlization();
             m_enemySpawn.ApplyDieAction(DieAction);
         }
+
+        if (m_eventListener == null)
+        {
+            m_eventListener = new EventListener();
+            m_eventListener.active = true;
+            m_eventListener.AddListener<SetBattleRoleEvent>(OnSetBattleRoleEvent, true);
+            m_eventListener.AddListener<TomatoTriggerEvent>(OnTomatoTriggerEvent, true);
+        }
+
+        if (m_tomatoBtn)
+            m_tomatoBtn.Initlization();
+
+        m_tomatoManager ??= TomatoManager.instance;
+
+        if (m_hitPanel)
+            m_hitPanel.Initlization();
+    }
+
+    /// <summary>
+    /// 更新擊打數值
+    /// 重選角色時更新
+    /// </summary>
+    private void HitValueUpdate()
+    {
+        m_curHitValue = Formula.GetDefaultDamageValue();
+        // Debug Bouns
+        m_curHitValue *= SettingsManager.instance.setting.debugDamageRate;
+    }
+
+    private void OnTomatoTriggerEvent(TomatoTriggerEvent eventData)
+    {
+        if (m_tomatoBtn)
+            m_tomatoBtn.SetTrigger(eventData.enable);
+
+        if (eventData.enable)
+        {
+            if (Database<RoleData>.TryLoad(StorageManager.instance.StorageData.BattleStorageData.EnemyKey, out var roleData))
+                m_tomatoManager.Apply(roleData);
+        }
+        else
+        {
+            m_tomatoManager.Apply(null);
+
+            BigNumber value = 0;
+            for (int i = 0; i < m_tomatoHitStack; i++)
+            {
+                value += m_curHitValue;
+            }
+
+            if (m_enemySpawn)
+                m_enemySpawn.Hit(value , true);
+
+            PlayHit(value.ToString());
+        }
+        m_tomatoHitStack = 0;
+    }
+
+    private void OnSetBattleRoleEvent(SetBattleRoleEvent eventData)
+    {
+        if (Database<RoleData>.TryLoad(eventData.roleKey, out var data))
+        {
+            eLog.Log($"設定當前最後戰鬥角色資料：{data.key} ，剩餘次數：{data.HitCount}");
+            StorageManager.instance.StorageData.ApplyLastBattleStorageData(data.key, data.HitCount);
+            HitValueUpdate();
+            m_curBattleRole = data;
+            m_enemySpawn.LoadRoleData(data);
+            UpdateSceneBackground(data.SceneReference.Load());
+        }
+    }
+
+    private void UpdateSceneBackground(ScenemapData scenemapData)
+    {
+        m_bgImage.SetImage(scenemapData.ImgBgReference).AutoEnable();
     }
 
     public override void ActiveOn()
@@ -46,11 +131,14 @@ public class BattlePanel : PanelBase
         }
         else
         {
+            SettingsManager.instance.setting.defaultEnemyReference.TryLoad(out m_curBattleRole);
+            if (m_curBattleRole == null)
+            {
+                eLog.Error("未設定預設戰鬥角色，請重新檢查設定檔。");
+                return;
+            }
             CreateBattleEnemy();
         }
-
-        uiGameMainView.desktopPetController.SetParent(m_petParent);
-        uiGameMainView.desktopPetController.ChangeState(PetState.Battle);
 
         BattleManager.instance.Register(Hit);
     }
@@ -60,70 +148,26 @@ public class BattlePanel : PanelBase
         BattleManager.instance.Register(null);
     }
 
-    // 依最後場景載入敵人資料
-    // 確認可出場敵人
-    // 生成對應敵人
+    // 重新指定生成敵人
     private void CreateBattleEnemy()
     {
-        string curSceneMapKey = StorageManager.instance.StorageData?.CurrentSceneMap;
-        if (string.IsNullOrEmpty(curSceneMapKey) || Database<ScenemapData>.Exists(curSceneMapKey) == false)
-        {
-            // 載入預設場景資料…
-            curSceneMapKey = SettingsManager.instance.gameDefaultSetting.defaultScenemapReference.GetKey();
-        }
-
-        if (Database<ScenemapData>.TryLoad(curSceneMapKey, out ScenemapData scenemapData))
-        {
-            m_bgImage.sprite = scenemapData.ImgBgReference;
-            m_bgImage.enabled = m_bgImage.sprite != null;
-
-            // 取出合法的項目
-            IReadOnlyList <RoleData> validRoleDatas = scenemapData.enemies
-                .Where(data => data.ValidateFlagReferenceConditions())
-                .ToList();
-
-            // 進一步處理 validRoleDatas
-            int RandomValue = UnityEngine.Random.Range(0, validRoleDatas.Count);
-            m_curBattleRole = validRoleDatas[RandomValue];
-            m_enemySpawn.LoadRoleData(m_curBattleRole);
-        }
-
+        uiGameMainView.ApplyRoleRect();
+        OnSetBattleRoleEvent(new SetBattleRoleEvent(m_curBattleRole.key));
         PlayAnimation(ANI_ENEMYSPAWN, () => m_isAlive = true);
     }
 
-    private void DieAction()
+    private void DieAction(bool isTomatoModel = false)
     {
         m_isAlive = false;
         // 更新角色死亡次數
-        StorageManager.instance.StorageData.AddEnemyKillCount(m_curBattleRole.key);
+        StorageManager.instance.StorageData.AddEnemyKillCount(m_curBattleRole.key , isTomatoModel);
         // 更新旗標
         if (m_curBattleRole.KillToAddFlagReference != null)
         {
             StorageManager.instance.StorageData.AddFlagStorageValue(m_curBattleRole.KillToAddFlagReference?.GetKey());
         }
-        // 機率獲得道具
-        float dropRate = m_curBattleRole.DropInfo.dropRate;
-        float dropBonus = m_curBattleRole.DropInfo.dropBonus;
-        StorageManager.instance.StorageData.GetEnemyKillCount(m_curBattleRole.key, out var enemyKillValue);
-        float finalDropRate = Mathf.Clamp(dropRate + (dropBonus * enemyKillValue), 0, 100);
-        if (UnityEngine.Random.Range(0, 100) <= finalDropRate)
-        {
-            string itemKey = m_curBattleRole.DropInfo.itemReference.GetKey();
-            m_dropItem.SetItemKey(itemKey);
-            // 獲得道具
-            StorageManager.instance.StorageData.ModifyItemCount(itemKey, 1);
-            eLog.Log($"獲得道具: {m_curBattleRole.DropInfo.itemReference.GetKey()}");
-            EnemyDieAnimation(
-                () =>
-                {
-                    PlayAnimation(ANI_DROPITEM, CreateBattleEnemy);
-                }
-            );
-        }
-        else
-        {
-            EnemyDieAnimation(CreateBattleEnemy);
-        }
+
+        EnemyDieAnimation(CreateBattleEnemy);
     }
 
     public void Hit(string hit)
@@ -134,8 +178,21 @@ public class BattlePanel : PanelBase
         if (m_isAlive == false)
             return;
 
+        if (m_tomatoManager.isTomatoTime)
+        {
+            // 儲蓄能量
+            m_tomatoHitStack ++;
+            PlayHit("?");
+            // 需要一個儲蓄能量的表現
+            return;
+        }
+
         if (m_enemySpawn)
-            m_enemySpawn.Hit();
+        {
+            m_enemySpawn.Hit(m_curHitValue);
+            //PlayHit(UnityEngine.Random.Range(1,10).ToString());
+            PlayHit(m_curHitValue.ToString());
+        }
     }
 
     private void EnemyDieAnimation(Action callBack = null)
@@ -151,5 +208,23 @@ public class BattlePanel : PanelBase
         {
             callBack?.Invoke();
         });
+    }
+
+    public override void Tick(float deltaTime)
+    {
+        if (m_tomatoBtn)
+            m_tomatoBtn.ApplyTomatoTime();
+    }
+
+    /// <summary>
+    /// 播放傷害來源是否為 TomatoTime
+    /// </summary>
+    /// <param name="hitValue"></param>
+    /// <param name="isFromTomatoTime"></param>
+    public void PlayHit(string hitValue)
+    {
+        if (m_hitPanel)
+            m_hitPanel.PlayHit(hitValue);
+
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CommandBase : MonoBehaviour , ICommand
 {
-    public virtual CommandType CommandType => CommandType.Main;
+    public virtual CommandType CommandType => CommandType.Battle;
     public virtual void Execute()
     {
         Debug.Log("Executing Base Command");

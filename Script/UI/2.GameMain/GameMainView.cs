@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class GameMainView : UIViewBase
 {
-    [SerializeField] private DesktopPetController m_petController;
-    [SerializeField] private CommandBase[] m_commands;
-
-    [SerializeField] private HomePanel m_homePanel;
     [SerializeField] private BattlePanel m_battlePanel;
-    [SerializeField] private BookPanel m_bookPanel;
-    [SerializeField] private StagePanel m_stagePanel;
-    [SerializeField] private ToyPanel m_toyPanel;
+    [SerializeField] private RoleScrollRect m_roleScrollRect;
 
     private PanelBase m_curPanel;
 
@@ -24,37 +18,16 @@ public class GameMainView : UIViewBase
 
         if (m_battlePanel == null)
             m_battlePanel = GetComponentInChildren<BattlePanel>();
-        if (m_commands == null || m_commands.Length == 0)
-            m_commands = GetComponentsInChildren<CommandBase>(true);
-        if (m_homePanel == null)
-            m_homePanel = GetComponentInChildren<HomePanel>();
-        if (m_stagePanel == null)
-            m_stagePanel = GetComponentInChildren<StagePanel>();
-        if (m_bookPanel == null)
-            m_bookPanel = GetComponentInChildren<BookPanel>();
-        if (m_toyPanel == null)
-            m_toyPanel = GetComponentInChildren<ToyPanel>();
     }
 #endif
 
-    public DesktopPetController desktopPetController => m_petController;
 
     public override void Initlization(Action callBack = null)
     {
         base.Initlization(callBack);
 
-        m_homePanel.Initlization();
-        m_homePanel.Apply(this);
         m_battlePanel.Initlization();
         m_battlePanel.Apply(this);
-        m_stagePanel.Initlization();
-        m_stagePanel.Apply(this);
-        m_bookPanel.Initlization();
-        m_bookPanel.Apply(this);
-        m_toyPanel.Initlization();
-        m_toyPanel.Apply(this);
-        foreach (var cmd in m_commands)
-            cmd.Apply(this);
 
     }
     public override void Active(bool isActive)
@@ -62,39 +35,21 @@ public class GameMainView : UIViewBase
         base.Active(isActive);
 
         if (isActive)
-            ActionCommand(CommandType.Home);
+        {
+            ActionCommand(CommandType.Battle);
+
+        }
     }
 
     internal void ActionCommand(CommandType commandType)
     {
         switch (commandType)
         {
-            case CommandType.Home:
-                Debug.Log("Home Command Executed");
-                m_curPanel?.Active(false);
-                m_homePanel.Active(true);
-                m_curPanel = m_homePanel;
-                break;
             case CommandType.Battle:
                 Debug.Log("Battle Command Executed");
                 m_curPanel?.Active(false);
                 m_battlePanel.Active(true);
                 m_curPanel = m_battlePanel;
-                break;
-            case CommandType.Stage:
-                Debug.Log("Stage Command Executed");
-                m_stagePanel.Active(true);
-                break;
-            case CommandType.Toy:
-                Debug.Log("Toy Command Executed");
-                m_toyPanel.Active(true);
-                break;
-            case CommandType.Book:
-                Debug.Log("Book Command Executed");
-                m_bookPanel.Active(true);
-                break;
-            case CommandType.Setting:
-                Debug.Log("Setting Command Executed");
                 break;
             default:
                 Debug.Log("Unknown Command Executed");
@@ -104,7 +59,12 @@ public class GameMainView : UIViewBase
 
     private void Update()
     {
-        if (m_curPanel is HomePanel panel)
-            panel.Tick(Time.deltaTime);
+        if (m_battlePanel)
+            m_battlePanel.Tick(Time.deltaTime);
+    }
+
+    public void ApplyRoleRect()
+    {
+        m_roleScrollRect.ListUpdate();
     }
 }

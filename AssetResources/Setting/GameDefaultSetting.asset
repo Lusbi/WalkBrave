@@ -16,4 +16,8 @@ MonoBehaviour:
     m_key: "\u5192\u96AA\u5165\u53E3"
     m_queryText: 
     m_selectedTitle: "\u5192\u96AA\u5165\u53E3: "
-  defaultClickDamage: 5
+  defaultClickDamage: 1
+  defaultEnemyReference:
+    m_key: "\u7D19\u7BB1"
+    m_queryText: 
+    m_selectedTitle: "\u7D19\u7BB1: "

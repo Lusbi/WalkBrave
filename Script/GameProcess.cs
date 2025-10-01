@@ -1,3 +1,4 @@
+using GameCore.Event;
 using GameCore.UI;
 using UnityEngine;
 
@@ -25,7 +26,6 @@ public class GameProcess : MonoBehaviour
         GameCore.Database.DatabaseManager.instance.Initialize(
             ()=>LocalizationManager.instance.Initlization(
                 () => Setup()));
-
     }
 
     /// <summary>
@@ -34,6 +34,7 @@ public class GameProcess : MonoBehaviour
     private void Setup()
     {
         SettingsManager.instance.Initlization();
+        TomatoManager.instance.Initlization();
         UIManager.instance.Initlization(ChangeToTitle);
 
         if (ForceNewGame == false)

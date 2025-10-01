@@ -19,9 +19,9 @@ namespace Febucci.UI
     /// <summary>
     /// The main TextAnimator component. Add this near to a TextMeshPro component in order to enable effects. It can also be used in combination with a TextAnimatorPlayer in order to display letters dynamically (like a typewriter).<br/>
     /// - See also: <seealso cref="TextAnimatorPlayer"/><br/>
-    /// - Manual: <see href="https://www.febucci.com/text-animator-unity/docs/how-to-add-effects-to-your-texts/">How to add effects to your texts</see><br/>
+    /// - Manual: <see href="https://www.febucci.com/text-animator-unity/docs/1.X/how-to-add-effects-to-your-texts/">How to add effects to your texts</see><br/>
     /// </summary>
-    [HelpURL("https://www.febucci.com/text-animator-unity/docs/how-to-add-effects-to-your-texts/")]
+    [HelpURL("https://www.febucci.com/text-animator-unity/docs/1.X/how-to-add-effects-to-your-texts/")]
     [AddComponentMenu("Febucci/TextAnimator/TextAnimator")]
     [RequireComponent(typeof(TMP_Text)), DisallowMultipleComponent]
     public class TextAnimator : MonoBehaviour
