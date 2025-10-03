@@ -60,6 +60,10 @@ namespace GameCore.Database
         [SerializeField]
         private string m_roleIconkey;
 
+        [LabelText("對話資料")]
+        [SerializeField]
+        private TalkScriptableObject m_talkScriptableObject; // 指定角色可使用的對話 ScriptableObject
+
         public int roleSortId => m_roleSortId;
         public string RoleName => m_roleName;
         public string RoleDescription => m_roleDescription;
@@ -73,6 +77,7 @@ namespace GameCore.Database
         public Sprite EnemyIcon => m_enemyIcon;
         public int KillBonus => m_killBonus;
         public int TomatoBonus => m_tomatoBouns;
+        public TalkScriptableObject TalkScriptableObject => m_talkScriptableObject; // 讓外部取得對話 ScriptableObject 以便顯示對話
         public bool ValidateFlagReferenceConditions()
         {
             if (m_flagReferenceConditions == null || m_flagReferenceConditions.Length == 0)
