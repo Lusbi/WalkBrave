@@ -7,7 +7,7 @@ using GameCore.Database.Editor;
 using UnityEditor;
 using UnityEngine;
 
-internal static class TalkScriptableObjectSheetImporter
+public static class TalkScriptableObjectSheetImporter
 {
     private static readonly string[] s_headerKeywords =
     {

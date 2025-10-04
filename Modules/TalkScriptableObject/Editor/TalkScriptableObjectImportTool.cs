@@ -1,3 +1,4 @@
+using GameCore.Database;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

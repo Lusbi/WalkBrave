@@ -40,6 +40,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0502
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-8572075138140381688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +81,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0103
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-8470744692071837744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +122,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0105
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-8464233040534860180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +163,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0805
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-8236365160055707037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +204,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0901
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-8023240887506441675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +245,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0304
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-7811345282933128439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +286,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0911
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-7716545042429061199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +327,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0102
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-7464797187756750964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +368,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0204
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-7387906493409244034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +409,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0404
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-7281009289561792791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +450,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0302
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-6445032715040759049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +491,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0203
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-6033574214875861240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +532,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0902
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-5882992432556577393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +573,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0402
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-5779342695947175185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,6 +614,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0202
+  m_talkScriptableObject: {fileID: 11400000, guid: cb15f281a67842d4f9013cefcece5f1d, type: 2}
 --- !u!114 &-5672889247780724166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +655,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0611
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4915889791935783199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,6 +696,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0603
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4807500708305071959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +737,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0301
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4803783542002423321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +778,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0701
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4260487337147235364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +819,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0101
+  m_talkScriptableObject: {fileID: 11400000, guid: cb15f281a67842d4f9013cefcece5f1d, type: 2}
 --- !u!114 &-4130069585008667241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,6 +860,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0604
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4083128337814233445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,6 +901,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0401
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-4032599264716717802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +942,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0411
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-3934072804122521430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,6 +983,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0601
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-3099290712714048522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,6 +1024,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0605
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2964233767393923160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,6 +1065,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0704
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2749729636265525871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,6 +1106,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0811
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2582028980247346222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,6 +1147,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0303
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2322246862927793568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,6 +1188,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0903
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2282728046106140920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,6 +1229,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0104
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-2192268727118871612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,6 +1270,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0905
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-1834405293160709448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1280,6 +1311,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0205
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-1601447254415154018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1352,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0501
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-839381378524103733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,6 +1393,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0511
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-344818632175126153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,6 +1434,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0305
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-42529864505115276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,6 +1475,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0311
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &-9454202061368611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1516,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_1012
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1634,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0802
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &209611234249782339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,6 +1675,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_1013
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &358876552186429477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,6 +1716,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0801
+  m_talkScriptableObject: {fileID: 11400000, guid: b5ba8b1d1d4293f4b92f0b531f0b2dbe, type: 2}
 --- !u!114 &768279517145388459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,6 +1757,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0505
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &2029169840254307350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,6 +1798,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0211
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &2802172165901217668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1794,6 +1836,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0001
+  m_talkScriptableObject: {fileID: 11400000, guid: b5ba8b1d1d4293f4b92f0b531f0b2dbe, type: 2}
 --- !u!114 &2802941207026632634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,6 +1877,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0201
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &3075256532581512014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,6 +1918,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_1011
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &3474280909880729771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,6 +1959,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0403
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &4066205625334357814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,6 +2000,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0804
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &4414193167586752712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,6 +2041,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0803
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &4690096294232761914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,6 +2082,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0503
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &5073014329320146125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2074,6 +2123,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0111
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &5604162068840273191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,6 +2164,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0904
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &6226339734261269760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,6 +2205,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0602
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &6725464781359861601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2194,6 +2246,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0405
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &7895950442299010232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2234,6 +2287,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0504
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &7908589988331048803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2274,6 +2328,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0711
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &8160939513442045490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2314,6 +2369,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0703
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &8214006055210634301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2354,6 +2410,7 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0702
+  m_talkScriptableObject: {fileID: 0}
 --- !u!114 &8692105084915671564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2394,3 +2451,4 @@ MonoBehaviour:
   m_changeStyleKey: 
   m_dramaKey: 
   m_roleIconkey: Mob_0705
+  m_talkScriptableObject: {fileID: 0}
