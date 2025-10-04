@@ -49,9 +49,7 @@ internal static class TalkScriptableObjectEditorUtility
 
     internal static TalkScriptableObject GetOrCreateTalkAssetByName(string assetName)
     {
-        string folder = EnsureFolder();
-        string fileName = assetName.EndsWith(".asset", StringComparison.OrdinalIgnoreCase) ? assetName : assetName + ".asset";
-        string assetPath = Path.Combine(folder, fileName).Replace("\\", "/");
+        string assetPath = BuildAssetPath(assetName);
         var talkAsset = AssetDatabase.LoadAssetAtPath<TalkScriptableObject>(assetPath);
         if (talkAsset == null)
         {
@@ -60,6 +58,12 @@ internal static class TalkScriptableObjectEditorUtility
         }
 
         return talkAsset;
+    }
+
+    internal static TalkScriptableObject LoadTalkAssetByName(string assetName)
+    {
+        string assetPath = BuildAssetPath(assetName);
+        return AssetDatabase.LoadAssetAtPath<TalkScriptableObject>(assetPath);
     }
 
     internal static void ApplyEntries(TalkScriptableObject asset, IReadOnlyList<TalkScriptableObjectName> entries)
@@ -179,6 +183,13 @@ internal static class TalkScriptableObjectEditorUtility
         }
 
         return -1;
+    }
+
+    private static string BuildAssetPath(string assetName)
+    {
+        string folder = EnsureFolder();
+        string fileName = assetName.EndsWith(".asset", StringComparison.OrdinalIgnoreCase) ? assetName : assetName + ".asset";
+        return Path.Combine(folder, fileName).Replace("\\", "/");
     }
 }
 #endif
