@@ -84,45 +84,7 @@ internal static class TalkScriptableObjectEditorUtility
             return -1;
         }
 
-        var serializedObject = new SerializedObject(role);
-        string[] propertyNames =
-        {
-            "m_id",
-            "m_ID",
-            "m_dataID",
-            "m_dataId",
-            "m_Id",
-            "id",
-            "ID",
-            "dataID",
-            "dataId",
-            "m_comment"
-        };
-
-        foreach (string propertyName in propertyNames)
-        {
-            SerializedProperty property = serializedObject.FindProperty(propertyName);
-            if (property == null)
-            {
-                continue;
-            }
-
-            switch (property.propertyType)
-            {
-                case SerializedPropertyType.Integer:
-                    return property.intValue;
-                case SerializedPropertyType.String:
-                    if (int.TryParse(property.stringValue, NumberStyles.Integer, CultureInfo.InvariantCulture, out int parsed))
-                    {
-                        return parsed;
-                    }
-                    break;
-                case SerializedPropertyType.Float:
-                    return Mathf.RoundToInt(property.floatValue);
-            }
-        }
-
-        return -1;
+        return role.roleSortId;
     }
 
     internal static bool TryAssignToRole(TalkScriptableObject talkAsset, string assetName, IDictionary<int, RoleData> roleLookup = null)
