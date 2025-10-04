@@ -60,6 +60,9 @@ namespace GameCore.Database
         [SerializeField]
         private string m_roleIconkey;
 
+        [SerializeField]
+        private TalkScriptableObject m_talkScriptableObject;
+
         public int roleSortId => m_roleSortId;
         public string RoleName => m_roleName;
         public string RoleDescription => m_roleDescription;
@@ -73,6 +76,7 @@ namespace GameCore.Database
         public Sprite EnemyIcon => m_enemyIcon;
         public int KillBonus => m_killBonus;
         public int TomatoBonus => m_tomatoBouns;
+        public TalkScriptableObject TalkScriptableObject => m_talkScriptableObject;
         public bool ValidateFlagReferenceConditions()
         {
             if (m_flagReferenceConditions == null || m_flagReferenceConditions.Length == 0)
@@ -96,6 +100,12 @@ namespace GameCore.Database
         }
 
 #if UNITY_EDITOR
+        public void Editor_SetTalkScriptableObject(TalkScriptableObject talkScriptableObject)
+        {
+            m_talkScriptableObject = talkScriptableObject;
+            EditorUtility.SetDirty(this);
+        }
+
         public void SetSprite()
         {
             string[] guids = AssetDatabase.FindAssets($"t:Sprite {m_roleIconkey}");
