@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GameCore.Database;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "TalkScriptableObject", menuName = "Scriptable Objects/Talk Scriptable Object")]
@@ -39,13 +40,49 @@ public struct TalkScriptableObjectName
     [SerializeField, Min(0f)]
     private float m_duration;
 
+    [SerializeField]
+    private TalkCondition[] m_conditions;
+
     public string Content => m_content;
 
     public float Duration => m_duration;
 
-    public TalkScriptableObjectName(string content, float duration)
+    public IReadOnlyList<TalkCondition> Conditions => m_conditions ?? Array.Empty<TalkCondition>();
+
+    public TalkScriptableObjectName(string content, float duration, IReadOnlyList<TalkCondition> conditions = null)
     {
         m_content = content;
         m_duration = duration;
+        if (conditions == null || conditions.Count == 0)
+        {
+            m_conditions = Array.Empty<TalkCondition>();
+            return;
+        }
+
+        m_conditions = new TalkCondition[conditions.Count];
+        for (int i = 0; i < conditions.Count; i++)
+        {
+            m_conditions[i] = conditions[i];
+        }
+    }
+}
+
+[Serializable]
+public struct TalkCondition
+{
+    [SerializeField, Min(0)]
+    private int m_remainingCount;
+
+    [SerializeField]
+    private FlagReference m_flagReference;
+
+    public int RemainingCount => m_remainingCount;
+
+    public FlagReference FlagReference => m_flagReference;
+
+    public TalkCondition(int remainingCount, FlagReference flagReference)
+    {
+        m_remainingCount = Mathf.Max(0, remainingCount);
+        m_flagReference = flagReference;
     }
 }
