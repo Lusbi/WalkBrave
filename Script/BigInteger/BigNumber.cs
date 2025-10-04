@@ -1,113 +1,47 @@
 using System;
-using System.Globalization;
 using System.Numerics;
 
 namespace BigMath
 {
-    [Serializable]
+    /// <summary>
+    /// 薄包裝 BigInteger，提供符號運算（+ - * / ^）與比較運算（== != < <= > >=）
+    /// 注意：此型別將 ^ 視為「冪次」，僅限右側為 int 的情境
+    /// </summary>
     public readonly struct BigNumber : IComparable<BigNumber>, IEquatable<BigNumber>
     {
-        private const int ScaleDigits = 6;
-        private static readonly BigInteger ScaleFactor = BigInteger.Pow(10, ScaleDigits);
-        private static readonly decimal ScaleFactorDecimal = PowDecimal10(ScaleDigits);
-        private static readonly double ScaleFactorDouble = Math.Pow(10d, ScaleDigits);
-
         public BigInteger Value { get; }
 
-        private BigNumber(BigInteger value, bool alreadyScaled)
-        {
-            Value = alreadyScaled ? value : value * ScaleFactor;
-        }
+        public BigNumber(BigInteger value) => Value = value;
 
-        public BigNumber(BigInteger value) : this(value, false)
-        {
-        }
-
-        public BigNumber(decimal value) : this(ToScaled(value), true)
-        {
-        }
-
-        private static BigInteger ToScaled(decimal value)
-        {
-            decimal scaled = decimal.Round(value * ScaleFactorDecimal, 0, MidpointRounding.AwayFromZero);
-            return new BigInteger(scaled);
-        }
-
-        private static decimal PowDecimal10(int exponent)
-        {
-            decimal result = 1m;
-            for (int i = 0; i < exponent; i++)
-            {
-                result *= 10m;
-            }
-            return result;
-        }
-
-        public static BigNumber FromDouble(double value) => new BigNumber(ToScaled((decimal)value), true);
-
-        public decimal ToDecimal()
-        {
-            decimal scaledValue;
-            try
-            {
-                scaledValue = (decimal)Value;
-            }
-            catch (OverflowException)
-            {
-                return (decimal)ToDouble();
-            }
-            return scaledValue / ScaleFactorDecimal;
-        }
-
-        public double ToDouble() => (double)Value / ScaleFactorDouble;
-
+        // 隱式轉換，方便直接用整數或 BigInteger 建立 BigNumber
         public static implicit operator BigNumber(int v) => new BigNumber(new BigInteger(v));
         public static implicit operator BigNumber(long v) => new BigNumber(new BigInteger(v));
-        public static implicit operator BigNumber(float v) => new BigNumber((decimal)v);
-        public static implicit operator BigNumber(double v) => FromDouble(v);
-        public static implicit operator BigNumber(decimal v) => new BigNumber(v);
         public static implicit operator BigNumber(BigInteger v) => new BigNumber(v);
 
-        public static implicit operator BigInteger(BigNumber v) => BigInteger.Divide(v.Value, ScaleFactor);
-        public static explicit operator double(BigNumber v) => v.ToDouble();
-        public static explicit operator decimal(BigNumber v) => v.ToDecimal();
+        // 需要時也可取回 BigInteger
+        public static implicit operator BigInteger(BigNumber v) => v.Value;
 
-        public static BigNumber operator +(BigNumber a, BigNumber b) => new BigNumber(BigInteger.Add(a.Value, b.Value), true);
-        public static BigNumber operator -(BigNumber a, BigNumber b) => new BigNumber(BigInteger.Subtract(a.Value, b.Value), true);
+        // 1) 算術運算 + - * /
+        public static BigNumber operator +(BigNumber a, BigNumber b) => new BigNumber(a.Value + b.Value);
+        public static BigNumber operator -(BigNumber a, BigNumber b) => new BigNumber(a.Value - b.Value);
+        public static BigNumber operator *(BigNumber a, BigNumber b) => new BigNumber(a.Value * b.Value);
+        public static BigNumber operator /(BigNumber a, BigNumber b) => new BigNumber(a.Value / b.Value);
 
-        public static BigNumber operator *(BigNumber a, BigNumber b)
-        {
-            BigInteger scaledProduct = BigInteger.Divide(BigInteger.Multiply(a.Value, b.Value), ScaleFactor);
-            return new BigNumber(scaledProduct, true);
-        }
-
-        public static BigNumber operator /(BigNumber a, BigNumber b)
-        {
-            if (b.Value.IsZero)
-            {
-                throw new DivideByZeroException();
-            }
-
-            BigInteger scaledDividend = BigInteger.Multiply(a.Value, ScaleFactor);
-            return new BigNumber(BigInteger.Divide(scaledDividend, b.Value), true);
-        }
-
+        // 2) 冪次：以 ^ 表示，限定右側為 int
         public static BigNumber operator ^(BigNumber a, int exponent)
         {
-            return Pow(a, new BigNumber(exponent));
+            return new BigNumber(BigInteger.Pow(a.Value, exponent));
         }
 
+        // 也提供明確的方法版本（當 exponent 需要檢查或來自 BigInteger 時）
         public static BigNumber Pow(BigNumber a, BigInteger exponent)
         {
-            return Pow(a, new BigNumber(exponent));
+            if (exponent > int.MaxValue || exponent < int.MinValue)
+                throw new ArgumentOutOfRangeException(nameof(exponent), "次方指數必須在 int 範圍內");
+            return new BigNumber(BigInteger.Pow(a.Value, (int)exponent));
         }
 
-        public static BigNumber Pow(BigNumber a, BigNumber exponent)
-        {
-            double result = Math.Pow(a.ToDouble(), exponent.ToDouble());
-            return FromDouble(result);
-        }
-
+        // 3) 比較運算 == != < <= > >= 需要成對實作
         public static bool operator ==(BigNumber a, BigNumber b) => a.Value == b.Value;
         public static bool operator !=(BigNumber a, BigNumber b) => a.Value != b.Value;
         public static bool operator <(BigNumber a, BigNumber b) => a.Value < b.Value;
@@ -115,32 +49,59 @@ namespace BigMath
         public static bool operator <=(BigNumber a, BigNumber b) => a.Value <= b.Value;
         public static bool operator >=(BigNumber a, BigNumber b) => a.Value >= b.Value;
 
+        // 4) 介面實作
         public int CompareTo(BigNumber other) => Value.CompareTo(other.Value);
         public bool Equals(BigNumber other) => Value.Equals(other.Value);
         public override bool Equals(object obj) => obj is BigNumber bn && Equals(bn);
         public override int GetHashCode() => Value.GetHashCode();
 
-        public override string ToString()
+        public override string ToString() => Value.ToString();
+    }
+
+    /// <summary>
+    /// 依你需求保留 Utils：提供 a ⊕ b = result 的字串格式工具
+    /// </summary>
+    public static class BigIntegerUtils
+    {
+        public enum Operator
         {
-            if (Value.IsZero)
+            Add, Subtract, Multiply, Divide, Pow, Compare
+        }
+
+        public static string ToSymbol(Operator op) => op switch
+        {
+            Operator.Add => "+",
+            Operator.Subtract => "-",
+            Operator.Multiply => "*",
+            Operator.Divide => "/",
+            Operator.Pow => "^",
+            Operator.Compare => "cmp",
+            _ => "?"
+        };
+
+        /// <summary>
+        /// 回傳字串："a op b = result"，若為 Compare 則輸出 a ? b（<, =, >）
+        /// </summary>
+        public static string FormatEval(BigNumber a, Operator op, BigNumber b)
+        {
+            switch (op)
             {
-                return "0";
+                case Operator.Add: return $"{a} + {b} = {a + b}";
+                case Operator.Subtract: return $"{a} - {b} = {a - b}";
+                case Operator.Multiply: return $"{a} * {b} = {a * b}";
+                case Operator.Divide: return $"{a} / {b} = {a / b}";
+                case Operator.Pow:
+                    // 這裡用 ^ 的 int 版本，若需要 BigInteger 指數請改用 BigNumber.Pow(a, exponent)
+                    if (b.Value > int.MaxValue || b.Value < int.MinValue)
+                        throw new ArgumentOutOfRangeException(nameof(b), "次方指數必須在 int 範圍內");
+                    return $"{a} ^ {b} = {(a ^ (int)b.Value)}";
+                case Operator.Compare:
+                    var cmp = a.CompareTo(b);
+                    var sign = cmp < 0 ? "<" : (cmp > 0 ? ">" : "=");
+                    return $"{a} {sign} {b}";
+                default:
+                    throw new NotSupportedException($"不支援的運算: {op}");
             }
-
-            bool isNegative = Value.Sign < 0;
-            BigInteger absValue = BigInteger.Abs(Value);
-            BigInteger integerPart = BigInteger.Divide(absValue, ScaleFactor);
-            BigInteger fractionalPart = BigInteger.Remainder(absValue, ScaleFactor);
-
-            string integerString = integerPart.ToString(CultureInfo.InvariantCulture);
-            if (fractionalPart.IsZero)
-            {
-                return isNegative ? $"-{integerString}" : integerString;
-            }
-
-            string fractionalString = fractionalPart.ToString(CultureInfo.InvariantCulture).PadLeft(ScaleDigits, '0').TrimEnd('0');
-            string result = fractionalString.Length > 0 ? $"{integerString}.{fractionalString}" : integerString;
-            return isNegative ? $"-{result}" : result;
         }
     }
 }
