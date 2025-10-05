@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Role_001_Talk
   m_EditorClassIdentifier: Assembly-CSharp::TalkScriptableObject
   m_entries:
-  - m_content: "\u6BCF\u6B21\u64CA\u5012\u65B0\u7684\u6575\u4EBA\uFF0C\u4F60\u90FD\u6703\u8B8A\u5F97\u66F4\u5F37\u5927\uFF01"
+  - m_content: "\u7834\u820A\u7D19\u7BB1.Talk01"
     m_duration: 5
-  - m_content: "\u64CA\u5012\u6211\u5F8C\uFF0C\u5C31\u53EF\u4EE5\u6311\u6230\u4E0B\u4E00\u500B\u6575\u4EBA\u2026"
+    m_conditions: []
+  - m_content: "\u7834\u820A\u7D19\u7BB1.Talk02"
     m_duration: 5
-  - m_content: "\u64CA\u5012\u6211\u5F8C\uFF0C\u958B\u555F\u8543\u8304\u9418\u6A21\u5F0F"
+    m_conditions: []
+  - m_content: "\u7834\u820A\u7D19\u7BB1.Talk03"
     m_duration: 5
+    m_conditions: []
