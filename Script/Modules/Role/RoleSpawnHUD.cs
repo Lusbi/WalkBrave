@@ -11,14 +11,34 @@ using UnityEngine.UI;
 public class RoleSpawnHUD : MonoBehaviour, IInitlization
 {
     [Header("UI Components")]
-    [SerializeField] private Image m_enemyImage; // ¼Ä¤H¹Ï¤ù
-    [SerializeField] private TextMeshProUGUI m_enemyHealthText; // ¼Ä¤H¦å¶q¼Æ­È
-    [SerializeField] private TextMeshProUGUI m_enemyNameText; // ¼Ä¤H¦WºÙ
-    [SerializeField] private Image m_enemyHealthBar; // ¼Ä¤H¦å±øªí²{
+    // Ø«eÑ¾lqÑµÔ°OÏ¥Î¡AÎ©P_Ü±
+    public BigNumber CurrentRemainHit => m_curHitCount;
+
+        // lÆ®Ã¼Ä¤HÜ¤rA×§Kİ¯d
+        SetTalkContent(string.Empty);
+    /// <summary>
+    /// Ü¼Ä¤HÜ¤eAÅ¦rÉ¦Û°rC
+    /// </summary>
+    public void SetTalkContent(string content)
+    {
+        if (m_enemyNameText == null)
+        {
+            return;
+        }
+
+        bool hasContent = string.IsNullOrEmpty(content) == false;
+        m_enemyNameText.gameObject.SetActive(hasContent);
+        m_enemyNameText.text = hasContent ? content : string.Empty;
+    }
+
+    [SerializeField] private Image m_enemyImage; // æ•µäººåœ–ç‰‡
+    [SerializeField] private TextMeshProUGUI m_enemyHealthText; // æ•µäººè¡€é‡æ•¸å€¼
+    [SerializeField] private TextMeshProUGUI m_enemyNameText; // æ•µäººåç¨±
+    [SerializeField] private Image m_enemyHealthBar; // æ•µäººè¡€æ¢è¡¨ç¾
     [SerializeField] private RectTransform m_enemyRect;
     private Action<bool> m_dieActionCallBack;
-    private BigNumber m_maxHitCount; // ³Ì¤j¦å¶q
-    private BigNumber m_curHitCount; // ·í«e¦å¶q
+    private BigNumber m_maxHitCount; // æœ€å¤§è¡€é‡
+    private BigNumber m_curHitCount; // ç•¶å‰è¡€é‡
 
     public void Initlization(Action callBack = null)
     {
@@ -26,7 +46,7 @@ public class RoleSpawnHUD : MonoBehaviour, IInitlization
         m_enemyImage.sprite = null;
         m_enemyHealthText.text = "0";
         //m_enemyNameText.text = "Enemy";
-        m_enemyHealthBar.fillAmount = 1f; // ¹w³]¦å±ø¬°º¡
+        m_enemyHealthBar.fillAmount = 1f; // é è¨­è¡€æ¢ç‚ºæ»¿
         m_dieActionCallBack = null;
         m_enemyRect = m_enemyImage.GetComponent<RectTransform>();
     }
@@ -37,29 +57,29 @@ public class RoleSpawnHUD : MonoBehaviour, IInitlization
     }
 
     /// <summary>
-    /// ¸ü¤J¼Ä¤H¸ê®Æ
+    /// è¼‰å…¥æ•µäººè³‡æ–™
     /// </summary>
     /// <param name="roleData"></param>
     public void LoadRoleData(RoleData roleData)
     {
-        // ¨ú±o¼Ä¤H¹Ï¤ù
+        // å–å¾—æ•µäººåœ–ç‰‡
         m_enemyImage.sprite = roleData.EnemyIcon;
         m_enemyImage.enabled = m_enemyImage.sprite != null;
-        // ¨ú±o¼Ä¤H¦WºÙ
+        // å–å¾—æ•µäººåç¨±
         // m_enemyNameText.text = roleData.RoleName;
 
         m_maxHitCount = roleData.HitCount;
         m_curHitCount = roleData.HitCount;
-        // §ó·s¦å±øªí²{
+        // æ›´æ–°è¡€æ¢è¡¨ç¾
         UpdateHealthBar(roleData.HitCount, roleData.HitCount);
 
         float rotationY = roleData.DirectionType == DirectionType.Right ? 180f : 0f;
-        m_enemyRect.localEulerAngles = new UnityEngine.Vector3(0, rotationY, 0); // ­±¦V¥kÃä
+        m_enemyRect.localEulerAngles = new UnityEngine.Vector3(0, rotationY, 0); // é¢å‘å³é‚Š
 
     }
 
     /// <summary>
-    /// ¸ü¤J³Ì«á¾Ô°«¤¤ªº¼Ä¤H¸ê®Æ
+    /// è¼‰å…¥æœ€å¾Œæˆ°é¬¥ä¸­çš„æ•µäººè³‡æ–™
     /// </summary>
     /// <param name="battleStorageData"></param>
     public void ApplyBattleStorageData(BattleStorageData battleStorageData)
@@ -75,14 +95,14 @@ public class RoleSpawnHUD : MonoBehaviour, IInitlization
     }
 
     /// <summary>
-    /// §ó·s¼Ä¤H¦å±øªí²{
+    /// æ›´æ–°æ•µäººè¡€æ¢è¡¨ç¾
     /// </summary>
-    /// <param name="currentHealth">·í«e¦å¶q</param>
-    /// <param name="maxHealth">³Ì¤j¦å¶q</param>
+    /// <param name="currentHealth">ç•¶å‰è¡€é‡</param>
+    /// <param name="maxHealth">æœ€å¤§è¡€é‡</param>
     private void UpdateHealthBar(BigNumber currentHealth, BigNumber maxHealth)
     {
         m_enemyHealthText.text = $"{m_curHitCount}/{m_maxHitCount}";
-        // ­pºâ¦å¶q¦Ê¤À¤ñ
+        // è¨ˆç®—è¡€é‡ç™¾åˆ†æ¯”
         m_enemyHealthBar.fillAmount = (float)((double)currentHealth.Value / (double)maxHealth.Value);
     }
 
@@ -117,14 +137,14 @@ public class RoleSpawnHUD : MonoBehaviour, IInitlization
 
     private void Shake()
     {
-        // ¹Ï¤ù¾_°Ê(0.1¬í)¡A¨Ï¥Î Tween
+        // åœ–ç‰‡éœ‡å‹•(0.1ç§’)ï¼Œä½¿ç”¨ Tween
         ShakeSettings shakeSettings = new()
         {
-            // «Ø¥ßÂ²©öªº¾_°Ê®ÄªG
+            // å»ºç«‹ç°¡æ˜“çš„éœ‡å‹•æ•ˆæœ
             duration = 0.1f,
-            strength = UnityEngine.Random.insideUnitSphere * 5, // ¾_°Ê±j«×
-            cycles = 1, // ¾_°Ê¦¸¼Æ
-            easeBetweenShakes = Ease.OutSine, // ¾_°Ê¹L´ç®ÄªG
+            strength = UnityEngine.Random.insideUnitSphere * 5, // éœ‡å‹•å¼·åº¦
+            cycles = 1, // éœ‡å‹•æ¬¡æ•¸
+            easeBetweenShakes = Ease.OutSine, // éœ‡å‹•éæ¸¡æ•ˆæœ
             frequency = 3,
         };
         PrimeTween.Tween.PunchLocalPosition(m_enemyRect, shakeSettings);

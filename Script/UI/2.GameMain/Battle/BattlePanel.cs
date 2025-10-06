@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using GameCore.Database;
 using GameCore.Event;
 using GameCore.Log;
@@ -34,8 +36,13 @@ public class BattlePanel : PanelBase
     private EventListener m_eventListener;
     private RoleData m_curBattleRole;
     private bool m_isAlive = false;
-    private int m_tomatoHitStack = 0; // ¿»­XÄÁ´Á¶¡²Ö¿nªº¶Ë®`¦¸¼Æ
-    private BigNumber m_curHitValue = 0;  // ·í«eÂIÀ»¶Ë®`
+    // Ä¤HÜ½{
+    private Coroutine m_enemyTalkCoroutine;
+    // Æ§QÎªÖ¨MAÎ©ziÎªÜ¤e
+    private readonly List<TalkScriptableObjectName> m_talkCandidates = new List<TalkScriptableObjectName>();
+
+    private int m_tomatoHitStack = 0; // è•ƒèŒ„é˜æœŸé–“ç´¯ç©çš„å‚·å®³æ¬¡æ•¸
+    private BigNumber m_curHitValue = 0;  // ç•¶å‰é»æ“Šå‚·å®³
     public override void Initlization(Action callBack = null)
     {
         base.Initlization(callBack);
@@ -64,8 +71,8 @@ public class BattlePanel : PanelBase
     }
 
     /// <summary>
-    /// §ó·sÀ»¥´¼Æ­È
-    /// ­«¿ï¨¤¦â®É§ó·s
+    /// æ›´æ–°æ“Šæ‰“æ•¸å€¼
+    /// é‡é¸è§’è‰²æ™‚æ›´æ–°
     /// </summary>
     private void HitValueUpdate()
     {
@@ -106,7 +113,203 @@ public class BattlePanel : PanelBase
     {
         if (Database<RoleData>.TryLoad(eventData.roleKey, out var data))
         {
-            eLog.Log($"³]©w·í«e³Ì«á¾Ô°«¨¤¦â¸ê®Æ¡G{data.key} ¡A³Ñ¾l¦¸¼Æ¡G{data.HitCount}");
+            StartEnemyTalkRoutine(); // sÒ°Ê¼Ä¤HÜ¬y{
+        }
+        else
+        {
+            StopEnemyTalkRoutine();
+            if (Database<RoleData>.TryLoad(StorageManager.instance.StorageData.BattleStorageData.EnemyKey, out var roleData))
+            {
+                m_curBattleRole = roleData;
+                UpdateSceneBackground(roleData.SceneReference.Load());
+                StartEnemyTalkRoutine(); // qxsÙ­É¤]nÜ¼Ä¤H
+            }
+            else
+            {
+                StopEnemyTalkRoutine();
+            }
+        StopEnemyTalkRoutine(); // OÉ°Ä¤H
+        StopEnemyTalkRoutine(); // Ä¤H`É°Ü½
+    // Ò°Ê¼Ä¤HÜªy{A|Ì¾Ú³]wÆ½
+    private void StartEnemyTalkRoutine()
+    {
+        StopEnemyTalkRoutine();
+
+        if (m_enemySpawn == null)
+        {
+            return;
+        }
+
+        if (m_curBattleRole == null || m_curBattleRole.TalkScriptableObject == null)
+        {
+            m_enemySpawn.SetTalkContent(string.Empty);
+            return;
+        }
+
+        var talkAsset = m_curBattleRole.TalkScriptableObject;
+        if (talkAsset.Entries == null || talkAsset.Entries.Count == 0)
+        {
+            m_enemySpawn.SetTalkContent(string.Empty);
+            return;
+        }
+
+        // Ï¥Î¨{Ì§H
+        m_enemyTalkCoroutine = StartCoroutine(EnemyTalkRoutine(talkAsset));
+    }
+
+    // Ä¤HÜ¨Ã²MÜ¤r
+    private void StopEnemyTalkRoutine()
+    {
+        if (m_enemyTalkCoroutine != null)
+        {
+            StopCoroutine(m_enemyTalkCoroutine);
+            m_enemyTalkCoroutine = null;
+        }
+
+        if (m_enemySpawn != null)
+        {
+            m_enemySpawn.SetTalkContent(string.Empty);
+        }
+    }
+
+    // Ä¤HÜ¨{GÌ¾ TalkScriptableObject Æ½e
+    private IEnumerator EnemyTalkRoutine(TalkScriptableObject talkAsset)
+    {
+        while (true)
+        {
+            if (talkAsset == null || m_curBattleRole == null || m_curBattleRole.TalkScriptableObject != talkAsset)
+            {
+                m_enemySpawn?.SetTalkContent(string.Empty);
+                yield break;
+            }
+
+            if (!active || m_isAlive == false)
+            {
+                m_enemySpawn?.SetTalkContent(string.Empty);
+                yield return null;
+                continue;
+            }
+
+            if (!TryGetRandomTalkEntry(talkAsset, out var talkEntry))
+            {
+                m_enemySpawn?.SetTalkContent(string.Empty);
+                yield return null;
+                continue;
+            }
+
+            string localizedContent = GetLocalizedTalkContent(talkEntry.Content);
+            m_enemySpawn?.SetTalkContent(localizedContent);
+
+            float duration = Mathf.Max(0.5f, talkEntry.Duration);
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                if (!active || m_isAlive == false || m_curBattleRole == null || m_curBattleRole.TalkScriptableObject != talkAsset)
+                {
+                    break;
+                }
+
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            if (!active || m_isAlive == false)
+            {
+                m_enemySpawn?.SetTalkContent(string.Empty);
+            }
+
+            yield return null;
+        }
+    }
+
+    // Õ¨oÅ¦XHÜ±
+    private bool TryGetRandomTalkEntry(TalkScriptableObject talkAsset, out TalkScriptableObjectName talkEntry)
+    {
+        var entries = talkAsset.Entries;
+        m_talkCandidates.Clear();
+
+        if (entries != null)
+        {
+            for (int i = 0; i < entries.Count; i++)
+            {
+                var entry = entries[i];
+                if (IsTalkEntryValid(entry))
+                {
+                    m_talkCandidates.Add(entry);
+                }
+            }
+        }
+
+        if (m_talkCandidates.Count == 0)
+        {
+            talkEntry = default;
+            return false;
+        }
+
+        talkEntry = m_talkCandidates[UnityEngine.Random.Range(0, m_talkCandidates.Count)];
+        return true;
+    }
+
+    // Ë¬dÜ±O_
+    private bool IsTalkEntryValid(TalkScriptableObjectName entry)
+    {
+        var conditions = entry.Conditions;
+        if (conditions == null || conditions.Count == 0)
+        {
+            return true;
+        }
+
+        for (int i = 0; i < conditions.Count; i++)
+        {
+            var condition = conditions[i];
+
+            if (condition.RemainingCount > 0 && m_enemySpawn != null)
+            {
+                if (m_enemySpawn.CurrentRemainHit > condition.RemainingCount)
+                {
+                    return false;
+                }
+            }
+
+            var flagReference = condition.FlagReference;
+            if (flagReference != null)
+            {
+                if (flagReference.TryLoad(out var flagData))
+                {
+                    var storageData = StorageManager.instance?.StorageData;
+                    if (storageData == null)
+                    {
+                        return false;
+                    }
+
+                    if (storageData.GetFlagStorageValue(flagData.key) <= 0)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    eLog.Error($"ä¤£XĞ¸Æ¡G{flagReference.GetKey()}");
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    // Nhyt key à¦¨Ü¤r
+    private string GetLocalizedTalkContent(string key)
+    {
+        if (string.IsNullOrEmpty(key))
+        {
+            return string.Empty;
+        }
+
+        return LocalizationManager.instance != null ? LocalizationManager.instance.GetLocalization(key) : key;
+    }
+
+            eLog.Log($"è¨­å®šç•¶å‰æœ€å¾Œæˆ°é¬¥è§’è‰²è³‡æ–™ï¼š{data.key} ï¼Œå‰©é¤˜æ¬¡æ•¸ï¼š{data.HitCount}");
             StorageManager.instance.StorageData.ApplyLastBattleStorageData(data.key, data.HitCount);
             HitValueUpdate();
             m_curBattleRole = data;
@@ -122,9 +325,9 @@ public class BattlePanel : PanelBase
 
     public override void ActiveOn()
     {
-        // ½T»{¬O§_¦³³Ì«á¾Ô°«¸ê®Æ
+        // ç¢ºèªæ˜¯å¦æœ‰æœ€å¾Œæˆ°é¬¥è³‡æ–™
         bool hasBattleData = string.IsNullOrEmpty(StorageManager.instance.StorageData.BattleStorageData.EnemyKey) == false;
-        // Åª¨ú³Ì«á°O¿ı¤¤ªº³õ´º
+        // è®€å–æœ€å¾Œè¨˜éŒ„ä¸­çš„å ´æ™¯
         if (hasBattleData)
         {
             m_enemySpawn.ApplyBattleStorageData(StorageManager.instance.StorageData.BattleStorageData);
@@ -134,7 +337,7 @@ public class BattlePanel : PanelBase
             SettingsManager.instance.setting.defaultEnemyReference.TryLoad(out m_curBattleRole);
             if (m_curBattleRole == null)
             {
-                eLog.Error("¥¼³]©w¹w³]¾Ô°«¨¤¦â¡A½Ğ­«·sÀË¬d³]©wÀÉ¡C");
+                eLog.Error("æœªè¨­å®šé è¨­æˆ°é¬¥è§’è‰²ï¼Œè«‹é‡æ–°æª¢æŸ¥è¨­å®šæª”ã€‚");
                 return;
             }
             CreateBattleEnemy();
@@ -148,7 +351,7 @@ public class BattlePanel : PanelBase
         BattleManager.instance.Register(null);
     }
 
-    // ­«·s«ü©w¥Í¦¨¼Ä¤H
+    // é‡æ–°æŒ‡å®šç”Ÿæˆæ•µäºº
     private void CreateBattleEnemy()
     {
         uiGameMainView.ApplyRoleRect();
@@ -159,9 +362,9 @@ public class BattlePanel : PanelBase
     private void DieAction(bool isTomatoModel = false)
     {
         m_isAlive = false;
-        // §ó·s¨¤¦â¦º¤`¦¸¼Æ
+        // æ›´æ–°è§’è‰²æ­»äº¡æ¬¡æ•¸
         StorageManager.instance.StorageData.AddEnemyKillCount(m_curBattleRole.key , isTomatoModel);
-        // §ó·sºX¼Ğ
+        // æ›´æ–°æ——æ¨™
         if (m_curBattleRole.KillToAddFlagReference != null)
         {
             StorageManager.instance.StorageData.AddFlagStorageValue(m_curBattleRole.KillToAddFlagReference?.GetKey());
@@ -174,16 +377,16 @@ public class BattlePanel : PanelBase
     {
         if (active == false)
             return;
-        // ¥Í¦¨ºt¥X¤¤¤£³B²z
+        // ç”Ÿæˆæ¼”å‡ºä¸­ä¸è™•ç†
         if (m_isAlive == false)
             return;
 
         if (m_tomatoManager.isTomatoTime)
         {
-            // Àx»W¯à¶q
+            // å„²è“„èƒ½é‡
             m_tomatoHitStack ++;
             PlayHit("?");
-            // »İ­n¤@­ÓÀx»W¯à¶qªºªí²{
+            // éœ€è¦ä¸€å€‹å„²è“„èƒ½é‡çš„è¡¨ç¾
             return;
         }
 
@@ -217,7 +420,7 @@ public class BattlePanel : PanelBase
     }
 
     /// <summary>
-    /// ¼½©ñ¶Ë®`¨Ó·½¬O§_¬° TomatoTime
+    /// æ’­æ”¾å‚·å®³ä¾†æºæ˜¯å¦ç‚º TomatoTime
     /// </summary>
     /// <param name="hitValue"></param>
     /// <param name="isFromTomatoTime"></param>
