@@ -2,9 +2,6 @@ using System;
 using System.Collections.Generic;
 using GameCore.Database;
 using UnityEngine;
-#if UNITY_EDITOR
-using Sirenix.OdinInspector;
-#endif
 
 [CreateAssetMenu(fileName = "TalkScriptableObject", menuName = "Scriptable Objects/Talk Scriptable Object")]
 public class TalkScriptableObject : ScriptableObject
@@ -51,12 +48,6 @@ public struct TalkScriptableObjectName
     public float Duration => m_duration;
 
     public IReadOnlyList<TalkCondition> Conditions => m_conditions ?? Array.Empty<TalkCondition>();
-
-#if UNITY_EDITOR
-    [ShowInInspector, DisplayAsString, LabelText("繁中預覽"), PropertyOrder(-1)]
-    [InfoBox("依據多國語系表顯示的繁體中文內容，僅供檢視", InfoMessageType.None)]
-    private string Editor_LocalizedPreview => TalkScriptableObjectEditorPreviewUtility.GetTraditionalChineseContent(m_content);
-#endif
 
     public TalkScriptableObjectName(string content, float duration, IReadOnlyList<TalkCondition> conditions = null)
     {
