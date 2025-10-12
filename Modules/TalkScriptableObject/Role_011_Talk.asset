@@ -12,4 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42d3f47d93863fb48953493b65e437b2, type: 3}
   m_Name: Role_011_Talk
   m_EditorClassIdentifier: Assembly-CSharp::TalkScriptableObject
-  m_entries: []
+  m_entries:
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk01"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk02"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk03"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk04"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk05"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk06"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk07"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk08"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk09"
+    m_duration: 5
+    m_conditions: []
+  - m_content: "\u60E1\u610F\u85E4\u8513.Talk10"
+    m_duration: 5
+    m_conditions: []

@@ -31,7 +31,7 @@ public class TalkScriptableObject : ScriptableObject
 #endif
 }
 
-[Serializable]
+[Serializable, HideInInspector]
 public struct TalkScriptableObjectName
 {
     [SerializeField, TextArea]
@@ -73,16 +73,22 @@ public struct TalkCondition
     [SerializeField, Min(0)]
     private int m_remainingCount;
 
+    [SerializeField, Min(0)]
+    private int m_killCount;
+
     [SerializeField]
     private FlagReference m_flagReference;
 
     public int RemainingCount => m_remainingCount;
 
+    public int KillCount => m_killCount;
+
     public FlagReference FlagReference => m_flagReference;
 
-    public TalkCondition(int remainingCount, FlagReference flagReference)
+    public TalkCondition(int remainingCount, int KillCount, FlagReference flagReference)
     {
-        m_remainingCount = Mathf.Max(0, remainingCount);
+        m_remainingCount = remainingCount;
+        m_killCount = KillCount;
         m_flagReference = flagReference;
     }
 }

@@ -9,6 +9,7 @@ public class TomatoButton : MonoBehaviour
     [SerializeField] private UIButton m_clickBtn;
     [SerializeField] private GameObject m_enableObj;
     [SerializeField] private GameObject m_disableObj;
+    [SerializeField] private TextMeshProUGUI m_tipText;
 
     private TomatoManager m_tomatoManager;
     public void Initlization()
@@ -38,7 +39,7 @@ public class TomatoButton : MonoBehaviour
     {
         if (m_tomatoManager.isTomatoTime)
         {
-            eLog.Log($"¿»­XÄÁ©|¥¼µ²§ô");
+            eLog.Log($"ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             return;
         }
 

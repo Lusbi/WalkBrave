@@ -13,9 +13,9 @@ public class RoleSpawnHUD : MonoBehaviour, IInitlization
     [Header("UI Components")]
     [SerializeField] private Image m_enemyImage; // 敵人圖片
     [SerializeField] private TextMeshProUGUI m_enemyHealthText; // 敵人血量數值
-    [SerializeField] private TextMeshProUGUI m_enemyNameText; // 敵人名稱
     [SerializeField] private Image m_enemyHealthBar; // 敵人血條表現
     [SerializeField] private RectTransform m_enemyRect;
+    [SerializeField] private TextMeshProUGUI m_talkText;
     private Action<bool> m_dieActionCallBack;
     private BigNumber m_maxHitCount; // 最大血量
     private BigNumber m_curHitCount; // 當前血量

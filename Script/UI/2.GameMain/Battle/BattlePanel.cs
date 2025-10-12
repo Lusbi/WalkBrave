@@ -4,10 +4,6 @@ using GameCore.Event;
 using GameCore.Log;
 using UnityEngine;
 using UnityEngine.UI;
-using GameCore.Utils;
-using NUnit.Framework;
-using Cinemachine;
-using TreeEditor;
 using BigMath;
 
 public class BattlePanel : PanelBase
@@ -26,16 +22,14 @@ public class BattlePanel : PanelBase
 
     [SerializeField] private HitPanel m_hitPanel;
 
-    private Cinemachine.CinemachineVirtualCamera m_cinemachineVirtualCamera;
-
     private TomatoManager m_tomatoManager;
-    private CinemachineBasicMultiChannelPerlin m_perlin;
 
     private EventListener m_eventListener;
     private RoleData m_curBattleRole;
     private bool m_isAlive = false;
     private int m_tomatoHitStack = 0; // 蕃茄鐘期間累積的傷害次數
     private BigNumber m_curHitValue = 0;  // 當前點擊傷害
+    private RoleTalkHandler m_roleTalkHandler;
     public override void Initlization(Action callBack = null)
     {
         base.Initlization(callBack);
@@ -61,6 +55,8 @@ public class BattlePanel : PanelBase
 
         if (m_hitPanel)
             m_hitPanel.Initlization();
+
+        m_roleTalkHandler = new RoleTalkHandler();
     }
 
     /// <summary>
@@ -112,6 +108,7 @@ public class BattlePanel : PanelBase
             m_curBattleRole = data;
             m_enemySpawn.LoadRoleData(data);
             UpdateSceneBackground(data.SceneReference.Load());
+            m_roleTalkHandler.Apply(data);
         }
     }
 
@@ -214,6 +211,9 @@ public class BattlePanel : PanelBase
     {
         if (m_tomatoBtn)
             m_tomatoBtn.ApplyTomatoTime();
+
+        if (m_roleTalkHandler != null)
+            m_roleTalkHandler.Tick(deltaTime);
     }
 
     /// <summary>
