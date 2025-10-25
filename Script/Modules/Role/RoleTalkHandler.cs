@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using GameCore.Database;
-using UnityEngine;
 
 public class RoleTalkHandler
 {
@@ -16,6 +14,8 @@ public class RoleTalkHandler
     {
         m_roleData = roleData;
         m_durationTime = 0;
+
+        TalkManager.instance.Clear();
     }
     /// <summary>
     /// 逐幀更新
@@ -34,6 +34,9 @@ public class RoleTalkHandler
     /// </summary>
     private void ConditionTalk()
     {
+        if (m_roleData.TalkScriptableObject == null)
+            return;
+
         List<TalkScriptableObjectName> validTalks = new List<TalkScriptableObjectName>();
         // 取得合法可說的內容
         foreach (var talkScriptableObjectName in m_roleData.TalkScriptableObject.Entries)
@@ -51,6 +54,9 @@ public class RoleTalkHandler
 
             // 發送對話內容
             m_durationTime = talk.Duration;
+
+            var content = LocalizationManager.instance.GetLocalization(talk.Content);
+            TalkManager.instance.Play(content, m_durationTime);
         }
         
     }

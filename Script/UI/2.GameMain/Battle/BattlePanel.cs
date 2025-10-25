@@ -164,6 +164,7 @@ public class BattlePanel : PanelBase
             StorageManager.instance.StorageData.AddFlagStorageValue(m_curBattleRole.KillToAddFlagReference?.GetKey());
         }
 
+        TalkManager.instance.Clear();
         EnemyDieAnimation(CreateBattleEnemy);
     }
 

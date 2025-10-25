@@ -8,8 +8,73 @@ public class TalkManager : MonoSingleton<TalkManager>
     [SerializeField] private TextMeshProUGUI m_talkText;
     [SerializeField] private TextAnimatorPlayer m_textAnimatorPlayer;
 
-    public void Play(string contentKey)
+    private float m_remainingDuration;
+    private bool m_isPlaying;
+
+    private void OnEnable()
     {
-        m_textAnimatorPlayer.ShowText(contentKey);
+        Clear();
+    }
+
+    private void Update()
+    {
+        if (!m_isPlaying)
+        {
+            return;
+        }
+
+        m_remainingDuration -= Time.deltaTime;
+        if (m_remainingDuration <= 0f)
+        {
+            Clear();
+        }
+    }
+
+    public void Play(string content, float duration)
+    {
+        if (string.IsNullOrWhiteSpace(content))
+        {
+            Clear();
+            return;
+        }
+
+        m_remainingDuration = Mathf.Max(duration, 0f);
+        m_isPlaying = true;
+
+        if (m_talkText != null && !m_talkText.gameObject.activeSelf)
+        {
+            m_talkText.gameObject.SetActive(true);
+        }
+
+        if (m_textAnimatorPlayer != null)
+        {
+            m_textAnimatorPlayer.ShowText(content);
+        }
+        else if (m_talkText != null)
+        {
+            m_talkText.text = content;
+        }
+
+    }
+
+    public void Clear()
+    {
+        m_isPlaying = false;
+        m_remainingDuration = 0f;
+
+        if (m_textAnimatorPlayer != null)
+        {
+            m_textAnimatorPlayer.StopShowingText();
+            m_textAnimatorPlayer.ShowText(string.Empty);
+        }
+
+        if (m_talkText != null)
+        {
+            m_talkText.text = string.Empty;
+            if (m_talkText.gameObject.activeSelf)
+            {
+                m_talkText.gameObject.SetActive(false);
+            }
+        }
     }
 }

@@ -1,7 +1,5 @@
-using UnityEngine;
 using GameCore;
 using System;
-using System.Collections;
 using UnityEngine.Localization.Settings;
 using GameCore.Log;
 using UnityEngine.Localization.Tables;

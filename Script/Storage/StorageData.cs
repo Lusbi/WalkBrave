@@ -3,6 +3,7 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using BigMath;
 using GameCore.Database;
+using GameCore.Event;
 
 [System.Serializable]
 public class StorageData
@@ -55,6 +56,8 @@ public class StorageData
         // If not found, add a new entry
         var newData = new FlagStorageData(flagKey, 1);
         m_flagStorageDatas.Add(newData);
+
+        EventManager.instance.Notify(new FlagUpdateEvent(flagKey));
     }
 
     // API for EnemyStorageData

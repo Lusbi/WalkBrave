@@ -19,60 +19,8 @@ MonoBehaviour:
     m_Key: "\u6575\u4EBA\u540D\u5B57.\u7834\u820A\u7D19\u7BB1"
     m_Metadata:
       m_Items: []
-  - m_Id: 141629064277233664
-    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk01"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371008
-    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk02"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371009
-    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk03"
-    m_Metadata:
-      m_Items: []
   - m_Id: 143268326001184769
     m_Key: "\u6575\u4EBA\u540D\u5B57.\u6D41\u6D6A\u9F20\u5996"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371010
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk01"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371011
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk02"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371012
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk03"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371013
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk04"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371014
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk05"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371015
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk06"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371016
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk07"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371017
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk08"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371018
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk09"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 141629064323371019
-    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk10"
     m_Metadata:
       m_Items: []
   - m_Id: 143268326001184770
@@ -541,6 +489,66 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 143268326001184883
     m_Key: "\u6575\u4EBA\u8AAA\u660E.\u6DF7\u6C8C\u4E4B\u4E3B-\u7D42\u7109\u8C93\u795E_Lv3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 145759257686282240
+    m_Key: Tomato.UseageTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 145759257732419584
+    m_Key: Tomato.DontClose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064277233664
+    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371008
+    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk02"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371009
+    m_Key: "\u7834\u820A\u7D19\u7BB1.Talk03"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371010
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371011
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk02"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371012
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk03"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371013
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk04"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371014
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk05"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371015
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk06"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371016
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk07"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371017
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk08"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371018
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk09"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141629064323371019
+    m_Key: "\u6D41\u6D6A\u9F20\u5996.Talk10"
     m_Metadata:
       m_Items: []
   - m_Id: 143268278827847680
